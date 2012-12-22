@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_none">Den Knopf mit den Operationszeichen (+—·:) drücken, um die trainierte Operation zu ändern.
+        Den Menüknopf drücken und zu den Einstellungen gehen, um den Schwierigkeitsgrad des Trainings zu ändern.</string>
+        
+    <!-- SPECIFIC PLUS HINTS -->
+    <string name="hint_plus_zero">Null (0) jeder Zahl hinzuzufügen ergibt diese selbe Zahl; 
+        z.B. 1234 <b>+ 0</b> = 1234</string>
+    <string name="hint_plus_nine">Neun (9) einer Zahl hinzuzufügen ist das Selbe als zehn (10) zu addieren und dann eins (1) abzuziehen; 
+        z.B. anstatt 26 <b>+ 9</b>, füge zuerst 10 zu 26 (ergibt 36) dann ziehe 1 ab, das Ganze ergibt dann 35,
+        d.h. 26 <b>+ 9</b> = (26 + 10) — 1 = 36 — 1 = 35</string>
+
+    <!-- GENERIC PLUS HINTS -->
+    <string name="hint_plus_commute">Addition (bzw. die Plus Operation) bezeichnet man als <i>kommutativ</i>, 
+        es bedeutet, dass man die Operanden (die Zahlen) umdrehen kann, und das Ergebnis bleibt das Selbe, 
+        manchmal macht\'s die Sache klarer im Kopf; 
+        z.B. 12 + 412 = 412 + 12 = 424</string>
+    <string name="hint_plus_smaller">Anstatt eine schwierige Zahl zu addieren 
+        kann es einfacher sein, zwei kleinere zu addieren, und dabei zu versuchen, bis zur nächsten runden Zahl zu "hüpfen";
+        z.B. anstatt <b>19 +</b> 24, addiere zuerst 16 zu 24 (ergibt 40) dann 3, das Ganze ist gleich 43,
+        d.h. <b>19 +</b> 24 = 3 + 16 + 24 = 3 + 40 = 43</string>
+        
+    <!-- SPECIFIC MINUS HINTS -->
+    <string name="hint_minus_zero">Null (0) von jeder Zahl zu substrahieren (abzuziehen) ergibt diese selbe Zahl;
+        z.B. 768 <b>— 0</b> = 768</string>
+    <string name="hint_minus_nine">Neun (9) von einer Zahl abzuziehen ist das Selbe wie eins (1) hinzuzufügen und dann zehn (10) abzuziehen; 
+        z.B. anstatt 82 <b>— 9</b>, füge zuerst 1 zu 82 hinzu (ergibt 83) und ziehe dann 10 ab, das Ganze ergibt 73,
+        d.h. 82 <b>— 9</b> = 82 + 1 — 10 = 83 — 10 = 73</string>
+     <string name="hint_minus_equal">Eine Zahl von sich selbst abzuziehen, ergibt <i>immer</i> Null (0);
+        z.B. 384 — 384 = <b>0</b></string>
+    
+    <!-- GENERIC MINUS HINTS -->
+    <string name="hint_minus_addition">Subtraktion (bzw. die Minus Operation) ist das Gegenteil von Addition: 
+        wenn Du eine Schachtel mit 20 Bonbons hast und Dich fragst, wieviele Bonbons übrig bleiben würden,
+        solltest Du acht (8) rausnehmen, ist das das Selbe, als sich die Frage zu stellen, wieviele Bonbons 
+        in eine Schachtel mit 8 Bonbons Du stecken mußt, damit Du 20 zum Naschen hast.
+		Andersherum zu denken kann Dir helfen, die richtige Lösung zu finden;
+        z.B. 20 <b>—</b> 8 = <b>?</b> wird zu 8 <b>+ ?</b> = 20 (und die Antwort ist 12 in beiden Fällen)</string>
+    <string name="hint_minus_smaller">Anstatt eine schwierige Zahl zu subtrahieren 
+        kann es einfacher sein, zwei kleinere abzuziehen, und dabei zu versuchen, bis zur nächsten runden Zahl zu "hüpfen";
+        z.B. anstatt <b>53 —</b> 24, ziehe zuerst 23 von 53 ab (ergibt 30) dann 1, das Ganze ergibt 29,
+        d.h. <b>53 —</b> 24 = 53 — 23 — 1 = 30 — 1 = 29</string>
+        
+    <!-- SPECIFIC TIMES HINTS -->
+    <string name="hint_times_zero">Jede Zahl mit Null (0) zu multiplizieren ergibt <i>immer</i> 0; 
+        z.B. 1234 <b>· 0</b> = <b>0</b></string>
+    <string name="hint_times_one">Jede Zahl mit eins (1) zu multiplizieren ergibt diese selbe Zahl; 
+        z.B. <b>1 ·</b> 37 = 37</string>
+    <string name="hint_times_two">Jede Zahl mit zwei (2) zu multiplizieren ist das Selbe als diese Zahl mit sich selbst zu addieren; 
+        z.B. <b>2 ·</b> 25 = 25 + 25 = 50</string>
+    <string name="hint_times_three">Wenn Du eine Zahl mit drei (3) multiplizierst, kannst Du einfach das Ergebnis überprüfen,
+        indem Du alle Ziffern dieses Ergebnisses addierst: ihre Summe must gleich drei oder ein Vielfaches davon (6 oder 9).
+        Falls es nicht so ist, dann ist was Falsches mit Deinem Ergebnis und Du solltest nochmal probieren; 
+        z.B. <b>3 ·</b> 12 = 36 und 3 + 6 = <b>9</b> (was 3 mal 3 ist)
+        oder komplizierter <b>3 ·</b> 19 = 57 und 5 + 7 = 12 und 1 + 2 = <b>3</b>;</string>
+    <string name="hint_times_five">Jede Zahl mit (5) zu multiplizieren ist das Selbe als diese Zahl mit zehn (10) zu multiplizieren
+        und dann durch zwei (2) zu teilen bzw. die Hälfte davon zu nehmen; 
+        z.B. <b>5 ·</b> 43 = (10 · 43) : 2 = 430 : 2 = 215</string>
+    <string name="hint_times_nine1">Jede Zahl mit neun (9) zu multiplizieren ist das Selbe als diese Zahl mit zehn (10) zu multiplizieren
+        und vom Ergebnis einmal abzuziehen; 
+        z.B. <b>9 ·</b> 24 = (10 · 24) — 24 = 240 — 24 = 216</string>
+    <string name="hint_times_nine2">Wenn Du eine Zahl mit neun (9) multiplizierst, kannst Du einfach das Ergebnis überprüfen,
+        indem Du alle Ziffern dieses Ergebnisses sukzessiv addierst: ihre Summe must gleich neun (9) sein.
+        Falls es nicht so ist, dann ist was Falsches mit Deinem Ergebnis und Du solltest nochmal probieren; 
+        z.B. <b>9 ·</b> 24 = 216 und 2 + 1 + 6 = <b>9</b>; 
+        oder komplizierter 9 · 44 = 396 und 3 + 9 + 6 = 18, und letztendlich 1 + 8 = 9</string>
+    <string name="hint_times_ten_int">Jede Ganzzahl mit zehn (10) zu multiplizieren ist so einfach wie eine Null am Ende zu setzen; 
+        z.B. <b>10 ·</b> 683 = 683<b>0</b></string>
+        
+    <!-- GENERIC TIMES HINTS -->
+    <string name="hint_times_commute">Multiplikation (bzw. die Mal Operation) bezeichnet man als <i>kommutativ</i>, 
+        es bedeutet, dass man die Operanden (die Zahlen) umdrehen kann, und das Ergebnis bleibt das Selbe, 
+        manchmal macht\'s die Sache klarer im Kopf; 
+        z.B. 12 · 3 = 3 · 12 = 36</string>
+        
+    <!-- SPECIFIC DIVIDE HINTS -->
+    <string name="hint_divide_zero">Null (0) geteilt durch irgendeine Zahl ergibt <i>immer</i> 0; 
+        z.B. <b>0 :</b> 354 = <b>0</b></string>
+    <string name="hint_divide_one">Jede Zahl durch eins (1) geteilt ergibt immer diese selbe Zahl; 
+        z.B. 28 <b>: 1</b> = 28</string>
+    <string name="hint_divide_equal">Eine Zahl durch sich selbst zu teilen, ergibt <i>immer</i> eins (1);
+        z.B. 427 : 427 = <b>1</b></string>
+    
+    <!-- GENERIC DIVIDE HINTS -->
+    <string name="hint_divide_multiplication">Division (bzw. die Teilen Operation) ist das Gegenteil von Multiplikation: 
+        hast Du 24 Murmeln und fragst Du Dich, wieviele jeder von Deinen Freunden von Dir kriegen wird, kannst Du Dich
+        genauso fragen, wieviele Freunde zusammenkommen müssen, falls jeder 4 Murmeln bringt, damit Ihr 24 Murmeln zum
+        Spielen habt.
+		Andersherum zu denken kann Dir helfen, die richtige Lösung zu finden;
+        z.B. 24 <b>:</b> 4 = <b>?</b> wird zu 4 <b>· ?</b> = 24 (und die Antwort ist 6 in beiden Fällen)</string>
+        
+</resources>

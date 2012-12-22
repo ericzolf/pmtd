@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="default_tries_number">0</string>
+    <string name="default_tries_separator">/</string>
+    <string name="default_max_tries">XX</string>
+    <string name="default_chrono_time">00:00</string>
+    <string name="sign_unknown">\?\?\?</string>
+
+</resources>

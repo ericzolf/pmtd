@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_none">Press the button with an operation sign (+—x÷) to change the operation being trained.
+        Press the menu button and go to the Preferences to change the difficulty of the training.</string>
+    
+    <!-- SPECIFIC PLUS HINTS -->
+    <string name="hint_plus_zero">Adding zero (0) to any number gives this same number as result; 
+        e.g. 1234 <b>+ 0</b> = 1234</string>
+    <string name="hint_plus_nine">Adding nine (9) to a number is the same as adding ten (10) and removing one (1); 
+        e.g. instead of 26 <b>+ 9</b>, add first 10 to 26 (gives 36) and remove 1, the whole equals to 35,
+        i.e. 26 <b>+ 9</b> = (26 + 10) — 1 = 36 — 1 = 35</string>
+
+    <!-- GENERIC PLUS HINTS -->
+    <string name="hint_plus_commute">Addition (or the plus operation) is called <i>commutative</i>, 
+        it means you can switch the operands (the numbers) and the result is the same, 
+        sometimes it can make the operation clearer in your head; 
+        e.g. 12 + 412 = 412 + 12 = 424</string>
+    <string name="hint_plus_smaller">Instead of adding a complicated number, 
+        it might be easier to add two smaller numbers, trying to jump to the next round result;
+        e.g. instead of <b>19 +</b> 24, add first 16 to 24 (gives 40) then 3, the whole equals to 43,
+        i.e. <b>19 +</b> 24 = 3 + 16 + 24 = 3 + 40 = 43</string>
+        
+    <!-- SPECIFIC MINUS HINTS -->
+    <string name="hint_minus_zero">Subtracting (removing) zero (0) from any number gives this same number as result;
+        e.g. 768 <b>— 0</b> = 768</string>
+    <string name="hint_minus_nine">Removing nine (9) from a number is the same as adding one (1) and removing ten (10); 
+        e.g. instead of 82 <b>— 9</b>, add first 1 to 82 (gives 83) and remove 10, the whole equals to 73,
+        i.e. 82 <b>— 9</b> = 82 + 1 — 10 = 83 — 10 = 73</string>
+     <string name="hint_minus_equal">Subtracting a number from itself <i>always</i> equals to zero (0);
+        e.g. 384 — 384 = <b>0</b></string>
+    
+    <!-- GENERIC MINUS HINTS -->
+    <string name="hint_minus_addition">Subtraction (or the minus operation) is the inverse of addition: 
+        if you have a box with 20 sweets and ask yourself how many sweets remain if you take 8 out is the same thing
+        as asking yourself how many sweets you need to add to your lunch-box in addition to the 8 you already have in order
+        to have 20 for your break. Thinking the other way around might help you find the correct solution;
+        e.g. 20 <b>—</b> 8 = <b>?</b> becomes 8 <b>+ ?</b> = 20 (and the answer is 12 in both cases)</string>
+    <string name="hint_minus_smaller">Instead of removing a complicated number, 
+        it might be easier to remove two smaller numbers, trying to jump to the next round result;
+        e.g. instead of <b>53 —</b> 24, remove first 23 from 53 (gives 30) then 1, the whole equals to 29,
+        i.e. <b>53 —</b> 24 = 53 — 23 — 1 = 30 — 1 = 29</string>
+        
+    <!-- SPECIFIC TIMES HINTS -->
+    <string name="hint_times_zero">Multiplying by zero (0) any number gives <i>always</i> 0 as result; 
+        e.g. 1234 <b>x 0</b> = <b>0</b></string>
+    <string name="hint_times_one">Multiplying by one (1) any number gives this same number as result; 
+        e.g. <b>1 x</b> 37 = 37</string>
+    <string name="hint_times_two">Multiplying by two (2) any number is the same as adding this number to itself; 
+        e.g. <b>2 x</b> 25 = 25 + 25 = 50</string>
+    <string name="hint_times_three">When you multiply a number by three (3), you can easily check if your result is correct
+        by adding repetitively all digits: their sum must also be equal to three or a multiple of three (6 or 9)!
+        If it\'s not the result you get, then something is wrong with your result and you should try again; 
+        e.g. <b>3 x</b> 12 = 36 and 3 + 6 = <b>9</b> (which is 3 times 3)
+        or more complicated <b>3 x</b> 19 = 57 and 5 + 7 = 12 and 1 + 2 = <b>3</b>;</string>
+    <string name="hint_times_five">Multiplying by five (5) any number is the same as multiplying this number by ten (10)
+        and dividing it then by two (2) or taking half of it; 
+        e.g. <b>5 x</b> 43 = (10 x 43) ÷ 2 = 430 ÷ 2 = 215</string>
+    <string name="hint_times_nine1">Multiplying by nine (9) any number is the same as multiplying this number by ten (10)
+        and then removing (subtracting) it once; 
+        e.g. <b>9 x</b> 24 = (10 x 24) — 24 = 240 — 24 = 216</string>
+    <string name="hint_times_nine2">When you multiply a number by nine (9), you can easily check if your result is correct
+        by adding repetitively all digits: their sum must also be equal to nine! If it\'s not the result you get, then
+        something is wrong with your result and you should try again; 
+        e.g. <b>9 x</b> 24 = 216 and 2 + 1 + 6 = <b>9</b>; 
+        or more complicated 9 x 44 = 396 and 3 + 9 + 6 = 18, and finally 1 + 8 = 9</string>
+    <string name="hint_times_ten_int">Multiplying by ten (10) any integer number is as easy as adding a zero at the end; 
+        e.g. <b>10 x</b> 683 = 683<b>0</b></string>
+        
+    <!-- GENERIC TIMES HINTS -->
+    <string name="hint_times_commute">Multiplication (or the times operation) is called <i>commutative</i>, 
+        it means you can switch the operands (the numbers) and the result is the same, 
+        sometimes it can make the operation clearer in your head; 
+        e.g. 12 x 3 = 3 x 12 = 36</string>
+        
+    <!-- SPECIFIC DIVIDE HINTS -->
+    <string name="hint_divide_zero">Zero (0) divided by any number gives <i>always</i> 0 as result; 
+        e.g. <b>0 ÷</b> 354 = <b>0</b></string>
+    <string name="hint_divide_one">Dividing by one (1) any number gives this same number as result; 
+        e.g. 28 <b>÷ 1</b> = 28</string>
+    <string name="hint_divide_equal">Dividing a number by itself <i>always</i> equals to one (1)
+        e.g. 427 ÷ 427 = <b>1</b></string>
+    
+    <!-- GENERIC DIVIDE HINTS -->
+    <string name="hint_divide_multiplication">Division is the inverse of multiplication: 
+        if you have 24 marbles to offer and ask yourself how many each of your 4 friends will get from you, you may as
+        well ask yourself how many friends you need to call if each one of them bring 4 marbles in order to have 24
+        marbles to play with. Thinking the other way around might help you find the correct solution;
+        e.g. 24 <b>÷</b> 4 = <b>?</b> becomes 4 <b>x ?</b> = 24 (and the answer is 6 in both cases)</string>
+        
+</resources>

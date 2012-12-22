@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefs_cat_overall" android:key="prefs.overall">
+        <ListPreference android:key="prefs.overall.lang" android:title="@string/prefs_lang_title" android:entries="@array/prefs_lang_array" android:entryValues="@array/prefs_lang_val_array"></ListPreference>
+        <EditTextPreference android:defaultValue="5" android:key="prefs.overall.max_tries" android:title="@string/prefs_max_tries_title" android:inputType="number"/>
+        <CheckBoxPreference android:title="@string/prefs_overall_timer_visible_title" android:summaryOff="@string/prefs_overall_timer_visible_off_summary" android:key="prefs.overall.timer_visible" android:summaryOn="@string/prefs_overall_timer_visible_on_summary" android:defaultValue="False"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="prefs.plus" android:title="@string/prefs_cat_plus">
+        <EditTextPreference android:title="@string/prefs_plus_max_value_title" android:key="prefs.plus.max_value" android:defaultValue="10" android:inputType="number"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_plus_max_applies_title" android:summaryOff="@string/prefs_plus_max_applies_off_summary" android:key="prefs.plus.max_applies" android:summaryOn="@string/prefs_plus_max_applies_on_summary" android:defaultValue="True"/>
+        <EditTextPreference android:title="@string/prefs_decimal_places_title" android:key="prefs.plus.decimal_places" android:defaultValue="0" android:inputType="number" android:dialogMessage="@string/prefs_decimal_places_msg"></EditTextPreference>
+        <EditTextPreference android:title="@string/prefs_plus_table_training_title" android:key="prefs.plus.table_training" android:defaultValue="0" android:inputType="number" android:dialogMessage="@string/prefs_plus_table_training_msg"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_plus_carry_allow_title" android:summaryOff="@string/prefs_plus_carry_allow_off_summary" android:key="prefs.plus.carry_allow" android:summaryOn="@string/prefs_plus_carry_allow_on_summary" android:defaultValue="False"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="prefs.minus" android:title="@string/prefs_cat_minus">
+        <EditTextPreference android:title="@string/prefs_minus_max_value_title" android:key="prefs.minus.max_value" android:defaultValue="10" android:inputType="number"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_minus_max_applies_title" android:summaryOff="@string/prefs_minus_max_applies_off_summary" android:key="prefs.minus.max_applies" android:summaryOn="@string/prefs_minus_max_applies_on_summary" android:defaultValue="True"/>
+        <EditTextPreference android:title="@string/prefs_decimal_places_title" android:key="prefs.minus.decimal_places" android:defaultValue="0" android:inputType="number" android:dialogMessage="@string/prefs_decimal_places_msg"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_minus_borrow_allow_title" android:summaryOff="@string/prefs_minus_borrow_allow_off_summary" android:key="prefs.minus.borrow_allow" android:summaryOn="@string/prefs_minus_borrow_allow_on_summary" android:defaultValue="False"/>
+        <CheckBoxPreference android:title="@string/prefs_minus_negative_allow_title" android:summaryOff="@string/prefs_minus_negative_allow_off_summary" android:key="prefs.minus.negative_allow" android:summaryOn="@string/prefs_minus_negative_allow_on_summary" android:defaultValue="False"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="prefs.times" android:title="@string/prefs_cat_times">
+        <EditTextPreference android:title="@string/prefs_times_max_value_title" android:key="prefs.times.max_value" android:defaultValue="10" android:inputType="number"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_times_max_applies_title" android:summaryOff="@string/prefs_times_max_applies_off_summary" android:key="prefs.times.max_applies" android:summaryOn="@string/prefs_times_max_applies_on_summary" android:defaultValue="True"/>
+        <EditTextPreference android:title="@string/prefs_decimal_places_title" android:key="prefs.times.decimal_places" android:defaultValue="0" android:inputType="number" android:dialogMessage="@string/prefs_decimal_places_msg"></EditTextPreference>
+        <EditTextPreference android:title="@string/prefs_times_table_training_title" android:key="prefs.times.table_training" android:defaultValue="0" android:inputType="number" android:dialogMessage="@string/prefs_times_table_training_msg"></EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="prefs.divide" android:title="@string/prefs_cat_divide">
+        <EditTextPreference android:title="@string/prefs_divide_max_value_title" android:key="prefs.divide.max_value" android:defaultValue="10" android:inputType="number"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_divide_max_applies_title" android:summaryOff="@string/prefs_divide_max_applies_off_summary" android:key="prefs.divide.max_applies" android:summaryOn="@string/prefs_divide_max_applies_on_summary" android:defaultValue="True"/>
+        <EditTextPreference android:title="@string/prefs_decimal_places_title" android:key="prefs.divide.decimal_places" android:defaultValue="0" android:inputType="number" android:dialogMessage="@string/prefs_decimal_places_msg"></EditTextPreference>
+        <CheckBoxPreference android:title="@string/prefs_divide_rest_allow_title" android:summaryOff="@string/prefs_divide_rest_allow_off_summary" android:key="prefs.divide.rest_allow" android:summaryOn="@string/prefs_divide_rest_allow_on_summary" android:defaultValue="False"/>
+        <CheckBoxPreference android:title="@string/prefs_divide_integers_title" android:summaryOff="@string/prefs_divide_integers_off_summary" android:key="prefs.divide.integers" android:summaryOn="@string/prefs_divide_integers_on_summary" android:defaultValue="False"/>
+    </PreferenceCategory>
+        
+</PreferenceScreen>

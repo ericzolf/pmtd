@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_none">Appuie sur le button avec un signe d\'opération (+—x÷) pour changer l\'opération à entraîner.
+        Presse le bouton de menu et va aux Préférences pour changer la difficulté de l\'entraînement.</string>
+        
+    <!-- SPECIFIC PLUS HINTS -->
+    <string name="hint_plus_zero">Ajouter zéro (0) à tout nombre donne ce nombre comme résultat; 
+        par ex. 1234 <b>+ 0</b> = 1234</string>
+    <string name="hint_plus_nine">Ajouter neuf (9) à un nombre est la même chose que d\'ajouter dix (10) puis de retirer un (1); 
+        par ex. au lieu de 26 <b>+ 9</b>, ajoute d\'abord 10 à 26 (ça donne 36) et enlève 1, le tout donne 35,
+        c-à-d 26 <b>+ 9</b> = (26 + 10) — 1 = 36 — 1 = 35</string>
+
+    <!-- GENERIC PLUS HINTS -->
+    <string name="hint_plus_commute">L\'addition (ou l\'opération plus) est appelée <i>commutative</i>, 
+        cela signifie que tu peux échanger les opérands (les nombres) et que le résultat reste le même, 
+        cela peut parfois rendre l\'opération plus claire dans ta tête; 
+        par ex. 12 + 412 = 412 + 12 = 424</string>
+    <string name="hint_plus_smaller">Au lieu d\'ajouter un nombre compliqué, 
+        il peut être plus simple d\'ajouter deux nombres plus petits, en essayant de "sauter" au prochain nombre rond;
+        par ex. au lieu de <b>19 +</b> 24, ajoute d\'abord 16 à 24 (ça donne 40) puis 3, le tout donne 43,
+        c-à-d <b>19 +</b> 24 = 3 + 16 + 24 = 3 + 40 = 43</string>
+        
+    <!-- SPECIFIC MINUS HINTS -->
+    <string name="hint_minus_zero">Soustraire (enlever) zéro (0) de tout nombre donne ce même nombre comme résultat;
+        par ex. 768 <b>— 0</b> = 768</string>
+    <string name="hint_minus_nine">Enlever neuf (9) d\'un nombre est la même chose que d\'ajouter un (1) puis d\'enlever dix (10); 
+        par ex. au lieu de 82 <b>— 9</b>, ajout d\'abord 1 à 82 (ça donne 83) puis enlève 10, le tout donne 73,
+        c-à-d 82 <b>— 9</b> = 82 + 1 — 10 = 83 — 10 = 73</string>
+     <string name="hint_minus_equal">Soustraire (enlever) un nombre de lui-même donne <i>toujours</i> zéro (0) comme résultat;
+        par ex. 384 — 384 = <b>0</b></string>
+    
+    <!-- GENERIC MINUS HINTS -->
+    <string name="hint_minus_addition">La soustraction (ou l\'opération moins) est l\'inverse de l\'addition: 
+        si tu as une boîte avec 20 bonbons et te demandes combien il en restera si tu en enlèves 8, c\'est la même chose que
+        si tu te demandes combien de bonbons tu dois ajouter à ta boîte avec déjà 8 dedans pour en avoir 20 pour ton goûter.
+        Penser dans l\'autre sens peut t\'aider à trouver la bonne solution;
+        par ex. 20 <b>—</b> 8 = <b>?</b> devient 8 <b>+ ?</b> = 20 (et la réponse est 12 dans les deux cas)</string>
+    <string name="hint_minus_smaller">Au lieu d\'enlever un nombre compliqué,
+        il peut être plus simple d\'enlever deux nombres plus petits, en essayant de "sauter" au prochain nombre rond;
+        par ex. au lieu de <b>53 —</b> 24, enlève d\'abord 23 de 53 (ça donne 30) puis 1, le tout donne 29,
+        c-à-d <b>53 —</b> 24 = 53 — 23 — 1 = 30 — 1 = 29</string>
+        
+    <!-- SPECIFIC TIMES HINTS -->
+    <string name="hint_times_zero">Multiplier par zéro (0) tout nombre donne <i>toujours</i> 0 comme résultat; 
+        par ex. 1234 <b>x 0</b> = <b>0</b></string>
+    <string name="hint_times_one">Multiplier par un (1) tout nombre donne ce même nombre comme résultat; 
+        par ex. <b>1 x</b> 37 = 37</string>
+    <string name="hint_times_two">Multiplier par deux (2) tout nombre est la même chose que d\'ajouter ce nombre à lui-même; 
+        par ex. <b>2 x</b> 25 = 25 + 25 = 50</string>
+    <string name="hint_times_three">Si tu multiplies un nombre par trois (3), tu peux facilement vérifier si ton résultat est correct
+        en ajoutant répétitivement tous ses chiffres: leur somme doit toujours être égale à trois ou un multiple (6 ou 9)!
+        Si ce n\'est pas le cas, alors quelque chose est faux et tu devrais réessayer;
+        par ex. <b>3 x</b> 12 = 36 et 3 + 6 = <b>9</b> (qui est 3 fois 3)
+        ou plus compliqué <b>3 x</b> 19 = 57 et 5 + 7 = 12 et finalement 1 + 2 = <b>3</b>.</string>
+    <string name="hint_times_five">Multiplier par cinq (5) tout nombre est la même chose que de multiplier ce nombre par dix (10)
+        puis de le diviser par deux (2) ou d\'en prendre la moitié; 
+        par ex. <b>5 x</b> 43 = (10 x 43) ÷ 2 = 430 ÷ 2 = 215</string>
+    <string name="hint_times_nine1">Multiplier par neuf (9) tout nombre est la même chose que de multiplier ce nombre par dix (10)
+		puis de le retirer (soustraire) une fois;
+        par ex. <b>9 x</b> 24 = (10 x 24) — 24 = 240 — 24 = 216</string>
+    <string name="hint_times_nine2">Si tu multiplies un nombre par neuf (9), tu peux facilement vérifier si ton résultat est correct
+        en ajoutant répétitivement tous ses chiffres: leur somme doit toujours être égale à neuf!
+        Si ce n\'est pas le cas, alors quelque chose est faux et tu devrais réessayer;
+        par ex. <b>9 x</b> 24 = 216 et 2 + 1 + 6 = <b>9</b>; 
+        ou plus compliqué 9 x 44 = 396 et 3 + 9 + 6 = 18, et finalement 1 + 8 = 9</string>
+    <string name="hint_times_ten_int">Multiplier par dix (10) tout nombre entier est aussi simple que d\'y ajouter un zéro à la fin; 
+        par ex. <b>10 x</b> 683 = 683<b>0</b></string>
+        
+    <!-- GENERIC TIMES HINTS -->
+    <string name="hint_times_commute">La multiplication (ou l\'opération fois) est appelée <i>commutative</i>, 
+        cela signifie que tu peux échanger les opérands (les nombres) et que le résultat reste le même, 
+        cela peut parfois rendre l\'opération plus claire dans ta tête;
+        par ex. 12 x 3 = 3 x 12 = 36</string>
+        
+    <!-- SPECIFIC DIVIDE HINTS -->
+    <string name="hint_divide_zero">Zéro (0) divisé par tout nombre donne <i>toujours</i> 0 comme résultat; 
+        par ex. <b>0 ÷</b> 354 = <b>0</b></string>
+    <string name="hint_divide_one">Diviser par un (1) tout nombre donne ce même nombre comme résultat; 
+        par ex. 28 <b>÷ 1</b> = 28</string>
+    <string name="hint_divide_equal">Diviser un nombre par lui-même donne <i>toujours</i> un (1) comme résultat;
+        par ex. 427 ÷ 427 = <b>1</b></string>
+    
+    <!-- GENERIC DIVIDE HINTS -->
+    <string name="hint_divide_multiplication">La division est l\'inverse de la multiplication: 
+        si tu as 24 billes à offrir et te demandes combien tu peux en donner à chacun de tes 4 amis, tu peux
+        aussi bien te demander combien d\'amis tu dois inviter à apporter 4 billes pour que vous ayiez 24 billes
+        pour jouer avec.
+        Penser dans l\'autre sens peut t\'aider à trouver la bonne solution;
+        par ex. 24 <b>÷</b> 4 = <b>?</b> devient 4 <b>x ?</b> = 24 (et la réponse est 6 dans les deux cas)</string>
+        
+</resources>

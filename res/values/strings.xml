@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_hello">Check your calculation capabilities!</string>
+    <string name="tries_label">Tries:</string>
+    <string name="app_name">PlusMinusTimesDivide</string>
+    <string name="app_title">PMTD - %1$s</string>
+    <string name="sign_equal">=</string>
+    <string name="text_check_solution">Check the solution</string>
+    <string name="text_choose_operation">Choose the operation to train</string>
+    <string-array name="signs_array"> <!-- the order is important! -->
+        <item>+</item>
+        <item>—</item>
+        <item>x</item>
+        <item>÷</item>
+    </string-array>
+    <string name="text_new_exercise">Create a new exercise</string>
+    <string name="text_enter_result">Your answer?</string>
+    <string name="msg_answer_not_valid_title">Answer not valid</string>
+    <string name="msg_answer_not_valid">The answer you entered is not valid</string>
+    <string name="msg_answer_not_valid_too_many_digits">There are too many digits in your answer</string>
+    <string name="msg_answer_correct_title">Correct Answer</string>
+    <string name="msg_answer_correct">Yeah, your answer is correct, congratulation!</string>
+    <string name="msg_answer_incorrect_title">Answer incorrect</string>
+    <string name="msg_answer_incorrect">Sorry, your answer isn\'t correct, try again&#8230;</string>
+    <string name="msg_answer_not_found_title">Answer not found</string>
+    <string name="msg_answer_not_found">I\'m absolutely sorry but you didn\'t manage to find the right answer.</string>
+        
+    <!-- PREFERENCES -->
+    
+    <string name="preferences">Preferences</string>
+    <string name="prefs_cat_overall">Overall</string>
+    <string name="prefs_decimal_places_title">Decimal places</string>
+    <string name="prefs_decimal_places_msg">You can decide to have from 0 to 4 digits after the dot:</string>
+    <string name="prefs_max_tries_title">Maximum tries</string>
+        
+    <string name="prefs_lang_title">Application Language</string>
+    <string-array name="prefs_lang_val_array">
+        <item>default</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+    </string-array>
+    <string-array name="prefs_lang_array">
+        <item>Default</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+    </string-array>
+    <string name="prefs_overall_timer_visible_title">Timer Visibility</string>
+    <string name="prefs_overall_timer_visible_on_summary">Timer is visible</string>
+    <string name="prefs_overall_timer_visible_off_summary">Timer is invisible</string>
+    
+    <string name="prefs_cat_plus">Plus</string>
+    <string name="prefs_plus_max_value_title">Maximum value</string>
+    <string name="prefs_plus_max_applies_title">Maximum applies to &#8230;</string>
+    <string name="prefs_plus_max_applies_on_summary">Maximum applies to operands</string>
+    <string name="prefs_plus_max_applies_off_summary">Maximum applies to the result</string>
+    <string name="prefs_plus_table_training_title">Table training value</string>
+    <string name="prefs_plus_table_training_msg">If you want to train the addition of a specific value, enter it here, else enter 0:</string>
+    <string name="prefs_plus_carry_allow_title">Allow carry over</string>
+    <string name="prefs_plus_carry_allow_on_summary">Carry over allowed</string>
+    <string name="prefs_plus_carry_allow_off_summary">Carry over forbidden (only last digit)</string>
+        
+    <string name="prefs_cat_minus">Minus</string>
+    <string name="prefs_minus_max_value_title">Maximum value</string>
+    <string name="prefs_minus_max_applies_title">Max applies to &#8230;</string>
+    <string name="prefs_minus_max_applies_on_summary">Maximum applies to smaller numbers</string>
+    <string name="prefs_minus_max_applies_off_summary">Maximum applies to biggest operand</string>
+    <string name="prefs_minus_borrow_allow_title">Allow borrow</string>
+    <string name="prefs_minus_borrow_allow_on_summary">Borrow allowed</string>
+    <string name="prefs_minus_borrow_allow_off_summary">Borrow forbidden (only last digit)</string>
+    <string name="prefs_minus_negative_allow_title">Negative calculation</string>
+    <string name="prefs_minus_negative_allow_on_summary">Negative results allowed</string>
+    <string name="prefs_minus_negative_allow_off_summary">Negative results forbidden</string>
+        
+    <string name="prefs_cat_times">Times</string>
+    <string name="prefs_times_max_value_title">Maximum value</string>
+    <string name="prefs_times_max_applies_title">Max applies to &#8230;</string>
+    <string name="prefs_times_max_applies_on_summary">Maximum applies to operands</string>
+    <string name="prefs_times_max_applies_off_summary">Maximum applies to the result</string>
+    <string name="prefs_times_table_training_title">Table training value</string>
+    <string name="prefs_times_table_training_msg">If you want to train the multiplication of a specific value, enter it here, else enter 0:</string>
+        
+    <string name="prefs_cat_divide">Divide</string>
+    <string name="prefs_divide_max_value_title">Maximum value</string>
+    <string name="prefs_divide_max_applies_title">Max applies to &#8230;</string>
+    <string name="prefs_divide_max_applies_on_summary">Maximum applies to smaller numbers</string>
+    <string name="prefs_divide_max_applies_off_summary">Maximum applies to biggest operand</string>
+    <string name="prefs_divide_rest_allow_title">Non exact division</string>
+    <string name="prefs_divide_rest_allow_on_summary">Rest allowed</string>
+    <string name="prefs_divide_rest_allow_off_summary">Rest forbidden</string>
+    <string name="prefs_divide_integers_title">Divide only integers</string>
+    <string name="prefs_divide_integers_on_summary">The number of decimal places applies only to the result</string>
+    <string name="prefs_divide_integers_off_summary">The number of decimal places applies to operands and result</string>        
+
+	<!-- ABOUT -->
+    <string name="about">About&#8230;</string>        
+    <string name="about_chooser">Choose an email application to send your feedback:</string>
+    <string name="about_enhancement">Request feature</string>        
+    <string name="about_bug">Report bug</string>
+    <string name="about_text">© 2012, Eric Lavarde.
+        \nThe code of this program is free software: you can redistribute it and/or modify it under the terms
+        of the GPL version 3 or later. See the COPYING file in the source code for more information.
+		\nPress "OK" to close, or one of the other buttons to send an email with feedback.</string>
+    <string name="about_subject_bug">BUG: &lt;short problem description&gt;</string>
+    <string name="about_text_bug">&lt;Enter what you\'re doing when the problem appears that you\'d like me to fix.
+        Describe what is then happening and what you would expect to actually happen.&gt;</string>
+    <string name="about_subject_enhancement">ENH: &lt;short enhancement description&gt;</string>
+    <string name="about_text_enhancement">&lt;Describe in detail the feature you would like me to add,
+        what you would like to be able to do and what should then happen.&gt;</string>
+    
+    <!-- CHALLENGE -->
+    <string name="challenge">Challenge</string>
+    <string name="temp_sorry">Sorry!</string>
+    <string name="temp_wip">Work in progress, not implemented yet&#8230;</string>
+    
+    <!-- USERS ACTIVITY -->
+    <string name="no_user">No user created yet; use the menu to create one.\n
+        After, press longer on the new entry to get more actions.</string>        
+    <string name="add_user">Add user</string>        
+    <string name="select_user">Select user</string>        
+    <string name="rename_user">Rename user</string>        
+    <string name="delete_user">Delete user</string>
+    <string name="give_user_name">Give a name to your user:</string>
+    <string name="give_new_user_name">Modify the name of your user:</string>
+    <string name="user_name_hint">User name</string>
+    
+    <!-- CHALLENGES ACTIVITY -->
+    <string name="no_challenge">No challenge created yet; use the menu to create one.\n
+        After, press longer on the new entry to get more actions.</string>        
+    <string name="add_challenge">Add challenge</string>        
+    <string name="select_challenge">Select challenge</string>        
+    <string name="rename_challenge">Rename challenge</string>        
+    <string name="delete_challenge">Delete challenge</string>
+    <string name="give_challenge_name">Give a name to your challenge:</string>
+    <string name="give_new_challenge_name">Modify the name of your challenge:</string>
+    <string name="challenge_name_hint">Challenge name</string>
+    <!-- CHALLENGES DIALOG -->
+    <string name="challenge_rounds">Rounds:</string>
+    <string name="challenge_operation">Operation:</string>
+    <string name="challenge_max">Maximum:</string>
+    <string name="challenge_maxwhich">Max for smaller numbers</string>
+    <string name="challenge_places">Decimal places:</string>
+    <string name="challenge_table">Train table:</string>
+    <!--  CHALLENGE ACTIVITY -->
+    <string name="challenge_next_round">Next round</string>
+    <string name="challenge_round">Round %1$2d of %2$2d (%3$d)</string>
+    <string name="challenge_hint">Challenge \"%1$s\" of user \"%2$s\"\n
+        Tries: %3$d in %4$s min:sec\n
+        Found: %5$d\n
+        Failed: %6$d\n
+        <b>Score: %7$d</b></string>
+	<string name="challenge_finished_title">Challenge finished!</string>
+	<string name="challenge_finished_message">You finished the challenge with %1$d points.</string>
+	<string name="challenge_new">New Challenge</string>
+	<string name="challenge_other">Other Challenge</string>
+</resources>

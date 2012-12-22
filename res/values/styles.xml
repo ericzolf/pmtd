@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- TANGO COLORS TAKEN FROM http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines -->
+	<color name="tango_butter_1">#fce94f</color>
+	<color name="tango_butter_2">#edd400</color>
+	<color name="tango_butter_3">#c4a000</color>
+	<color name="tango_chameleon_1">#8ae234</color>
+	<color name="tango_chameleon_2">#73d216</color>
+	<color name="tango_chameleon_3">#4e9a06</color>
+	<color name="tango_orange_1">#fcaf3e</color>
+	<color name="tango_orange_2">#f57900</color>
+	<color name="tango_orange_3">#ce5c00</color>
+	<color name="tango_sky_blue_1">#729fcf</color>
+	<color name="tango_sky_blue_2">#3465a4</color>
+	<color name="tango_sky_blue_3">#204a87</color>
+	<color name="tango_plum_1">#ad7fa8</color>
+	<color name="tango_plum_2">#75507b</color>
+	<color name="tango_plum_3">#5c3566</color>
+	<color name="tango_chocolate_1">#e9b96e</color>
+	<color name="tango_chocolate_2">#c17d11</color>
+	<color name="tango_chocolate_3">#8f5902</color>
+	<color name="tango_scarlet_red_1">#ef2929</color>
+	<color name="tango_scarlet_red_2">#cc0000</color>
+	<color name="tango_scarlet_red_3">#a40000</color>
+	<color name="tango_aluminium_1">#eeeeec</color>
+	<color name="tango_aluminium_2">#d3d7cf</color>
+	<color name="tango_aluminium_3">#babdb6</color>
+	<color name="tango_aluminium_4">#888a85</color>
+	<color name="tango_aluminium_5">#555753</color>
+	<color name="tango_aluminium_6">#2e3436</color>
+
+	<style name="CalculationTangoTheme" parent="android:Theme.Light">
+		<item name="android:windowBackground">@color/tango_butter_1</item>
+		<item name="android:colorBackground">@color/tango_butter_1</item>
+		<item name="android:colorForeground">@color/tango_butter_3</item>
+		<item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
+    	
+<!-- 		<item name="android:windowBackground">@color/tango_aluminium_1</item> -->
+<!-- 		<item name="android:colorBackground">@color/tango_aluminium_1</item> -->
+<!-- 		<item name="android:colorForeground">@color/tango_aluminium_2</item> -->
+<!-- 		<item name="android:textColorPrimary">@color/tango_sky_blue_3</item> -->
+
+    	<item name="android:buttonStyle">@style/butter_button</item>
+
+    	<!-- 		    
+        <item name="android:colorForegroundInverse">@color/tango_chocolate_3</item>
+		<item name="android:textColorSecondary">@color/tango_sky_blue_3</item>
+		<item name="android:textColorTertiary">@color/tango_scarlet_red_3</item>
+		<item name="android:textColorPrimaryInverse">@color/tango_plum_1</item>
+		<item name="android:textColorSecondaryInverse">@color/tango_sky_blue_1</item>
+		<item name="android:textColorTertiaryInverse">@color/tango_scarlet_red_1</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/tango_aluminium_5</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/tango_aluminium_2</item>
+        <item name="android:textColorPrimaryNoDisable">@color/tango_aluminium_6</item>
+        <item name="android:textColorSecondaryNoDisable">@color/tango_aluminium_6</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/tango_aluminium_1</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/tango_aluminium_1</item>
+        <item name="android:textColorHint">@color/tango_chameleon_3</item>
+        <item name="android:textColorHintInverse">@color/tango_chameleon_1</item>        
+        <item name="android:textColorHighlight">@color/tango_chameleon_3</item>
+        <item name="android:textColorLink">@color/tango_sky_blue_3</item>
+        -->
+	</style>
+	
+	<style name="butter_button" parent="@android:style/Widget.Button">
+    	<item name="android:background">@drawable/butter_button_background_selector</item>
+     	<item name="android:textColor">@drawable/butter_button_text_selector</item>
+   	</style>
+   	
+	<style name="neutral_button" parent="@android:style/Widget.Button">
+    	<item name="android:background">@drawable/neutral_button_background_selector</item>
+   	</style>
+		
+	<!-- Not usable in older versions of Android aka prior to API level 11
+   	<style name="Dialog_Bad" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/tango_scarlet_red_1</item>
+        <item name="android:colorBackground">@color/tango_scarlet_red_1</item>
+        <item name="android:colorForeground">@color/tango_scarlet_red_3</item>
+        <item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
+    </style>
+
+   	<style name="Dialog_Good" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/tango_chameleon_1</item>
+        <item name="android:colorBackground">@color/tango_chameleon_1</item>
+        <item name="android:colorForeground">@color/tango_chameleon_3</item>
+        <item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
+    </style>
+    -->
+    
+</resources>

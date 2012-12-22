@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the icons don't seem to work, but let's keep them for now... -->
+    <item android:id="@+id/select_user" android:title="@string/select_user" android:icon="@android:drawable/ic_menu_directions"></item>
+    <item android:id="@+id/rename_user" android:title="@string/rename_user" android:icon="@android:drawable/ic_menu_edit"></item>
+    <item android:id="@+id/delete_user" android:title="@string/delete_user" android:icon="@android:drawable/ic_menu_delete"></item>
+</menu>

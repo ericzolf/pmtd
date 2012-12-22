@@ -1,0 +1,53 @@
+2012.12.18.20:
+- NEW: challenge mode can now be used and shows a result with score (which can't yet be stored).
+- CHG: specific title for each activity.
+- DEV: new ChallengeRoundActivity activity.
+2012.12.02.21:
+- FIX: correct function of new exercise button (sorry!).
+- FIX: correct labels for challenge context menu (only in English).
+- DEV: create superclass PmtdRoundActivity and derive/rename TrainingRoundActivity (was PlusMinusTimesDivideActivity).
+2012.11.24.09:
+- NEW: bigger icons for high-density screens.
+- NEW: challenge mode still a stub, user can be selected, challenge created/renamed, but not used (yet).
+- CHG: last trained operation is remembered after leaving the app.
+- NEW: hints about subtracting and dividing same numbers.
+- DEV: created interface for prefs and start to use it.
+- DEV: create all "Challenge" classes.
+2012.10.06.11:
+- NEW: stub of a challenge mode (just user list, where users can be created/deleted/renamed). Work in progress!
+- CHG: menus have icons (looks nicer).
+- NEW: An about dialog with the possibility to send feedback.
+- DEV: Make Prefs a non-static class and adapt usage accordingly (still preparation for challenge mode).
+- DEV: Stop fiddling with R.string.plus/minus/etc and use instead INumberProvider.PLUS/MINUS/etc
+- DEV: Bumped minimum API level from 4 to 7 aka Android 2.1 (according to statistics, shouldn't impact any user).
+2012.07.01.20:
+- CHG: more colourful / playful interface (more funny than good-looking, design isn't my strength)
+- NEW: Added time counter and preference to make it visible (or not by default).
+- CHG: Number of decimal places has become specific to operation.
+- NEW: Preference to divide integers with rest having decimal places, the "Jocki" option :o).
+- FIX: Language of preferences changes as language preference changes (no need to go out and back in).
+- DEV: Refactored main Activity to centralize all findViewById calls in onCreate (might improve performance).
+- DEV: Split Prefs and PrefsActivity in order to prepare for later challenge mode.
+2012.05.29.10:
+- CHG: New fixed version in Play Store (see details in description of old entry)
+- NEW: Landscape specific layout.
+- NEW: Further beautification with smileys in pop-up menus.
+- FIX: Small correction in German hints for multiplications by nine (9).
+- DEV: Changed package name to eu.lavarde.pmtd
+2012.05.12.19:
+- CHG: Slightly more compact user interface.
+- FIX: Really correctly fixed the language issue this time (hopefully).
+- FIX: The old language fix created issues on older Android versions (2.1/2.2 and older)
+- CHG: Press the Return button to check the answer given.
+2012.05.06.17:
+- NEW: preference to train a specific table of addition or multiplication.
+- NEW: the program gives hints when the answer given is wrong (send me your tips if you have some more).
+- CHG: more children friendly interface (still work in progress).
+- FIX: application should be correctly set (Android isn't meant for this).
+- FIX: there were quite a lot of overflow errors that needed fixing.
+- CHG: maximum 4 decimal places (to avoid overflows indeed).
+- DEV: isMaxOperands renamed to isSmallNumbersMax for more clarity.
+2012.04.07.18:
+- NEW: maximum number of tries per exercise.
+2012.03.25.12: 
+- initially released version
