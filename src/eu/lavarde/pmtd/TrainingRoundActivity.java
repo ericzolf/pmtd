@@ -1,6 +1,8 @@
 package eu.lavarde.pmtd;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -90,21 +92,35 @@ public class TrainingRoundActivity extends PmtdRoundActivity {
 		initiateGUI();
 		
 		if (type == INumberProvider.CORRECT) { // answer is valid and correct
+			chrono.stop();
 			new AlertDialog.Builder(v.getContext())
 			.setTitle(R.string.msg_answer_correct_title)
 			.setIcon(getResources().getDrawable(SmileysProvider.getGoodSmiley()))
 			.setMessage(R.string.msg_answer_correct)
 			.setPositiveButton(android.R.string.ok,null)
+			.setNeutralButton(R.string.msg_again, new OnClickListener() {
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						renewRounds();
+						initiateGUI();					
+					}
+				})
 			.show();
-			chrono.stop();
 		} else if (nums[round].getTries() >= Prefs.getMaxTries(this)) { // too many tries and answer not correct
+			chrono.stop();
 			new AlertDialog.Builder(v.getContext())
 			.setTitle(R.string.msg_answer_not_found_title)
 			.setIcon(getResources().getDrawable(SmileysProvider.getBadSmiley()))
 			.setMessage(R.string.msg_answer_not_found)
 			.setPositiveButton(android.R.string.ok,null)
+			.setNeutralButton(R.string.msg_again, new OnClickListener() {
+					@Override
+					public void onClick(DialogInterface arg0, int arg1) {
+						renewRounds();
+						initiateGUI();					
+					}
+				})
 			.show();
-			chrono.stop();
 		} else { // give (slightly) more detailed error message
 		    if ((type & INumberProvider.TOOMANYDIGITS) != 0) { // too many digits
 				new AlertDialog.Builder(v.getContext())

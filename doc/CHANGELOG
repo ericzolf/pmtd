@@ -1,3 +1,4 @@
+- NEW: win/loss dialog of training allows to jump directly to the next exercise.
 - FIX: state of training or challenge was not properly saved when rotating device.
 - DEV: moved to git at https://code.google.com/p/pmtd/
 2012.12.18.20:

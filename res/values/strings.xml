@@ -24,7 +24,8 @@
     <string name="msg_answer_incorrect">Sorry, your answer isn\'t correct, try again&#8230;</string>
     <string name="msg_answer_not_found_title">Answer not found</string>
     <string name="msg_answer_not_found">I\'m absolutely sorry but you didn\'t manage to find the right answer.</string>
-        
+    <string name="msg_again">Next exercise!</string>
+    
     <!-- PREFERENCES -->
     
     <string name="preferences">Preferences</string>
