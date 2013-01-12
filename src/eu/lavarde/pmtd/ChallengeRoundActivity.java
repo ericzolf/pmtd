@@ -3,6 +3,7 @@ package eu.lavarde.pmtd;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,7 +41,21 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 //    private Cursor mChallengesCursor;
     private int tries, failed, found;
 
-	/* (non-Javadoc)
+    /* (non-Javadoc)
+	 * @see android.app.Activity#onCreate()
+	 */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+    	// Create the main view
+        super.onCreate(savedInstanceState);
+    	if (savedInstanceState != null) {
+    		tries = savedInstanceState.getInt("Pmtd_Challenge_Tries");
+    		failed = savedInstanceState.getInt("Pmtd_Challenge_Failed");
+    		found = savedInstanceState.getInt("Pmtd_Challenge_Found");
+    	}
+    }
+    
+     /* (non-Javadoc)
 	 * @see android.app.Activity#onDestroy()
 	 */
 	@Override
@@ -239,5 +254,13 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 				.show();
 			} 
 		}
+	}
+	
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		outState.putInt("Pmtd_Challenge_Tries", tries);
+		outState.putInt("Pmtd_Challenge_Failed", failed);
+		outState.putInt("Pmtd_Challenge_Found", found);
+		super.onSaveInstanceState(outState);
 	}
 }

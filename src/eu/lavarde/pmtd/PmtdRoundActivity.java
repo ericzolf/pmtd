@@ -88,10 +88,12 @@ public abstract class PmtdRoundActivity extends Activity {
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int pos, long id) {
-            	mPrefs.setOperation(pos);
-                nums[round].generateOperands();
-                chrono.forceStart();
-                initiateGUI();
+				if (mPrefs.getOperation() != pos) { // necessary to avoid disturbing call at creation time
+					mPrefs.setOperation(pos);
+					nums[round].generateOperands();
+					chrono.forceStart();
+					initiateGUI();
+				}
 			}
 
 			@Override
@@ -155,7 +157,7 @@ public abstract class PmtdRoundActivity extends Activity {
     		chronoText.setVisibility(TextView.INVISIBLE);
     	}
     	chrono.loadFromBundle(savedInstanceState);
-    	if (savedInstanceState != null) round = savedInstanceState.getInt("Round");
+    	if (savedInstanceState != null) round = savedInstanceState.getInt("Pmtd_Round");
     	chrono.start();
     }
 
@@ -257,7 +259,7 @@ public abstract class PmtdRoundActivity extends Activity {
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
         nums[round].setAnswer(proposedResultField.getText().toString());
-        for(int i = 0; i < nums.length; i++) nums[round].saveToBundle(outState);
+        for(int i = 0; i < nums.length; i++) nums[i].saveToBundle(outState);
 		chrono.saveToBundle(outState);
 		outState.putInt("Pmtd_Round", round);
 		super.onSaveInstanceState(outState);
