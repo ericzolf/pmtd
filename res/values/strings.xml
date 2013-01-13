@@ -16,14 +16,19 @@
     <string name="text_new_exercise">Create a new exercise</string>
     <string name="text_enter_result">Your answer?</string>
     <string name="msg_answer_not_valid_title">Answer not valid</string>
-    <string name="msg_answer_not_valid">The answer you entered is not valid</string>
-    <string name="msg_answer_not_valid_too_many_digits">There are too many digits in your answer</string>
+    <string name="msg_answer_not_valid">The answer you entered is not valid.
+        \nThe result of “%1$s” can <b>NOT</b> be “%2$s”.</string>
+    <string name="msg_answer_not_valid_too_many_digits">There are too many digits in your answer.
+        \nThe result of “%1$s” can <b>NOT</b> be “%2$s”.</string>
     <string name="msg_answer_correct_title">Correct Answer</string>
-    <string name="msg_answer_correct">Yeah, your answer is correct, congratulation!</string>
+    <string name="msg_answer_correct">Yeah, your answer is correct, congratulation!
+        \nThe result of “%1$s” is really “%2$s”.</string>
     <string name="msg_answer_incorrect_title">Answer incorrect</string>
-    <string name="msg_answer_incorrect">Sorry, your answer isn\'t correct, try again&#8230;</string>
+    <string name="msg_answer_incorrect">Sorry, your answer isn\'t correct, try again…
+        \nThe result of “%1$s” is <b>NOT</b> “%2$s”.</string>
     <string name="msg_answer_not_found_title">Answer not found</string>
-    <string name="msg_answer_not_found">I\'m absolutely sorry but you didn\'t manage to find the right answer.</string>
+    <string name="msg_answer_not_found">I\'m absolutely sorry but you didn\'t manage to find the right answer.
+        \nThe result of “%1$s” is actually “%2$s”.</string>
     <string name="msg_again">Next exercise!</string>
     
     <!-- PREFERENCES -->
@@ -53,7 +58,7 @@
     
     <string name="prefs_cat_plus">Plus</string>
     <string name="prefs_plus_max_value_title">Maximum value</string>
-    <string name="prefs_plus_max_applies_title">Maximum applies to &#8230;</string>
+    <string name="prefs_plus_max_applies_title">Maximum applies to …</string>
     <string name="prefs_plus_max_applies_on_summary">Maximum applies to operands</string>
     <string name="prefs_plus_max_applies_off_summary">Maximum applies to the result</string>
     <string name="prefs_plus_table_training_title">Table training value</string>
@@ -64,7 +69,7 @@
         
     <string name="prefs_cat_minus">Minus</string>
     <string name="prefs_minus_max_value_title">Maximum value</string>
-    <string name="prefs_minus_max_applies_title">Max applies to &#8230;</string>
+    <string name="prefs_minus_max_applies_title">Max applies to …</string>
     <string name="prefs_minus_max_applies_on_summary">Maximum applies to smaller numbers</string>
     <string name="prefs_minus_max_applies_off_summary">Maximum applies to biggest operand</string>
     <string name="prefs_minus_borrow_allow_title">Allow borrow</string>
@@ -76,7 +81,7 @@
         
     <string name="prefs_cat_times">Times</string>
     <string name="prefs_times_max_value_title">Maximum value</string>
-    <string name="prefs_times_max_applies_title">Max applies to &#8230;</string>
+    <string name="prefs_times_max_applies_title">Max applies to …</string>
     <string name="prefs_times_max_applies_on_summary">Maximum applies to operands</string>
     <string name="prefs_times_max_applies_off_summary">Maximum applies to the result</string>
     <string name="prefs_times_table_training_title">Table training value</string>
@@ -84,7 +89,7 @@
         
     <string name="prefs_cat_divide">Divide</string>
     <string name="prefs_divide_max_value_title">Maximum value</string>
-    <string name="prefs_divide_max_applies_title">Max applies to &#8230;</string>
+    <string name="prefs_divide_max_applies_title">Max applies to …</string>
     <string name="prefs_divide_max_applies_on_summary">Maximum applies to smaller numbers</string>
     <string name="prefs_divide_max_applies_off_summary">Maximum applies to biggest operand</string>
     <string name="prefs_divide_rest_allow_title">Non exact division</string>
@@ -95,14 +100,14 @@
     <string name="prefs_divide_integers_off_summary">The number of decimal places applies to operands and result</string>        
 
 	<!-- ABOUT -->
-    <string name="about">About&#8230;</string>        
+    <string name="about">About…</string>        
     <string name="about_chooser">Choose an email application to send your feedback:</string>
     <string name="about_enhancement">Request feature</string>        
     <string name="about_bug">Report bug</string>
     <string name="about_text">© 2012, Eric Lavarde.
         \nThe code of this program is free software: you can redistribute it and/or modify it under the terms
         of the GPL version 3 or later. See the COPYING file in the source code for more information.
-		\nPress "OK" to close, or one of the other buttons to send an email with feedback.</string>
+		\nPress “OK” to close, or one of the other buttons to send an email with feedback.</string>
     <string name="about_subject_bug">BUG: &lt;short problem description&gt;</string>
     <string name="about_text_bug">&lt;Enter what you\'re doing when the problem appears that you\'d like me to fix.
         Describe what is then happening and what you would expect to actually happen.&gt;</string>
@@ -113,7 +118,7 @@
     <!-- CHALLENGE -->
     <string name="challenge">Challenge</string>
     <string name="temp_sorry">Sorry!</string>
-    <string name="temp_wip">Work in progress, not implemented yet&#8230;</string>
+    <string name="temp_wip">Work in progress, not implemented yet…</string>
     
     <!-- USERS ACTIVITY -->
     <string name="no_user">No user created yet; use the menu to create one.\n
@@ -146,11 +151,11 @@
     <!--  CHALLENGE ACTIVITY -->
     <string name="challenge_next_round">Next round</string>
     <string name="challenge_round">Round %1$2d of %2$2d (%3$d)</string>
-    <string name="challenge_hint">Challenge \"%1$s\" of user \"%2$s\"\n
-        Tries: %3$d in %4$s min:sec\n
-        Found: %5$d\n
-        Failed: %6$d\n
-        <b>Score: %7$d</b></string>
+    <string name="challenge_hint">Challenge “%1$s” of user “%2$s”
+        \nTries: %3$d in %4$s min:sec
+        \nFound: %5$d
+        \nFailed: %6$d
+        \n<b>Score: %7$d</b></string>
 	<string name="challenge_finished_title">Challenge finished!</string>
 	<string name="challenge_finished_message">You finished the challenge with %1$d points.</string>
 	<string name="challenge_new">New Challenge</string>

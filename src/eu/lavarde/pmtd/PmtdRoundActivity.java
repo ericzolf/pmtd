@@ -276,5 +276,23 @@ public abstract class PmtdRoundActivity extends Activity {
 	}
 
 	protected abstract void checkResult(View v);
-
+	
+	/* Helpers functions to get strings with parameters */
+	/* TODO (perhaps, not sure it's worth the effort) make sure formatting is kept using the following code snippet:
+	String escapedUsername = TextUtils.htmlEncode(username);
+	Resources res = getResources();
+	String text = String.format(res.getString(R.string.welcome_messages), escapedUsername, mailCount);
+	CharSequence styledText = Html.fromHtml(text);
+	 */
+	protected String getMsgWithAnswer(int msgid) {
+		return this.getString(msgid, getOperationString(), nums[round].getAnswer());
+	}
+	protected String getMsgWithResult(int msgid) {
+		return this.getString(msgid, getOperationString(), nums[round].getResult());
+	}
+	private String getOperationString() {
+		return nums[round].getOperand1() + " " +
+				getResources().getStringArray(R.array.signs_array)[nums[round].getOperation()]
+						+ " " + nums[round].getOperand2();
+	}
 }

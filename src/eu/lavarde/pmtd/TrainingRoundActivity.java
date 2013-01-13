@@ -96,7 +96,7 @@ public class TrainingRoundActivity extends PmtdRoundActivity {
 			new AlertDialog.Builder(v.getContext())
 			.setTitle(R.string.msg_answer_correct_title)
 			.setIcon(getResources().getDrawable(SmileysProvider.getGoodSmiley()))
-			.setMessage(R.string.msg_answer_correct)
+			.setMessage(getMsgWithResult(R.string.msg_answer_correct))
 			.setPositiveButton(android.R.string.ok,null)
 			.setNeutralButton(R.string.msg_again, new OnClickListener() {
 					@Override
@@ -111,7 +111,7 @@ public class TrainingRoundActivity extends PmtdRoundActivity {
 			new AlertDialog.Builder(v.getContext())
 			.setTitle(R.string.msg_answer_not_found_title)
 			.setIcon(getResources().getDrawable(SmileysProvider.getBadSmiley()))
-			.setMessage(R.string.msg_answer_not_found)
+			.setMessage(getMsgWithResult(R.string.msg_answer_not_found))
 			.setPositiveButton(android.R.string.ok,null)
 			.setNeutralButton(R.string.msg_again, new OnClickListener() {
 					@Override
@@ -126,24 +126,25 @@ public class TrainingRoundActivity extends PmtdRoundActivity {
 				new AlertDialog.Builder(v.getContext())
 				.setTitle(R.string.msg_answer_not_valid_title)
 				.setIcon(getResources().getDrawable(SmileysProvider.getBadSmiley()))
-				.setMessage(R.string.msg_answer_not_valid_too_many_digits)
+				.setMessage(getMsgWithAnswer(R.string.msg_answer_not_valid_too_many_digits))
 				.setPositiveButton(android.R.string.ok,null)
 				.show();
 			} else if ((type & INumberProvider.INVALID) != 0) { // invalid result
 				new AlertDialog.Builder(v.getContext())
 				.setTitle(R.string.msg_answer_not_valid_title)
 				.setIcon(getResources().getDrawable(SmileysProvider.getBadSmiley()))
-				.setMessage(R.string.msg_answer_not_valid)
+				.setMessage(getMsgWithAnswer(R.string.msg_answer_not_valid))
 				.setPositiveButton(android.R.string.ok,null)
 				.show();
 			} else if ((type & INumberProvider.INCORRECT) != 0) { // incorrect result
 				new AlertDialog.Builder(v.getContext())
 				.setTitle(R.string.msg_answer_incorrect_title)
 				.setIcon(getResources().getDrawable(SmileysProvider.getBadSmiley()))
-				.setMessage(R.string.msg_answer_incorrect)
+				.setMessage(getMsgWithAnswer(R.string.msg_answer_incorrect))
 				.setPositiveButton(android.R.string.ok,null)
 				.show();
 			} 
 		}
 	}
+	
 }

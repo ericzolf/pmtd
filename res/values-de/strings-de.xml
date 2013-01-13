@@ -16,14 +16,19 @@
     <string name="text_new_exercise">Eine neue Übung erzeugen</string>
     <string name="text_enter_result">Deine Lösung?</string>
     <string name="msg_answer_not_valid_title">Unpassende Antwort</string>
-    <string name="msg_answer_not_valid">Deine Antwort passt leider nicht</string>
-    <string name="msg_answer_not_valid_too_many_digits">Es gibt zu viele Nachkommastellen in Deiner Antwort</string>
+    <string name="msg_answer_not_valid">Deine Antwort passt leider nicht.
+        \nDas Ergebnis von „%1$s” can <b>NICHT</b> „%2$s” sein.</string>
+    <string name="msg_answer_not_valid_too_many_digits">Es gibt zu viele Nachkommastellen in Deiner Antwort.
+        \nDas Ergebnis von „%1$s” can <b>NICHT</b> „%2$s” sein.</string>
     <string name="msg_answer_correct_title">Korrekte Antwort</string>
-    <string name="msg_answer_correct">Juhu, Deine Antwort ist korrekt, Glückwunsch!</string>
+    <string name="msg_answer_correct">Juhu, Deine Antwort ist korrekt, Glückwunsch!
+        \nDas Ergebnis von „%1$s” ist in der Tat „%2$s”.</string>
     <string name="msg_answer_incorrect_title">Inkorrekte Antwort</string>
-    <string name="msg_answer_incorrect">Tut mir leid, Deine Antwort ist nicht korrekt, versuch\'s nochmal&#8230;</string>
+    <string name="msg_answer_incorrect">Tut mir leid, Deine Antwort ist nicht korrekt, versuch\'s nochmal…
+        \nDas Ergebnis von „%1$s” ist <b>NICHT</b> „%2$s”.</string>
     <string name="msg_answer_not_found_title">Antwort nicht gefunden</string>
-    <string name="msg_answer_not_found">Es tut mir echt leid aber Du hast die richtige Antwort nicht finden können.</string>
+    <string name="msg_answer_not_found">Es tut mir echt leid aber Du hast die richtige Antwort nicht finden können.
+        \nDas Ergebnis von „%1$s” ist eigentlich „%2$s”.</string>
     <string name="msg_again">Nächste Übung!</string>
     
     <!-- PREFERENCES -->
@@ -54,7 +59,7 @@
         
     <string name="prefs_cat_plus">Plus</string>
     <string name="prefs_plus_max_value_title">Maximaler Wert</string>
-    <string name="prefs_plus_max_applies_title">Max bezieht sich auf &#8230;</string>
+    <string name="prefs_plus_max_applies_title">Max bezieht sich auf …</string>
     <string name="prefs_plus_max_applies_on_summary">Maximum bezieht sich auf die Operanden</string>
     <string name="prefs_plus_max_applies_off_summary">Maximum bezieht sich auf das Ergebnis</string>
     <string name="prefs_plus_table_training_title">Festen Wert trainieren</string>
@@ -65,7 +70,7 @@
         
     <string name="prefs_cat_minus">Minus</string>
     <string name="prefs_minus_max_value_title">Maximaler Wert</string>
-    <string name="prefs_minus_max_applies_title">Max bezieht sich auf &#8230;</string>
+    <string name="prefs_minus_max_applies_title">Max bezieht sich auf …</string>
     <string name="prefs_minus_max_applies_on_summary">Maximum bezieht sich auf die kleineren Zahlen</string>
     <string name="prefs_minus_max_applies_off_summary">Maximum bezieht sich auf den größten Operand</string>
     <string name="prefs_minus_borrow_allow_title">Mit Übertrag</string>
@@ -77,7 +82,7 @@
         
     <string name="prefs_cat_times">Mal</string>
     <string name="prefs_times_max_value_title">Maximaler Wert</string>
-    <string name="prefs_times_max_applies_title">Max bezieht sich auf &#8230;</string>
+    <string name="prefs_times_max_applies_title">Max bezieht sich auf …</string>
     <string name="prefs_times_max_applies_on_summary">Maximum bezieht sich auf die Operanden</string>
     <string name="prefs_times_max_applies_off_summary">Maximum bezieht sich auf das Ergebnis</string>
     <string name="prefs_times_table_training_title">Festen Wert trainieren</string>
@@ -85,7 +90,7 @@
         
     <string name="prefs_cat_divide">Geteilt</string>
     <string name="prefs_divide_max_value_title">Maximaler Wert</string>
-    <string name="prefs_divide_max_applies_title">Max bezieht sich auf &#8230;</string>
+    <string name="prefs_divide_max_applies_title">Max bezieht sich auf …</string>
     <string name="prefs_divide_max_applies_on_summary">Maximum bezieht sich auf die kleineren Zahlen</string>
     <string name="prefs_divide_max_applies_off_summary">Maximum bezieht auf den größten Operand</string>
     <string name="prefs_divide_rest_allow_title">Nicht exakte Teilung</string>
@@ -96,14 +101,14 @@
     <string name="prefs_divide_integers_off_summary">Zahlen nach dem Komma beziehen sich auf Ergebnis und Operanden</string>        
     
 	<!-- ABOUT -->
-    <string name="about">Über&#8230;</string>        
+    <string name="about">Über…</string>        
     <string name="about_chooser">Wählen Sie eine E-Mail-Applikation, um Ihre Meinung zu schicken:</string>
     <string name="about_enhancement">Funktion vorschlagen</string>        
     <string name="about_bug">Fehler melden</string>
     <string name="about_text">© 2012, Eric Lavarde.
         \nDer Code dieses Programs ist freie Software: Sie können ihn unter der Konditionen der GPL Version 3 oder später
         verteilen und/or ändern. Siehe die COPYING Datei im Quellcode für mehr Information.
-		\n"OK" drücken, um zuzumachen, sonst einen der anderen Knöpfen, um eine E-Mail mit Meinung zu schicken.</string>
+		\n„OK” drücken, um zuzumachen, sonst einen der anderen Knöpfen, um eine E-Mail mit Meinung zu schicken.</string>
     <string name="about_subject_bug">BUG: &lt;kurze Problembeschreibung&gt;</string>
     <string name="about_text_bug">&lt;Tippen Sie, was Sie taten als das Problem vorgekommen ist, das Sie gelöst haben wollen.
         Beschreiben Sie, was dann passiert ist, und was Sie eigentlich erwartet hätten.&gt;</string>
@@ -114,7 +119,7 @@
     <!-- CHALLENGE -->
     <string name="challenge">Wettbewerb</string>
     <string name="temp_sorry">Tut mir leid!</string>
-    <string name="temp_wip">Arbeit im Gange, noch nicht implementiert&#8230;</string>
+    <string name="temp_wip">Arbeit im Gange, noch nicht implementiert…</string>
     
     <!-- USERS ACTIVITY -->
     <string name="no_user">Kein Benutzer bis jetzt vorhanden; Menü benutzen, um Einen zu kreieren.\n
@@ -147,11 +152,11 @@
     <!--  CHALLENGE ACTIVITY -->
     <string name="challenge_next_round">Nächste Runde</string>
     <string name="challenge_round">Runde %1$2d von %2$2d (%3$d)</string>
-    <string name="challenge_hint">Wettbewerb \"%1$s\" von Benutzer \"%2$s\"\n
-        Versuche: %3$d in %4$s Min:Sek\n
-        Gefunden: %5$d\n
-        Fehlgeschlagen: %6$d\n
-        <b>Punktzahl: %7$d</b></string>
+    <string name="challenge_hint">Wettbewerb „%1$s” von Benutzer „%2$s”
+        \nVersuche: %3$d in %4$s Min:Sek
+        \nGefunden: %5$d
+        \nFehlgeschlagen: %6$d
+        \n<b>Punktzahl: %7$d</b></string>
 	<string name="challenge_finished_title">Wettbewerb fertig!</string>
 	<string name="challenge_finished_message">Du hast den Wettbewerb mit %1$d Punkten fertig gemacht.</string>
 	<string name="challenge_new">Neuer Wettbewerb</string>

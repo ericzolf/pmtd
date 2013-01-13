@@ -1,4 +1,7 @@
-- NEW: win/loss dialog of training allows to jump directly to the next exercise.
+2013.01.13.13:
+- CHG: texts have been modified to show nicer and more international quote signs.
+- NEW: win/loss dialogs show the actual result or the given answer.
+- NEW: win/loss dialogs of training allows to jump directly to the next exercise.
 - FIX: state of training or challenge was not properly saved when rotating device.
 - DEV: moved to git at https://code.google.com/p/pmtd/
 2012.12.18.20:
