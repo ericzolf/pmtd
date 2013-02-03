@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="eu.lavarde.pmtd"
-      android:versionCode="2013011313"
-      android:versionName="2013.01.13.13">
+      android:versionCode="2013020313"
+      android:versionName="2013.02.03.13">
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="9" />
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/CalculationTangoTheme">
         <activity android:name=".TrainingRoundActivity"

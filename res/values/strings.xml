@@ -104,7 +104,7 @@
     <string name="about_chooser">Choose an email application to send your feedback:</string>
     <string name="about_enhancement">Request feature</string>        
     <string name="about_bug">Report bug</string>
-    <string name="about_text">© 2012, Eric Lavarde.
+    <string name="about_text">© 2012-2013, Eric Lavarde.
         \nThe code of this program is free software: you can redistribute it and/or modify it under the terms
         of the GPL version 3 or later. See the COPYING file in the source code for more information.
 		\nPress “OK” to close, or one of the other buttons to send an email with feedback.</string>

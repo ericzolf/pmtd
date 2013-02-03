@@ -19,8 +19,8 @@ You should have received a copy of the GNU General Public License
 along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-import java.util.Random;
 import java.util.regex.Pattern;
+import eu.lavarde.util.RandomNonLinear;
 import android.os.Bundle;
 // import android.util.Log;
 
@@ -37,7 +37,7 @@ public class IntegerProvider implements INumberProvider {
 	private boolean tobefound = true;
 	private static String dec = ".";
 	private String answer = null;
-	private Random rnd = new Random();
+	private RandomNonLinear rnd = new RandomNonLinear();
 	private int round;
 
 	public IntegerProvider(IPrefs prefs) {
@@ -84,12 +84,12 @@ public class IntegerProvider implements INumberProvider {
 		if (table > 0) {
 			op1 = table * factor;
 		} else {
-			op1 = nextRandomLong(max);
+			op1 = rnd.nextLong(max);
 		}
 		if (prefs.isSmallNumbersMax()) {
- 			op2 = nextRandomLong(max);
+ 			op2 = rnd.nextLong(max);
 		} else {
-			op2 = nextRandomLong(max - op1);
+			op2 = rnd.nextLong(max - op1);
 		}
 
 		if (! prefs.isPlusCarryAllowed()) {
@@ -105,15 +105,15 @@ public class IntegerProvider implements INumberProvider {
 	}
 
 	private void generateMinusOperands(long max) {
-		op1 = nextRandomLong(max);
+		op1 = rnd.nextLong(max);
 		if (prefs.isSmallNumbersMax()) {
- 			op2 = nextRandomLong(max);
+ 			op2 = rnd.nextLong(max);
 		} else {
-			op2 = nextRandomLong(max - op1);
+			op2 = rnd.nextLong(max - op1);
 		}
 		op1 += op2;
 
-		if (prefs.isMinusNegativeAllowed() && nextRandomLong(2) == 0) {
+		if (prefs.isMinusNegativeAllowed() && rnd.nextBoolean()) {
 			long tmp = op1;
 			op1 = op2;
 			op2 = tmp;
@@ -136,12 +136,12 @@ public class IntegerProvider implements INumberProvider {
 		if (table > 0) { // we train only a specific table
 			op1 = table * factor;
 		} else {
-			op1 = nextRandomLong(max);
+			op1 = rnd.nextLong(max);
 		}
 		if (prefs.isSmallNumbersMax() || op1 == 0) {
- 			op2 = nextRandomLong(max);
+ 			op2 = rnd.nextLong(max);
 		} else {
-			op2 = nextRandomLong(max / op1 * factor);
+			op2 = rnd.nextLong(max / op1 * factor);
 		}
 		fac1 = fac2 = factor;
 		facr = factor * factor;
@@ -150,11 +150,20 @@ public class IntegerProvider implements INumberProvider {
 
 	private void generateDivideOperands(long max) {
 		if (prefs.isDivideRestAllowed()) {
-			op2 = nextRandomLong(max - 1)+1; // op2 is between 1 and max
 			if (prefs.isSmallNumbersMax()) {
-				op1 = nextRandomLong(op2 * max); // the result of op1 / op2 will be between 0 and max
+				op2 = rnd.nextLong(max - 1)+1; // op2 is between 1 and max
+				op1 = rnd.nextLong(op2 * max); // the result of op1 / op2 will be between 0 and max
 			} else {
-				op1 = nextRandomLong(max); // TODO: OK but op1 will often be smaller than op2, can we avoid this?
+				op1 = rnd.nextLong(max * factor);
+				op2 = (long) Math.sqrt(max * factor); // TODO: think about factors...
+				if (op1/factor < 1) { // op2 can't be less than 1 because max is at least 1
+					op2 = rnd.nextLong(new long[] {0, op2-1, max-1}, new double[] {2.0/3.0, 1.0/3.0});
+				} else if ( op2 >= (op1 / factor) ) {
+					op2 = rnd.nextLong(new long[] {0, op1/factor-1, op2-1, max-1}, new double[] {2.0/3.0, 0.25, 1.0/12.0});
+				} else {
+					op2 = rnd.nextLong(new long[] {0, op2-1, op1/factor-1, max-1}, new double[] {2.0/3.0, 1.0/6.0, 1.0/6.0});
+				}
+				op2++;
 			}
 			if (prefs.isDivideIntegers()) {
 				op1 /= factor * factor;
@@ -162,13 +171,13 @@ public class IntegerProvider implements INumberProvider {
 				if (op2 == 0) op2 = 1; // could happen if op2 < factor!
 			}
 		} else {
-			long res = nextRandomLong(max); // result res = op1 / op2
+			long res = rnd.nextLong(max); // result res = op1 / op2
 			if (prefs.isSmallNumbersMax() || res == 0) {
-				op2 = nextRandomLong(max-1)+1; // avoid zero
+				op2 = rnd.nextLong(max-1)+1; // avoid zero
 			} else if ( (max / res) * factor == 1) {
 				op2 = 1;
 			} else { // we must make sure that op1 is not bigger than max
-				op2 = nextRandomLong((max / res) * factor -1) + 1; // avoid zero
+				op2 = rnd.nextLong((max / res) * factor -1) + 1; // avoid zero
 			}
 			op1 = res * op2;
 		}
@@ -181,19 +190,6 @@ public class IntegerProvider implements INumberProvider {
 			fac1 = factor * factor;
 			facd = 1;
 		}
-	}
-
-	private long nextRandomLong(long max) {
-
-		if (max == 0) return 0; // deviation from nextInt which sends an exception
-		if (max <= Integer.MAX_VALUE) return rnd.nextInt((int)max);
-		
-		long res = rnd.nextLong();
-		
-		res %= max; // remainder of max
-		if (res < 0) res += max; // % can give a negative result
-		
-		return res;
 	}
 
 	public String getOperand1() {

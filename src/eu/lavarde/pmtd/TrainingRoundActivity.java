@@ -1,15 +1,5 @@
 package eu.lavarde.pmtd;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
-import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import eu.lavarde.util.AboutDialog;
-
 /* This file is part of the PlusMinusTimesDivide product, copyright Eric Lavarde <android@lavar.de>.
  * Trademarks (the product name, in English and translated, artwork like icons, and the domains
  * lavar.de and lavarde.eu - also reversed as package name) are properties of the copyright owner
@@ -28,6 +18,17 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import eu.lavarde.util.AboutDialog;
+
 
 public class TrainingRoundActivity extends PmtdRoundActivity {
 //	private static final String TAG = TrainingRoundActivity.class.getSimpleName();

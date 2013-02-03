@@ -105,7 +105,7 @@
     <string name="about_chooser">Wählen Sie eine E-Mail-Applikation, um Ihre Meinung zu schicken:</string>
     <string name="about_enhancement">Funktion vorschlagen</string>        
     <string name="about_bug">Fehler melden</string>
-    <string name="about_text">© 2012, Eric Lavarde.
+    <string name="about_text">© 2012-2013, Eric Lavarde.
         \nDer Code dieses Programs ist freie Software: Sie können ihn unter der Konditionen der GPL Version 3 oder später
         verteilen und/or ändern. Siehe die COPYING Datei im Quellcode für mehr Information.
 		\n„OK” drücken, um zuzumachen, sonst einen der anderen Knöpfen, um eine E-Mail mit Meinung zu schicken.</string>

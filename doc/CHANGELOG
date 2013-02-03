@@ -1,3 +1,7 @@
+2013.02.03.13
+- CHG: divisions with max applied to big number should be more "interesting".
+- CHG: copyright 2012-2013 instead of 2012 (nobody cares, I know).
+- DEV: new class util.RandomNonLinear derived from java.util.Random to get nextLong and non linear distribution.
 2013.01.13.13:
 - CHG: texts have been modified to show nicer and more international quote signs.
 - NEW: win/loss dialogs show the actual result or the given answer.
