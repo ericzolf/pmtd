@@ -1,5 +1,9 @@
 package eu.lavarde.pmtd;
 
+import eu.lavarde.db.HighscoresDbAdapter;
+import eu.lavarde.db.PmtdDbHelper;
+import eu.lavarde.db.ChallengesDbAdapter;
+import eu.lavarde.db.UsersDbAdapter;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -38,6 +42,7 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 	private String mChallengeName;
     private ChallengesDbAdapter mCDbAdapter;
     private UsersDbAdapter mUDbAdapter;
+    private HighscoresDbAdapter mHDbAdapter;
 //    private Cursor mChallengesCursor;
     private int tries, failed, found;
 
@@ -61,6 +66,7 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 	@Override
 	protected void onDestroy() {
         mCDbAdapter.close();
+        mHDbAdapter.close();
         mUDbAdapter.close();
 		super.onDestroy();
 	}
@@ -77,6 +83,9 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
         mUDbAdapter.open();
         mUserName = mUDbAdapter.fetchUserName(mUserId);
         
+        mHDbAdapter = new HighscoresDbAdapter(this);
+        mHDbAdapter.open();
+
         ChallengePrefs prefs = mCDbAdapter.fetchChallengePrefs(mChallengeId);
         mChallengeName = prefs.getName();
         
@@ -157,12 +166,18 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 	}
 	
 	private void finishChallenge() {
-		// TODO insert the necessary stuff to finish the challenge and offer the possibility to start a new one
 		chrono.stop(); initiateGUI();
+		// TODO add validation of high-score (or not)
+		int score = getScore();
+		int rank = mHDbAdapter.createHighscore(mUserId, mChallengeId, score);
+		String msg = getString(R.string.challenge_finished_message, getScore()) ;
+		if (rank > 0) {// we've got a high-score!
+			msg = msg + " " + getString(R.string.challenge_highscore_message, rank);
+		}
 		new AlertDialog.Builder(this)
 		.setTitle(R.string.challenge_finished_title)
 		.setIcon(R.drawable.trophy)
-		.setMessage(getString(R.string.challenge_finished_message, getScore()))
+		.setMessage(msg)
 		.setPositiveButton(android.R.string.ok, null)
 		.setNeutralButton(R.string.challenge_new, new OnClickListener() {
 					@Override
@@ -258,6 +273,7 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 	
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
+		// TODO: save the dialog state!
 		outState.putInt("Pmtd_Challenge_Tries", tries);
 		outState.putInt("Pmtd_Challenge_Failed", failed);
 		outState.putInt("Pmtd_Challenge_Found", found);

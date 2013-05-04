@@ -1,3 +1,6 @@
+- NEW: High-score ranking is shown when ending a challenge if under 50 best (you can't get a list yet).
+- DEV: new class HighscoresDbAdapter.
+- DEV: moved all DB related classes to a separate 'db' package.
 2013.02.03.13
 - CHG: divisions with max applied to big number should be more "interesting".
 - CHG: copyright 2012-2013 instead of 2012 (nobody cares, I know).

@@ -158,7 +158,8 @@
         \nFehlgeschlagen: %6$d
         \n<b>Punktzahl: %7$d</b></string>
 	<string name="challenge_finished_title">Wettbewerb fertig!</string>
-	<string name="challenge_finished_message">Du hast den Wettbewerb mit %1$d Punkten fertig gemacht.</string>
+	<string name="challenge_finished_message">Du hast den Wettbewerb mit %1$d Punkten abgeschlossen.</string>
+	<string name="challenge_highscore_message">Und hast den Highscore Nr. %1$d erreicht!</string>
 	<string name="challenge_new">Neuer Wettbewerb</string>
 	<string name="challenge_other">Anderer Wettbewerb</string>
 </resources>

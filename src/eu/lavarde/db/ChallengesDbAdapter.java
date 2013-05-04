@@ -33,8 +33,9 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
  * the License.
  */
 
-package eu.lavarde.pmtd;
+package eu.lavarde.db;
 
+import eu.lavarde.pmtd.ChallengePrefs;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -100,6 +101,12 @@ public class ChallengesDbAdapter {
     public ChallengesDbAdapter open() throws SQLException {
         mDbHelper = new PmtdDbHelper(mCtx);
         mDb = mDbHelper.getWritableDatabase();
+        
+        // Enable foreign key constraints
+        if (!mDb.isReadOnly()) {
+        	mDb.execSQL("PRAGMA foreign_keys = ON;");
+        }
+        
         return this;
     }
 
@@ -158,8 +165,11 @@ public class ChallengesDbAdapter {
      * @return true if deleted, false otherwise
      */
     public boolean deleteChallenge(long rowId) {
-
-        return mDb.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0;
+    	if (mDb.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0) {
+    		HighscoresDbAdapter.deleteChallenge(mDb, rowId);
+    		return true;
+    	}
+    	return false;
     }
 
     /**
@@ -245,5 +255,21 @@ public class ChallengesDbAdapter {
         args.put(KEY_NAME, name);
 
         return mDb.update(DATABASE_TABLE, args, KEY_ID + "=" + rowId, null) > 0;
+    }
+    
+    /**
+     * Function to zero all challenges of a specific user (assuming the user is being deleted
+     * but we don't want to lose their challenges). This function is static and meant to be used only
+     * from an object that has access to the same DB.
+     * 
+     * @param localDb a pointer to the same database
+     * @param userId id of the user to wipe out
+     * @return true if some challenge was successfully updated, false otherwise
+     */
+    protected static boolean nullifyUser(SQLiteDatabase localDb, long userId) {
+        ContentValues args = new ContentValues();
+        args.put(KEY_USER, (Integer) null);
+
+        return localDb.update(DATABASE_TABLE, args, KEY_USER + "=" + userId, null) > 0;
     }
 }

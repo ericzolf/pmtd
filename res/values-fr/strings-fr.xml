@@ -159,6 +159,7 @@
         \n<b>Score: %7$d</b></string>
 	<string name="challenge_finished_title">Compétition terminée!</string>
 	<string name="challenge_finished_message">Tu as achevée la compétition avec %1$d points.</string>
+	<string name="challenge_highscore_message">Et tu es le N°%1$d dans la table des records!</string>
 	<string name="challenge_new">Nouvelle compétition</string>
 	<string name="challenge_other">Autre compétition</string>
 </resources>

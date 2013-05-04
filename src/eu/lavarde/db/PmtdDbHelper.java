@@ -1,4 +1,4 @@
-package eu.lavarde.pmtd;
+package eu.lavarde.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,7 +15,7 @@ public class PmtdDbHelper extends SQLiteOpenHelper {
             "create table challenges (" 
             		+ ChallengesDbAdapter.KEY_ID   + " integer primary key autoincrement, "
             		+ ChallengesDbAdapter.KEY_NAME + " text not null, "
-            		+ ChallengesDbAdapter.KEY_USER + " integer REFERENCES users(_id) ON DELETE SET NULL, " // TODO: not sure it works automatically
+            		+ ChallengesDbAdapter.KEY_USER + " integer, "
             		+ ChallengesDbAdapter.KEY_ROUNDS + " integer not null, "
             		+ ChallengesDbAdapter.KEY_OPERATION + " integer not null, "
             		+ ChallengesDbAdapter.KEY_MAX + " integer not null, "
@@ -23,11 +23,29 @@ public class PmtdDbHelper extends SQLiteOpenHelper {
             		+ ChallengesDbAdapter.KEY_PLACES + " integer not null, "
             		+ ChallengesDbAdapter.KEY_TABLE + " integer, "
             		+ ChallengesDbAdapter.KEY_BOOL1 + " boolean, "
-            		+ ChallengesDbAdapter.KEY_BOOL2 + " boolean "
+            		+ ChallengesDbAdapter.KEY_BOOL2 + " boolean, "
+            		+ "FOREIGN KEY(" + ChallengesDbAdapter.KEY_USER
+        				+ ") REFERENCES users(" + UsersDbAdapter.KEY_ID
+        				+ ") ON DELETE SET NULL " // TODO: not sure why it doesn't work automatically
+            		+ ");";
+
+    private static final String DATABASE_CREATE_HIGHSCORES =
+            "create table highscores (" 
+            		+ HighscoresDbAdapter.KEY_ID   + " integer primary key autoincrement, "
+            		+ HighscoresDbAdapter.KEY_CHALLENGE + " integer not null, "
+            		+ HighscoresDbAdapter.KEY_USER + " integer, "
+            		+ HighscoresDbAdapter.KEY_SCORE + " integer not null, "
+            		+ HighscoresDbAdapter.KEY_WHEN + " integer not null, "
+            		+ "FOREIGN KEY(" + HighscoresDbAdapter.KEY_CHALLENGE 
+        				+ ") REFERENCES challenges(" + ChallengesDbAdapter.KEY_ID
+        				+ ") ON DELETE CASCADE, " // TODO: not sure why it doesn't work automatically
+        			+ "FOREIGN KEY(" + HighscoresDbAdapter.KEY_USER
+        				+ ") REFERENCES users(" + UsersDbAdapter.KEY_ID
+        				+ ") ON DELETE SET NULL " // TODO: not sure why it doesn't work automatically
             		+ ");";
 
     private static final String DATABASE_NAME = "pmtd";
-	private static final int DATABASE_VERSION = 2;
+	private static final int DATABASE_VERSION = 3;
 
 	// TODO: find a better place for these intents/extra constants
 	public static final String EXTRA_USERID = "EXTRA_USERID";
@@ -39,14 +57,25 @@ public class PmtdDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        // Enable foreign key constraints
+    	db.execSQL("PRAGMA foreign_keys = ON;");
+    	
+    	// Then create the databases
         db.execSQL(DATABASE_CREATE_USERS);
         db.execSQL(DATABASE_CREATE_CHALLENGES);
+        db.execSQL(DATABASE_CREATE_HIGHSCORES);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // Enable foreign key constraints
+    	db.execSQL("PRAGMA foreign_keys = ON;");
+
     	if (oldVersion < 2 && newVersion >= 2) {
             db.execSQL(DATABASE_CREATE_CHALLENGES); // challenges table was added with version 2
+    	}
+    	if (oldVersion < 3 && newVersion >= 3) {
+            db.execSQL(DATABASE_CREATE_HIGHSCORES); // high-scores table was added with version 3
     	}
     }
     

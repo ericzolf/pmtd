@@ -33,7 +33,7 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
  * the License.
  */
 
-package eu.lavarde.pmtd;
+package eu.lavarde.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -84,6 +84,12 @@ public class UsersDbAdapter {
     public UsersDbAdapter open() throws SQLException {
         mDbHelper = new PmtdDbHelper(mCtx);
         mDb = mDbHelper.getWritableDatabase();
+        
+        // Enable foreign key constraints
+        if (!mDb.isReadOnly()) {
+        	mDb.execSQL("PRAGMA foreign_keys = ON;");
+        }
+        
         return this;
     }
 
@@ -114,8 +120,13 @@ public class UsersDbAdapter {
      * @return true if deleted, false otherwise
      */
     public boolean deleteUser(long rowId) {
-
-        return mDb.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0;
+        if (mDb.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0) {
+        	ChallengesDbAdapter.nullifyUser(mDb, rowId);
+        	HighscoresDbAdapter.nullifyUser(mDb, rowId);
+        	return true;
+        } else {
+        	return false;
+        }
     }
 
     /**
@@ -124,7 +135,6 @@ public class UsersDbAdapter {
      * @return Cursor over all users
      */
     public Cursor fetchAllUsers() {
-
         return mDb.query(DATABASE_TABLE, new String[] {KEY_ID, KEY_NAME},
         		null, null, null, null, KEY_NAME);
     }
@@ -139,7 +149,6 @@ public class UsersDbAdapter {
     public Cursor fetchUser(long rowId) throws SQLException {
 
         Cursor mCursor =
-
             mDb.query(true, DATABASE_TABLE, new String[] {KEY_ID, KEY_NAME},
             		KEY_ID + "=" + rowId, null, null, null, null, null);
         if (mCursor != null) {
@@ -159,7 +168,6 @@ public class UsersDbAdapter {
     public String fetchUserName(long rowId) throws SQLException {
 
         Cursor mCursor =
-
             mDb.query(true, DATABASE_TABLE, new String[] {KEY_ID, KEY_NAME},
             		KEY_ID + "=" + rowId, null, null, null, null, null);
         if (mCursor != null) {

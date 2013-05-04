@@ -18,6 +18,8 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
 package eu.lavarde.pmtd;
 
+import eu.lavarde.db.PmtdDbHelper;
+import eu.lavarde.db.UsersDbAdapter;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.DialogInterface;
