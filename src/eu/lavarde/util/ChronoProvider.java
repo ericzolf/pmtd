@@ -19,6 +19,8 @@ You should have received a copy of the GNU General Public License
 along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+import java.util.Locale;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -140,7 +142,7 @@ public class ChronoProvider { // TODO: fix the chrono when the app is destroyed 
 		int secs = getElapsedSeconds();
 		int min  = secs / 60;
 		secs %= 60;
-		return String.format("%02d:%02d", min, secs);
+		return String.format(Locale.getDefault(),"%02d:%02d", min, secs);
 	}
 
 	public void saveToBundle(Bundle stateSaver) {

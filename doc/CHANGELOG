@@ -1,3 +1,4 @@
+- DEV: smaller lint corrections.
 2013.05.04.13
 - NEW: High-score ranking is shown when ending a challenge if under 50 best (you can't get a list yet).
 - DEV: new class HighscoresDbAdapter.
