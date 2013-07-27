@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="eu.lavarde.pmtd"
-      android:versionCode="2013050509"
-      android:versionName="2013.05.05.09">
-    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="9" />
+      android:versionCode="2013063009"
+      android:versionName="2013.06.30.09">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="18" />
     <application android:icon="@drawable/icon" android:label="@string/app_name"
         	android:theme="@style/CalculationTangoTheme"
         	android:allowBackup="true">
@@ -18,6 +18,7 @@
         <activity android:name=".UsersListActivity"></activity>
         <activity android:name=".ChallengesListActivity"></activity>
         <activity android:name=".ChallengeRoundActivity"></activity>
+        <activity android:name=".HighscoresListActivity"></activity>
         
     </application>
 </manifest>

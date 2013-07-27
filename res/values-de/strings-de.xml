@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="text_hello">Teste Deine Rechenfähigkeiten!</string>
     <string name="tries_label">Versuche:</string>
     <string name="app_name">PlusMinusMalGeteilt</string>
@@ -7,12 +8,14 @@
     <string name="sign_equal">=</string>
     <string name="text_check_solution">Die Lösung überprüfen</string>
     <string name="text_choose_operation">Die Rechenart wählen</string>
+
     <string-array name="signs_array"> <!-- die Reihenfolge ist wichtig! -->
         <item>+</item>
         <item>—</item>
         <item>·</item>
         <item>:</item>
     </string-array>
+
     <string name="text_new_exercise">Eine neue Übung erzeugen</string>
     <string name="text_enter_result">Deine Lösung?</string>
     <string name="msg_answer_not_valid_title">Unpassende Antwort</string>
@@ -30,16 +33,16 @@
     <string name="msg_answer_not_found">Es tut mir echt leid aber Du hast die richtige Antwort nicht finden können.
         \nDas Ergebnis von „%1$s” ist eigentlich „%2$s”.</string>
     <string name="msg_again">Nächste Übung!</string>
-    
+
     <!-- PREFERENCES -->
-    
+
     <string name="preferences">Einstellungen</string>
     <string name="prefs_cat_overall">Allgemein</string>
     <string name="prefs_decimal_places_title">Nachkommastellen</string>
     <string name="prefs_decimal_places_msg">Du kannst entscheiden 0 bis 4 Ziffern nach dem Komma (bzw. Punkt) zu haben:</string>
     <string name="prefs_max_tries_title">Maximum Versuche</string>
-        
     <string name="prefs_lang_title">Applikationssprache</string>
+
     <string-array name="prefs_lang_val_array">
         <item>default</item>
         <item>en</item>
@@ -52,11 +55,10 @@
         <item>Français</item>
         <item>Deutsch</item>
     </string-array>
-    
+
     <string name="prefs_overall_timer_visible_title">Sichtbarkeit der Zeituhr</string>
     <string name="prefs_overall_timer_visible_on_summary">Zeituhr ist sichtbar</string>
     <string name="prefs_overall_timer_visible_off_summary">Zeituhr ist unsichtbar</string>
-        
     <string name="prefs_cat_plus">Plus</string>
     <string name="prefs_plus_max_value_title">Maximaler Wert</string>
     <string name="prefs_plus_max_applies_title">Max bezieht sich auf …</string>
@@ -67,7 +69,6 @@
     <string name="prefs_plus_carry_allow_title">Mit Übertrag</string>
     <string name="prefs_plus_carry_allow_on_summary">Übertrag erlaubt</string>
     <string name="prefs_plus_carry_allow_off_summary">Übertrag verboten (nur letzte Ziffer)</string>
-        
     <string name="prefs_cat_minus">Minus</string>
     <string name="prefs_minus_max_value_title">Maximaler Wert</string>
     <string name="prefs_minus_max_applies_title">Max bezieht sich auf …</string>
@@ -79,7 +80,6 @@
     <string name="prefs_minus_negative_allow_title">Negative Berechnungen</string>
     <string name="prefs_minus_negative_allow_on_summary">Negatives Ergebnis erlaubt</string>
     <string name="prefs_minus_negative_allow_off_summary">Negatives Ergebnis verboten</string>
-        
     <string name="prefs_cat_times">Mal</string>
     <string name="prefs_times_max_value_title">Maximaler Wert</string>
     <string name="prefs_times_max_applies_title">Max bezieht sich auf …</string>
@@ -87,7 +87,6 @@
     <string name="prefs_times_max_applies_off_summary">Maximum bezieht sich auf das Ergebnis</string>
     <string name="prefs_times_table_training_title">Festen Wert trainieren</string>
     <string name="prefs_times_table_training_msg">Falls Du die Multiplikation mit einer spezifischen Zahl trainieren möchtest, trage sie hier ein, sonst trage 0 ein:</string>
-        
     <string name="prefs_cat_divide">Geteilt</string>
     <string name="prefs_divide_max_value_title">Maximaler Wert</string>
     <string name="prefs_divide_max_applies_title">Max bezieht sich auf …</string>
@@ -98,12 +97,12 @@
     <string name="prefs_divide_rest_allow_off_summary">Rest verboten</string>
     <string name="prefs_divide_integers_title">Nur Ganzzahlen teilen</string>
     <string name="prefs_divide_integers_on_summary">Zahlen nach dem Komma beziehen sich nur auf das Ergebnis</string>
-    <string name="prefs_divide_integers_off_summary">Zahlen nach dem Komma beziehen sich auf Ergebnis und Operanden</string>        
-    
-	<!-- ABOUT -->
-    <string name="about">Über…</string>        
+    <string name="prefs_divide_integers_off_summary">Zahlen nach dem Komma beziehen sich auf Ergebnis und Operanden</string>
+
+    <!-- ABOUT -->
+    <string name="about">Über…</string>
     <string name="about_chooser">Wählen Sie eine E-Mail-Applikation, um Ihre Meinung zu schicken:</string>
-    <string name="about_enhancement">Funktion vorschlagen</string>        
+    <string name="about_enhancement">Funktion vorschlagen</string>
     <string name="about_bug">Fehler melden</string>
     <string name="about_text">© 2012-2013, Eric Lavarde.
         \nDer Code dieses Programs ist freie Software: Sie können ihn unter der Konditionen der GPL Version 3 oder später
@@ -120,13 +119,13 @@
     <string name="challenge">Wettbewerb</string>
     <string name="temp_sorry">Tut mir leid!</string>
     <string name="temp_wip">Arbeit im Gange, noch nicht implementiert…</string>
-    
+
     <!-- USERS ACTIVITY -->
     <string name="no_user">Kein Benutzer bis jetzt vorhanden; Menü benutzen, um Einen zu kreieren.\n
-        Danach länger auf den neuen Eintrag drücken, um mehr Optionen zu kriegen.</string>        
-    <string name="add_user">Benutzer kreieren</string>        
-    <string name="select_user">Benutzer selektieren</string>        
-    <string name="rename_user">Benutzer umbenennen</string>        
+        Danach länger auf den neuen Eintrag drücken, um mehr Optionen zu kriegen.</string>
+    <string name="add_user">Benutzer kreieren</string>
+    <string name="select_user">Benutzer selektieren</string>
+    <string name="rename_user">Benutzer umbenennen</string>
     <string name="delete_user">Benutzer löschen</string>
     <string name="give_user_name">Gib Deinem Benutzer einen Namen:</string>
     <string name="give_new_user_name">Ändere den Namen Deines Benutzers:</string>
@@ -134,10 +133,10 @@
 
     <!-- CHALLENGES ACTIVITY -->
     <string name="no_challenge">Kein Wettbewerb bis jetzt vorhanden; Menü benutzen, um Einen zu kreieren.\n
-        Danach länger auf den neuen Eintrag drücken, um mehr Optionen zu kriegen.</string>        
-    <string name="add_challenge">Wettbewerb kreieren</string>        
-    <string name="select_challenge">Wettbewerb selektieren</string>        
-    <string name="rename_challenge">Wettbewerb umbenennen</string>        
+        Danach länger auf den neuen Eintrag drücken, um mehr Optionen zu kriegen.</string>
+    <string name="add_challenge">Wettbewerb kreieren</string>
+    <string name="select_challenge">Wettbewerb selektieren</string>
+    <string name="rename_challenge">Wettbewerb umbenennen</string>
     <string name="delete_challenge">Wettbewerb löschen</string>
     <string name="give_challenge_name">Gib Deinem Wettbewerb einen Namen:</string>
     <string name="give_new_challenge_name">Ändere den Namen Deines Wettbewerbs:</string>
@@ -149,7 +148,7 @@
     <string name="challenge_maxwhich">Max für kleine Zahlen</string>
     <string name="challenge_places">Nachkommastellen:</string>
     <string name="challenge_table">Tabelle trainieren:</string>
-    <!--  CHALLENGE ACTIVITY -->
+    <!-- CHALLENGE ACTIVITY -->
     <string name="challenge_next_round">Nächste Runde</string>
     <string name="challenge_round">Runde %1$2d von %2$2d (%3$d)</string>
     <string name="challenge_hint">Wettbewerb „%1$s” von Benutzer „%2$s”
@@ -157,9 +156,17 @@
         \nGefunden: %5$d
         \nFehlgeschlagen: %6$d
         \n<b>Punktzahl: %7$d</b></string>
-	<string name="challenge_finished_title">Wettbewerb fertig!</string>
-	<string name="challenge_finished_message">Du hast den Wettbewerb mit %1$d Punkten abgeschlossen.</string>
-	<string name="challenge_highscore_message">Und hast den Highscore Nr. %1$d erreicht!</string>
-	<string name="challenge_new">Neuer Wettbewerb</string>
-	<string name="challenge_other">Anderer Wettbewerb</string>
+    <string name="challenge_finished_title">Wettbewerb fertig!</string>
+    <string name="challenge_finished_message">Du hast den Wettbewerb mit %1$d Punkten abgeschlossen.</string>
+    <string name="challenge_highscore_message">Und hast den Highscore Nr. %1$d erreicht!</string>
+    <string name="challenge_new">Neuer Wettbewerb</string>
+    <string name="challenge_other">Anderer Wettbewerb</string>
+
+    <!-- HIGH-SCORES ACTIVITY -->
+    <string name="highscores">Highscores</string>
+    <string name="no_highscore">Kein Highscore wurde bis jetzt für diesen Wettbewerb oder Benutzer erreicht,
+	    drück die Zurücktaste, spiel eine Runde oder zwei, und komm später zurück!</string>
+    <string name="by">von</string>
+    <string name="points_when">Punkte am</string>
+
 </resources>

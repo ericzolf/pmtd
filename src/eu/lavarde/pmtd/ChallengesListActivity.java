@@ -20,6 +20,7 @@ package eu.lavarde.pmtd;
 
 import eu.lavarde.db.ChallengesDbAdapter;
 import eu.lavarde.db.PmtdDbHelper;
+import eu.lavarde.util.WipDialog;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.DialogInterface;
@@ -122,6 +123,10 @@ public class ChallengesListActivity extends ListActivity {
 	        break;
 	    case R.id.delete_challenge:
 	        mDbHelper.deleteChallenge(info.id);
+	        break;
+	    case R.id.highscores_challenge:
+	        //TODO remove: (new WipDialog(this)).show();
+	    	launchHighscore(info.id);
 	        break;
 	    default:
 		    return super.onContextItemSelected(item);
@@ -409,6 +414,12 @@ public class ChallengesListActivity extends ListActivity {
 	
 	private void launchChallenge(long challengeId) {
 		startActivity((new Intent(this, ChallengeRoundActivity.class))
+				.putExtra(PmtdDbHelper.EXTRA_USERID, mUserId)
+				.putExtra(PmtdDbHelper.EXTRA_CHALLENGEID, challengeId));
+	}
+
+	private void launchHighscore(long challengeId) {
+		startActivity((new Intent(this, HighscoresListActivity.class))
 				.putExtra(PmtdDbHelper.EXTRA_USERID, mUserId)
 				.putExtra(PmtdDbHelper.EXTRA_CHALLENGEID, challengeId));
 	}

@@ -4,4 +4,5 @@
     <item android:id="@+id/select_challenge" android:title="@string/select_challenge" android:icon="@android:drawable/ic_menu_directions"></item>
     <item android:id="@+id/rename_challenge" android:title="@string/rename_challenge" android:icon="@android:drawable/ic_menu_edit"></item>
     <item android:id="@+id/delete_challenge" android:title="@string/delete_challenge" android:icon="@android:drawable/ic_menu_delete"></item>
+    <item android:id="@+id/highscores_challenge" android:title="@string/highscores" android:icon="@android:drawable/ic_menu_gallery"></item>
 </menu>

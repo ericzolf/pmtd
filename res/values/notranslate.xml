@@ -6,5 +6,6 @@
     <string name="default_max_tries">XX</string>
     <string name="default_chrono_time">00:00</string>
     <string name="sign_unknown">\?\?\?</string>
-
+    <string name="sign_dash">-</string>
+    
 </resources>

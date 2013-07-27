@@ -178,7 +178,7 @@ public class HighscoresDbAdapter {
      */
    public Cursor fetchChallengeHighscoresLimited(long challengeId) {
 
-       return mDb.query(DATABASE_TABLE, new String[] {KEY_ID, KEY_USER, KEY_SCORE, KEY_WHEN},
+       return mDb.query(DATABASE_TABLE, null, // new String[] {KEY_ID, KEY_USER, KEY_SCORE, KEY_WHEN},
        		KEY_CHALLENGE + "=" + challengeId, null, null, null, KEY_SCORE + " DESC LIMIT " + MAX_HIGHSCORES);
    }
     

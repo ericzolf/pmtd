@@ -161,4 +161,11 @@
 	<string name="challenge_highscore_message">And you placed high-score Nr. %1$d!</string>
 	<string name="challenge_new">New Challenge</string>
 	<string name="challenge_other">Other Challenge</string>
+	
+	<!-- HIGH-SCORES ACTIVITY -->
+	<string name="highscores">High-scores</string>
+	<string name="no_highscore">No high-score has yet been played for this challenge or user,
+	    press the back key, play a round or two, and come back later!</string>
+	<string name="by">by</string>
+	<string name="points_when">points on the</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="text_hello">Vérifie tes connaissances de calcul!</string>
     <string name="tries_label">Essais:</string>
     <string name="app_name">PlusMoinsFoisDivise</string>
@@ -7,12 +8,14 @@
     <string name="sign_equal">=</string>
     <string name="text_check_solution">Vérifier la solution</string>
     <string name="text_choose_operation">Choisir le type d\'opération</string>
+
     <string-array name="signs_array"> <!-- l'ordre est important! -->
         <item>+</item>
         <item>—</item>
         <item>x</item>
         <item>÷</item>
     </string-array>
+
     <string name="text_new_exercise">Créer un nouvel exercice</string>
     <string name="text_enter_result">Ta solution?</string>
     <string name="msg_answer_not_valid_title">Réponse non valide</string>
@@ -38,8 +41,8 @@
     <string name="prefs_decimal_places_title">Nombre de décimales</string>
     <string name="prefs_decimal_places_msg">Tu peux décider d\'avoir de 0 à 4 chiffres après la virgule (ou le point):</string>
     <string name="prefs_max_tries_title">Essais maximum</string>
-        
     <string name="prefs_lang_title">Language de l\'application</string>
+
     <string-array name="prefs_lang_val_array">
         <item>default</item>
         <item>en</item>
@@ -56,7 +59,6 @@
     <string name="prefs_overall_timer_visible_title">Visibilité de la minuterie</string>
     <string name="prefs_overall_timer_visible_on_summary">La minuterie est visible</string>
     <string name="prefs_overall_timer_visible_off_summary">La minuterie est invisible</string>
-    
     <string name="prefs_cat_plus">Plus</string>
     <string name="prefs_plus_max_value_title">Valeur maximale</string>
     <string name="prefs_plus_max_applies_title">Le maxi s\'applique à …</string>
@@ -67,7 +69,6 @@
     <string name="prefs_plus_carry_allow_title">Avec reports</string>
     <string name="prefs_plus_carry_allow_on_summary">Reports autorisés</string>
     <string name="prefs_plus_carry_allow_off_summary">Reports interdits (seulement dernier chiffre)</string>
-        
     <string name="prefs_cat_minus">Moins</string>
     <string name="prefs_minus_max_value_title">Valeur maximale</string>
     <string name="prefs_minus_max_applies_title">Le maxi s\'applique à …</string>
@@ -79,7 +80,6 @@
     <string name="prefs_minus_negative_allow_title">Calculs négatifs</string>
     <string name="prefs_minus_negative_allow_on_summary">Résultat négatif autorisé</string>
     <string name="prefs_minus_negative_allow_off_summary">Résultat négatif interdit</string>
-        
     <string name="prefs_cat_times">Fois</string>
     <string name="prefs_times_max_value_title">Valeur maximale</string>
     <string name="prefs_times_max_applies_title">Le maxi s\'applique à …</string>
@@ -87,7 +87,6 @@
     <string name="prefs_times_max_applies_off_summary">Le maximum s\'applique au résultat</string>
     <string name="prefs_times_table_training_title">Entraîner une table</string>
     <string name="prefs_times_table_training_msg">Si tu veux entraîner une table de multiplication, entre la ici, sinon entre 0:</string>
-        
     <string name="prefs_cat_divide">Divisé</string>
     <string name="prefs_divide_max_value_title">Valeur maximale</string>
     <string name="prefs_divide_max_applies_title">Le maxi s\'applique à …</string>
@@ -98,12 +97,12 @@
     <string name="prefs_divide_rest_allow_off_summary">Reste interdit</string>
     <string name="prefs_divide_integers_title">Division d\'entiers seulement</string>
     <string name="prefs_divide_integers_on_summary">Les chiffres après la virgule s\'appliquent au résultat seulement</string>
-    <string name="prefs_divide_integers_off_summary">Les chiffres après la virgule s\'appliquent au résultat et aux opérandes</string>        
-    
-	<!-- ABOUT -->
-    <string name="about">A propos …</string>        
+    <string name="prefs_divide_integers_off_summary">Les chiffres après la virgule s\'appliquent au résultat et aux opérandes</string>
+
+    <!-- ABOUT -->
+    <string name="about">A propos …</string>
     <string name="about_chooser">Choisissez une application de courriel pour envoyer vos commentaires:</string>
-    <string name="about_enhancement">Demande de fonction</string>        
+    <string name="about_enhancement">Demande de fonction</string>
     <string name="about_bug">Rapport de bogue</string>
     <string name="about_text">© 2012-2013, Eric Lavarde.
         \nLe code de ce programme est du logiciel libre: vous pouvez le redistribuer et/ou le modifier sous les mêmes termes
@@ -120,13 +119,13 @@
     <string name="challenge">Compétition</string>
     <string name="temp_sorry">Désolé!</string>
     <string name="temp_wip">Travail en cours, pas encore implémenté …</string>
-    
+
     <!-- USERS ACTIVITY -->
     <string name="no_user">Aucun utilisateur existant; utilise le menu pour en créer un.\n
-        Après appuie longuement sur la nouvelle entrée pour de nouvelles options.</string>        
-    <string name="add_user">Créer un utilisateur</string>        
-    <string name="select_user">Choisir l\'utilisateur</string>        
-    <string name="rename_user">Renommer l\'utilisateur</string>        
+        Après appuie longuement sur la nouvelle entrée pour de nouvelles options.</string>
+    <string name="add_user">Créer un utilisateur</string>
+    <string name="select_user">Choisir l\'utilisateur</string>
+    <string name="rename_user">Renommer l\'utilisateur</string>
     <string name="delete_user">Effacer l\'utilisateur</string>
     <string name="give_user_name">Donne un nom à ton utilisateur:</string>
     <string name="give_new_user_name">Change le nom de ton utilisateur:</string>
@@ -134,10 +133,10 @@
 
     <!-- CHALLENGE ACTIVITY -->
     <string name="no_challenge">Aucune compétition existante; utilise le menu pour en créer une.\n       
-        Après appuie longuement sur la nouvelle entrée pour de nouvelles options.</string>        
-    <string name="add_challenge">Créer une compétition</string>        
-    <string name="select_challenge">Choisir la compétition</string>        
-    <string name="rename_challenge">Renommer la compétition</string>        
+        Après appuie longuement sur la nouvelle entrée pour de nouvelles options.</string>
+    <string name="add_challenge">Créer une compétition</string>
+    <string name="select_challenge">Choisir la compétition</string>
+    <string name="rename_challenge">Renommer la compétition</string>
     <string name="delete_challenge">Effacer la compétition</string>
     <string name="give_challenge_name">Donne un nom à ta compétition:</string>
     <string name="give_new_challenge_name">Change le nom de ta compétition:</string>
@@ -149,7 +148,7 @@
     <string name="challenge_maxwhich">Max pour petits chiffres</string>
     <string name="challenge_places">Chiffres après virgule</string>
     <string name="challenge_table">Table à entraîner:</string>
-    <!--  CHALLENGE ACTIVITY -->
+    <!-- CHALLENGE ACTIVITY -->
     <string name="challenge_next_round">Manche suivante</string>
     <string name="challenge_round">Manche %1$2d de %2$2d (%3$d)</string>
     <string name="challenge_hint">Compétition « %1$s » de l\'utilisateur « %2$s »
@@ -157,9 +156,17 @@
         \nTrouvés: %5$d
         \nRatés: %6$d
         \n<b>Score: %7$d</b></string>
-	<string name="challenge_finished_title">Compétition terminée!</string>
-	<string name="challenge_finished_message">Tu as achevée la compétition avec %1$d points.</string>
-	<string name="challenge_highscore_message">Et tu es le N°%1$d dans la table des records!</string>
-	<string name="challenge_new">Nouvelle compétition</string>
-	<string name="challenge_other">Autre compétition</string>
+    <string name="challenge_finished_title">Compétition terminée!</string>
+    <string name="challenge_finished_message">Tu as achevée la compétition avec %1$d points.</string>
+    <string name="challenge_highscore_message">Et tu es le N°%1$d dans la table des records!</string>
+    <string name="challenge_new">Nouvelle compétition</string>
+    <string name="challenge_other">Autre compétition</string>
+
+    <!-- HIGH-SCORES ACTIVITY -->
+    <string name="highscores">Table des records</string>
+    <string name="no_highscore">Aucun record n\'a été atteint pour cette compétition ou cet utilisateur,
+	    appuye sur le bouton de retour, joue une manche ou deux, et reviens plus tard!</string>
+    <string name="by">par</string>
+    <string name="points_when">points le</string>
+
 </resources>
