@@ -16,11 +16,6 @@ import android.widget.TextView;
 public class HighscoresCursorAdapter extends CursorAdapter {
 	private final LayoutInflater mInflater;
 	private final int rowLayout;
-    private String[] from = new String[] { HighscoresDbAdapter.KEY_ID, HighscoresDbAdapter.KEY_CHALLENGE,
-    		HighscoresDbAdapter.KEY_USER, HighscoresDbAdapter.KEY_SCORE, HighscoresDbAdapter.KEY_WHEN};
-    private int[] to = new int[] { R.id.place_field, R.id.challenge_field, R.id.user_field,
-    		R.id.score_field, R.id.when_field };
-    
 	
 	public HighscoresCursorAdapter(Context context, Cursor c, int layout) {
 		super(context, c, false);

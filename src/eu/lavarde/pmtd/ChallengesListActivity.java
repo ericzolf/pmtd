@@ -20,7 +20,6 @@ package eu.lavarde.pmtd;
 
 import eu.lavarde.db.ChallengesDbAdapter;
 import eu.lavarde.db.PmtdDbHelper;
-import eu.lavarde.util.WipDialog;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.DialogInterface;

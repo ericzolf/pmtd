@@ -23,8 +23,6 @@ import eu.lavarde.db.PmtdDbHelper;
 import android.app.ListActivity;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.widget.SimpleCursorAdapter;
-
 
 /**
  * @author Eric L.
