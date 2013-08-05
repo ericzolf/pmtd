@@ -62,14 +62,9 @@ public class HighscoresListActivity extends ListActivity {
         mHighscoresCursor = mDbHelper.fetchChallengeHighscoresLimited(mChallengeId);
         startManagingCursor(mHighscoresCursor);
 
-        String[] from = new String[] { HighscoresDbAdapter.KEY_ID, HighscoresDbAdapter.KEY_CHALLENGE,
-        		HighscoresDbAdapter.KEY_USER, HighscoresDbAdapter.KEY_SCORE, HighscoresDbAdapter.KEY_WHEN};
-        int[] to = new int[] { R.id.place_field, R.id.challenge_field, R.id.user_field,
-        		R.id.score_field, R.id.when_field };
-        
         // Now create an array adapter and set it to display using our row
-        SimpleCursorAdapter highscores =
-            new SimpleCursorAdapter(this, R.layout.highscore_row, mHighscoresCursor, from, to);
+        HighscoresCursorAdapter highscores =
+            new HighscoresCursorAdapter(this, mHighscoresCursor, R.layout.highscore_row);
         setListAdapter(highscores);
 	}
 }
