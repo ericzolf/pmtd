@@ -18,8 +18,10 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
 package eu.lavarde.pmtd;
 
+import eu.lavarde.db.ChallengesDbAdapter;
 import eu.lavarde.db.HighscoresDbAdapter;
 import eu.lavarde.db.PmtdDbHelper;
+import eu.lavarde.db.UsersDbAdapter;
 import android.app.ListActivity;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -32,6 +34,8 @@ public class HighscoresListActivity extends ListActivity {
     private HighscoresDbAdapter mDbHelper;
     private Cursor mHighscoresCursor;
 	private long mChallengeId;
+	private ChallengesDbAdapter mCDbHelper;
+	private UsersDbAdapter mUDbHelper;
     
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
@@ -44,12 +48,18 @@ public class HighscoresListActivity extends ListActivity {
         mChallengeId = this.getIntent().getExtras().getLong(PmtdDbHelper.EXTRA_CHALLENGEID);
         mDbHelper = new HighscoresDbAdapter(this);
         mDbHelper.open();
+        mCDbHelper = new ChallengesDbAdapter(this);
+        mCDbHelper.open();
+        mUDbHelper = new UsersDbAdapter(this);
+        mUDbHelper.open();
         fillData();	
 	}
 
 	@Override
 	protected void onDestroy() {
 		mDbHelper.close();
+		mCDbHelper.close();
+		mUDbHelper.close();
 		super.onDestroy();
 	}
 
@@ -62,7 +72,7 @@ public class HighscoresListActivity extends ListActivity {
 
         // Now create an array adapter and set it to display using our row
         HighscoresCursorAdapter highscores =
-            new HighscoresCursorAdapter(this, mHighscoresCursor, R.layout.highscore_row);
+            new HighscoresCursorAdapter(this, mHighscoresCursor, R.layout.highscore_row, mCDbHelper, mUDbHelper);
         setListAdapter(highscores);
 	}
 }

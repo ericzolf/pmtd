@@ -35,6 +35,7 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 
 package eu.lavarde.db;
 
+import eu.lavarde.pmtd.R;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -168,13 +169,12 @@ public class UsersDbAdapter {
     public String fetchUserName(long rowId) throws SQLException {
 
         Cursor mCursor =
-            mDb.query(true, DATABASE_TABLE, new String[] {KEY_ID, KEY_NAME},
+            mDb.query(true, DATABASE_TABLE, new String[] {KEY_NAME},
             		KEY_ID + "=" + rowId, null, null, null, null, null);
-        if (mCursor != null) {
-            mCursor.moveToFirst();
+        if (mCursor != null && mCursor.moveToFirst()) {
             return mCursor.getString(mCursor.getColumnIndex(ChallengesDbAdapter.KEY_NAME));
         }
-        return null;
+        return mCtx.getString(R.string.sign_unknown);
     }
     
     /**

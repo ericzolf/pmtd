@@ -36,6 +36,7 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 package eu.lavarde.db;
 
 import eu.lavarde.pmtd.ChallengePrefs;
+import eu.lavarde.pmtd.R;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -216,14 +217,23 @@ public class ChallengesDbAdapter {
 
     }
 
+	public String fetchChallengeName(long challengeId) throws SQLException {
+        Cursor mCursor =
+                mDb.query(true, DATABASE_TABLE, new String[] {KEY_NAME},
+                		KEY_ID + "=" + challengeId, null, null, null, null, null);
+        if (mCursor != null && mCursor.moveToFirst()) {
+            return mCursor.getString(mCursor.getColumnIndex(ChallengesDbAdapter.KEY_NAME));
+        }
+        return mCtx.getString(R.string.sign_unknown);
+	}
+
     public ChallengePrefs fetchChallengePrefs(long rowId) throws SQLException {
 
         Cursor mCursor =
             mDb.query(true, DATABASE_TABLE, new String[] {KEY_ID, KEY_NAME, KEY_ROUNDS, KEY_OPERATION,
             		KEY_MAX, KEY_WHICHMAX, KEY_PLACES, KEY_TABLE, KEY_BOOL1, KEY_BOOL2},
             		KEY_ID + "=" + rowId, null, null, null, null, null);
-        if (mCursor != null) {
-            mCursor.moveToFirst();
+        if (mCursor != null && mCursor.moveToFirst()) {
             ChallengePrefs chlg = new ChallengePrefs();
             chlg.setId(mCursor.getLong(mCursor.getColumnIndex(ChallengesDbAdapter.KEY_ID)));
             chlg.setName(mCursor.getString(mCursor.getColumnIndex(ChallengesDbAdapter.KEY_NAME)));
