@@ -141,7 +141,7 @@ public class IntegerProvider implements INumberProvider {
 		if (prefs.isSmallNumbersMax() || op1 == 0) {
  			op2 = rnd.nextLong(max);
 		} else {
-			op2 = rnd.nextLong(max / op1 * factor);
+			op2 = rnd.nextLong( (max * factor) / op1); // parenthesis to be sure to not loose digits
 		}
 		fac1 = fac2 = factor;
 		facr = factor * factor;
