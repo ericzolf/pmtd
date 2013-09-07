@@ -28,47 +28,33 @@ public class RandomNonLinear extends Random {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public long nextLong(long max) {
+	// ATTENTION: I stands for "included" meaning that also the max range is included
+	public long nextLongI(long max) {
 
 		if (max == 0) return 0; // deviation from nextInt which sends an exception
-		if (max <= Integer.MAX_VALUE) return nextInt((int)max);
+		if (max < Integer.MAX_VALUE) return nextInt((int)max+1);
 		
 		long res = nextLong();
 		
-		res %= max; // remainder of max
-		if (res < 0) res += max; // % can give a negative result
+		res %= max+1; // remainder of max
+		if (res < 0) res += max+1; // % can give a negative result
 		
 		return res;
 	}
 
-	/** A helper function to generate a random number according to the probabilities defined in different zones.
-	 * @param limits array containing the limits of each zone; the length of the array must be one bigger than the weights.
-	 * @param weights array containing the weight of each zone, defining the probability for a value in this zone. The sum of the weights must be equal to 1!
-	 * @return a random number with a distribution according to the given parameters
-	 */
-	public long nextLong(long[] limits, double[] weights) {
-/* for performance reasons, we assume that all weights sum up to exactly 1, but else we'd have to normalise them
-		double fullWeight = 0;
-		
-		for(int i = 0; i < weights.length; i++) { // calculate the total weight
-			fullWeight += weights[i];
+	// ATTENTION: I stands for "included" meaning that also the max range is included
+	public long nextLongGaussianI(double min, double mean, double max, double steepness) {
+		double rnd;
+		do {
+			  rnd = super.nextGaussian();
+		} while (rnd < -steepness || rnd > steepness); // in order to stay in the range
+		if (rnd < 0) {
+			rnd = mean + rnd * (mean - min) / steepness;
+		} else if (rnd > 0) {
+			rnd = mean + rnd * (max - mean) / steepness;
+		} else {
+			rnd = mean;
 		}
-		for(int i = 0; i < weights.length; i++) { // and normalise the weights to a sum of 1
-			weights[i] /= fullWeight;
-		}
-*/
-		
-		double rnd = nextDouble();
-		double currWeight = 0;
-		
-		for(int i = 0; i < weights.length; i++) {
-			if (currWeight + weights[i] > rnd) {
-				return (long) ( (rnd - currWeight) * (limits[i+1] - limits[i]) / weights[i] + limits[i] );
-			} else {
-				currWeight += weights[i];
-			}
-		}
-
-		return Long.MIN_VALUE; // should never be reached, just to keep Eclipse happy...
+		return Math.round(rnd);
 	}
 }

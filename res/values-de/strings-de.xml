@@ -91,7 +91,7 @@
     <string name="prefs_divide_max_value_title">Maximaler Wert</string>
     <string name="prefs_divide_max_applies_title">Max bezieht sich auf …</string>
     <string name="prefs_divide_max_applies_on_summary">Maximum bezieht sich auf die kleineren Zahlen</string>
-    <string name="prefs_divide_max_applies_off_summary">Maximum bezieht auf den größten Operand</string>
+    <string name="prefs_divide_max_applies_off_summary">Maximum bezieht sich auf den größten Operand</string>
     <string name="prefs_divide_rest_allow_title">Nicht exakte Teilung</string>
     <string name="prefs_divide_rest_allow_on_summary">Rest erlaubt</string>
     <string name="prefs_divide_rest_allow_off_summary">Rest verboten</string>

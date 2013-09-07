@@ -1,3 +1,5 @@
+- FIX: typo in German preferences
+- FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions.
 - NEW: High-scores list when long pressing on challenges.
 - DEV: added HighscoresCursorAdapter class to present nicely highscores in their list
 - DEV: Bumped the targetSdkVersion to 18 (4.3) - no impact expected

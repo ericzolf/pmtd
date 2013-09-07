@@ -37,7 +37,7 @@ public class IntegerProvider implements INumberProvider {
 	private boolean tobefound = true;
 	private static String dec = ".";
 	private String answer = null;
-	private RandomNonLinear rnd = new RandomNonLinear();
+	private static RandomNonLinear rnd = new RandomNonLinear();
 	private int round;
 
 	public IntegerProvider(IPrefs prefs) {
@@ -58,7 +58,7 @@ public class IntegerProvider implements INumberProvider {
 	public boolean generateOperands() {
 		operation = prefs.getOperation();
 		factor = (int) Math.pow(10, prefs.getDecimalPlaces());
-		long max = (long) prefs.getMaxValue() * factor + 1; // Random would provide only numbers strictly lower than max
+		long max = (long) prefs.getMaxValue() * factor;
 		tobefound = true; answer = null; tries = 0;
 
 		switch (operation) {
@@ -79,17 +79,17 @@ public class IntegerProvider implements INumberProvider {
 		return true;
 	}
 	
-	private void generatePlusOperands(long max) {
+	private void generatePlusOperands(long mMax) {
 		int table = prefs.getTableTraining();
 		if (table > 0) {
 			op1 = table * factor;
 		} else {
-			op1 = rnd.nextLong(max);
+			op1 = rnd.nextLongI(mMax);
 		}
 		if (prefs.isSmallNumbersMax()) {
- 			op2 = rnd.nextLong(max);
+ 			op2 = rnd.nextLongI(mMax);
 		} else {
-			op2 = rnd.nextLong(max - op1);
+			op2 = rnd.nextLongI(mMax - op1);
 		}
 
 		if (! prefs.isPlusCarryAllowed()) {
@@ -104,12 +104,12 @@ public class IntegerProvider implements INumberProvider {
 		fac1 = fac2 = facr = factor; facd = 1;
 	}
 
-	private void generateMinusOperands(long max) {
-		op1 = rnd.nextLong(max);
+	private void generateMinusOperands(long mMax) {
+		op1 = rnd.nextLongI(mMax);
 		if (prefs.isSmallNumbersMax()) {
- 			op2 = rnd.nextLong(max);
+ 			op2 = rnd.nextLongI(mMax);
 		} else {
-			op2 = rnd.nextLong(max - op1);
+			op2 = rnd.nextLongI(mMax - op1);
 		}
 		op1 += op2;
 
@@ -131,39 +131,40 @@ public class IntegerProvider implements INumberProvider {
 		fac1 = fac2 = facr = factor; facd = 1;
 	}
 
-	private void generateTimesOperands(long max) {
+	private void generateTimesOperands(long mMax) {
+		long bigMax = mMax * factor;
+
 		int table = prefs.getTableTraining();
 		if (table > 0) { // we train only a specific table
 			op1 = table * factor;
 		} else {
-			op1 = rnd.nextLong(max);
+			if (prefs.isSmallNumbersMax()) {
+				op1 = rnd.nextLongI(mMax);
+			} else {
+				op1 = rnd.nextLongGaussianI(0L, Math.sqrt(bigMax), mMax, 3.0);
+			}
 		}
 		if (prefs.isSmallNumbersMax() || op1 == 0) {
- 			op2 = rnd.nextLong(max);
+ 			op2 = rnd.nextLongI(mMax);
 		} else {
-			op2 = rnd.nextLong( (max * factor) / op1); // parenthesis to be sure to not loose digits
+			double localMax = (double) bigMax / op1;
+			op2 = rnd.nextLongGaussianI(0, 2*localMax/3, localMax, 1.0);
 		}
 		fac1 = fac2 = factor;
 		facr = factor * factor;
 		facd = 1;
 	}
 
-	private void generateDivideOperands(long max) {
+	private void generateDivideOperands(long mMax) {
+		long bigMax = mMax * factor;
+
 		if (prefs.isDivideRestAllowed()) {
 			if (prefs.isSmallNumbersMax()) {
-				op2 = rnd.nextLong(max - 1)+1; // op2 is between 1 and max
-				op1 = rnd.nextLong(op2 * max); // the result of op1 / op2 will be between 0 and max
+				op2 = rnd.nextLongI(mMax-1)+1; // make sure op2 isn't equal 0
+				op1 = rnd.nextLongGaussianI(0L, op2 * (2.0 * mMax + 1) / 3.0, op2 * mMax, 1.0); // the result of op1 / op2 will be between 0 and max
 			} else {
-				op1 = rnd.nextLong(max * factor);
-				op2 = (long) Math.sqrt(max * factor); // TODO: think about factors...
-				if (op1/factor < 1) { // op2 can't be less than 1 because max is at least 1
-					op2 = rnd.nextLong(new long[] {0, op2-1, max-1}, new double[] {2.0/3.0, 1.0/3.0});
-				} else if ( op2 >= (op1 / factor) ) {
-					op2 = rnd.nextLong(new long[] {0, op1/factor-1, op2-1, max-1}, new double[] {2.0/3.0, 0.25, 1.0/12.0});
-				} else {
-					op2 = rnd.nextLong(new long[] {0, op2-1, op1/factor-1, max-1}, new double[] {2.0/3.0, 1.0/6.0, 1.0/6.0});
-				}
-				op2++;
+				op1 = rnd.nextLongGaussianI(0L, (2.0 * bigMax) / 3.0, bigMax, 1.0);
+				op2 = rnd.nextLongGaussianI(1L, Math.sqrt(op1), mMax, 3.0);
 			}
 			if (prefs.isDivideIntegers()) {
 				op1 /= factor * factor;
@@ -171,15 +172,18 @@ public class IntegerProvider implements INumberProvider {
 				if (op2 == 0) op2 = 1; // could happen if op2 < factor!
 			}
 		} else {
-			long res = rnd.nextLong(max); // result res = op1 / op2
-			if (prefs.isSmallNumbersMax() || res == 0) {
-				op2 = rnd.nextLong(max-1)+1; // avoid zero
-			} else if ( (max / res) * factor == 1) {
-				op2 = 1;
-			} else { // we must make sure that op1 is not bigger than max
-				op2 = rnd.nextLong((max / res) * factor -1) + 1; // avoid zero
+			if (prefs.isSmallNumbersMax()) {
+				op1 = rnd.nextLongI(mMax);
+			} else {
+				op1 = rnd.nextLongGaussianI(0L, Math.sqrt(bigMax), mMax, 3.0);
 			}
-			op1 = res * op2;
+			if (prefs.isSmallNumbersMax() || op1 == 0) {
+	 			op2 = rnd.nextLongI(mMax-1)+1; // make sure op2 isn't equal 0
+			} else {
+				double localMax = (double) bigMax / op1;
+				op2 = rnd.nextLongGaussianI(1, 2*localMax/3, localMax, 1.0);
+			}
+			op1 *= op2;
 		}
 		if (prefs.isDivideIntegers()) {
 			facr = factor;
