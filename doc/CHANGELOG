@@ -1,6 +1,9 @@
 - FIX: typo in German preferences
 - FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions.
 - NEW: High-scores list when long pressing on challenges.
+- DEV: renamed the random functions and made them return numbers
+including the max boundary + removed non linear getLong function +
+adapted IntegerProvider to changes done.
 - DEV: added HighscoresCursorAdapter class to present nicely highscores in their list
 - DEV: Bumped the targetSdkVersion to 18 (4.3) - no impact expected
 - DEV: added HighscoresList Activity with all list layouts pertaining to it
