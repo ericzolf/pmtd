@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="eu.lavarde.pmtd"
-      android:versionCode="2013090721"
-      android:versionName="2013.09.07.21">
+      android:versionCode="2013091517"
+      android:versionName="2013.09.15.17">
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="18" />
     <application android:icon="@drawable/icon" android:label="@string/app_name"
         	android:theme="@style/CalculationTangoTheme"

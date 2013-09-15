@@ -1,5 +1,6 @@
+2013.09.15.17:
 - FIX: typo in German preferences
-- FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions.
+- FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions (Closes: Issues #2 and #3).
 - NEW: High-scores list when long pressing on challenges.
 - DEV: renamed the random functions and made them return numbers
 including the max boundary + removed non linear getLong function +
