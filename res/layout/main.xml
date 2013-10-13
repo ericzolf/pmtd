@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:scrollbarStyle="insideOverlay">
+    android:scrollbarStyle="insideOverlay" >
 
     <LinearLayout
         android:id="@+id/linearLayoutWork"
@@ -13,17 +13,17 @@
         android:orientation="vertical" >
 
         <LinearLayout
-            android:id="@+id/linearLayout1"
+            android:id="@+id/linearLayoutHelloAndTries"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
 
             <TextView
-        		android:id="@+id/infoTextView"
+                android:id="@+id/infoTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_hello"
-                android:layout_marginRight="5dp"/>
-            
+                android:layout_marginRight="5dp"
+                android:text="@string/text_hello" />
+
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="fill_parent"
@@ -61,7 +61,7 @@
         </LinearLayout>
 
         <TableLayout
-            android:id="@+id/tableLayout1"
+            android:id="@+id/tableLayoutTimeAndExercise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center" >
@@ -144,17 +144,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="@string/text_check_solution"
-            android:textAppearance="?android:attr/textAppearanceLarge" >
-        </Button>
+            android:text="@string/text_check_solution" />
 
         <Button
             android:id="@+id/NewExerciseButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_new_exercise"
-            android:textAppearance="?android:attr/textAppearanceLarge" >
-        </Button>
+            android:text="@string/text_new_exercise" />
+
     </LinearLayout>
 
     <ScrollView

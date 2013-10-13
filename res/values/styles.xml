@@ -42,7 +42,8 @@
 <!-- 		<item name="android:textColorPrimary">@color/tango_sky_blue_3</item> -->
 
     	<item name="android:buttonStyle">@style/butter_button</item>
-
+    	<item name="android:alertDialogStyle">@style/CalculationTangoTheme</item>
+    	
     	<!-- 		    
         <item name="android:colorForegroundInverse">@color/tango_chocolate_3</item>
 		<item name="android:textColorSecondary">@color/tango_sky_blue_3</item>
@@ -64,15 +65,21 @@
 	</style>
 	
 	<style name="butter_button" parent="@android:style/Widget.Button">
-    	<item name="android:background">@drawable/butter_button_background_selector</item>
-     	<item name="android:textColor">@drawable/butter_button_text_selector</item>
-   	</style>
-   	
-	<style name="neutral_button" parent="@android:style/Widget.Button">
-    	<item name="android:background">@drawable/neutral_button_background_selector</item>
-   	</style>
+        <item name="android:background">@drawable/butter_button_background_selector</item>
+        <item name="android:textColor">@drawable/butter_button_text_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="neutral_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/neutral_button_background_selector</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
 		
 	<!-- Not usable in older versions of Android aka prior to API level 11
+  	<item name="android:dialogTheme">@style/CalculationTangoTheme</item>
+
    	<style name="Dialog_Bad" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/tango_scarlet_red_1</item>
         <item name="android:colorBackground">@color/tango_scarlet_red_1</item>
