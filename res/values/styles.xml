@@ -72,7 +72,12 @@
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
 
-    <style name="neutral_button" parent="@android:style/Widget.Button">
+	<style name="butter_spinner" parent="@style/butter_button">
+        <item name="android:layout_width">0sp</item> <!-- works for some reason, wrap_content is too broad -->
+        <item name="android:gravity">center|center_horizontal</item>
+    </style>
+	
+	<style name="neutral_button" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/neutral_button_background_selector</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>

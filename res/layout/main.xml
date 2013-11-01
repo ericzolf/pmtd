@@ -95,10 +95,9 @@
 
                 <Spinner
                     android:id="@+id/OperationSpinner"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/butter_spinner"
                     android:prompt="@string/text_choose_operation" />
-
+                
                 <TextView
                     android:id="@+id/Operand2Label"
                     android:layout_width="fill_parent"
@@ -141,15 +140,13 @@
 
         <Button
             android:id="@+id/ShowSolutionButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/butter_button"
             android:enabled="false"
             android:text="@string/text_check_solution" />
-
+        
         <Button
             android:id="@+id/NewExerciseButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/butter_button"
             android:text="@string/text_new_exercise" />
 
     </LinearLayout>
