@@ -35,7 +35,8 @@
                     android:id="@+id/TriesLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tries_label" />
+                    android:text="@string/tries_label" 
+                    android:layout_marginRight="5dp"/>
 
                 <TextView
                     android:id="@+id/TriesNumber"
@@ -81,11 +82,8 @@
 
                 <TextView
                     android:id="@+id/Operand1Label"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="@string/sign_unknown"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    style="@style/operand_label"
+                    android:text="@string/sign_unknown" />
             </TableRow>
 
             <TableRow
@@ -97,14 +95,11 @@
                     android:id="@+id/OperationSpinner"
                     style="@style/butter_spinner"
                     android:prompt="@string/text_choose_operation" />
-                
+
                 <TextView
                     android:id="@+id/Operand2Label"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="@string/sign_unknown"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    style="@style/operand_label"
+                    android:text="@string/sign_unknown" />
             </TableRow>
 
             <TableRow
@@ -114,15 +109,8 @@
 
                 <TextView
                     android:id="@+id/EqualLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:gravity="center_horizontal"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:text="@string/sign_equal"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    style="@style/equal_label"
+                    android:text="@string/sign_equal" />
 
                 <EditText
                     android:id="@+id/ProposedResultField"

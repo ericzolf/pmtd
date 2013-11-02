@@ -82,7 +82,30 @@
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
 		
-	<!-- Not usable in older versions of Android aka prior to API level 11
+	<style name="operand_label">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">right</item>
+   	    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+	
+	<style name="equal_label">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_horizontal</item>
+   	    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+	<!--  Initial equal label, can be simplified:
+					android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" -->
+                    
+		<!-- Not usable in older versions of Android aka prior to API level 11
   	<item name="android:dialogTheme">@style/CalculationTangoTheme</item>
 
    	<style name="Dialog_Bad" parent="@android:style/Theme.Dialog">
