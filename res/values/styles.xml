@@ -73,7 +73,7 @@
     </style>
 
 	<style name="butter_spinner" parent="@style/butter_button">
-        <item name="android:layout_width">0sp</item> <!-- works for some reason, wrap_content is too broad -->
+        <item name="android:layout_width">45sp</item> <!-- for some reason, wrap_content is too broad -->
         <item name="android:gravity">center|center_horizontal</item>
     </style>
 	
@@ -81,20 +81,42 @@
         <item name="android:background">@drawable/neutral_button_background_selector</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
-		
-	<style name="operand_label">
+    
+	<style name="infolabel">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center|center_horizontal</item>
+   	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+			
+	<style name="infolabel.margin">
+		<item name="android:layout_marginRight">5dp</item>
+   	</style>
+
+	<style name="infolabel.center">
+		<item name="android:gravity">center|center_horizontal</item>
+   	</style>
+
+	<style name="infolabel.left">
+		<item name="android:gravity">left</item>
+   	</style>
+
+	<style name="oplabel">
 		<item name="android:layout_width">fill_parent</item>
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:gravity">right</item>
    	    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
+    
+	<style name="oplabel.result">
+		<item name="android:inputType">number|numberSigned|numberDecimal</item>
+		<item name="android:maxEms">12</item>
+	</style>
 	
-	<style name="equal_label">
-		<item name="android:layout_width">wrap_content</item>
-		<item name="android:layout_height">wrap_content</item>
+	<style name="oplabel.equal">
 		<item name="android:gravity">center_horizontal</item>
-   	    <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
+    
 	<!--  Initial equal label, can be simplified:
 					android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -104,7 +126,16 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"
                     android:textAppearance="?android:attr/textAppearanceLarge" -->
-                    
+	
+	<style name="hinttext">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:linksClickable">true</item>
+		<item name="android:padding">5dp</item>
+   	    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+   	</style>
+
 		<!-- Not usable in older versions of Android aka prior to API level 11
   	<item name="android:dialogTheme">@style/CalculationTangoTheme</item>
 

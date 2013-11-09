@@ -19,10 +19,8 @@
 
             <TextView
                 android:id="@+id/infoTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:text="@string/text_hello" />
+                android:text="@string/text_hello"
+                style="@style/infolabel.margin" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -33,31 +31,23 @@
 
                 <TextView
                     android:id="@+id/TriesLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="@string/tries_label" 
-                    android:layout_marginRight="5dp"/>
+                    style="@style/infolabel.margin" />
 
                 <TextView
                     android:id="@+id/TriesNumber"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="@string/default_tries_number" />
+                    android:text="@string/default_tries_number"
+                    style="@style/infolabel" />
 
                 <TextView
                     android:id="@+id/TriesSeparator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/default_tries_separator" />
+                    android:text="@string/default_tries_separator"
+                    style="@style/infolabel.center" />
 
                 <TextView
                     android:id="@+id/TriesMax"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:text="@string/default_max_tries" />
+                    android:text="@string/default_max_tries"
+                    style="@style/infolabel.left" />
             </LinearLayout>
         </LinearLayout>
 
@@ -74,15 +64,12 @@
 
                 <TextView
                     android:id="@+id/chronoText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center|center_horizontal"
                     android:text="@string/default_chrono_time"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+					style="@style/infolabel.center" />
 
                 <TextView
                     android:id="@+id/Operand1Label"
-                    style="@style/operand_label"
+                    style="@style/oplabel"
                     android:text="@string/sign_unknown" />
             </TableRow>
 
@@ -98,7 +85,7 @@
 
                 <TextView
                     android:id="@+id/Operand2Label"
-                    style="@style/operand_label"
+                    style="@style/oplabel"
                     android:text="@string/sign_unknown" />
             </TableRow>
 
@@ -109,25 +96,13 @@
 
                 <TextView
                     android:id="@+id/EqualLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:gravity="center_horizontal"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:text="@string/sign_equal"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    style="@style/oplabel.equal"
+                    android:text="@string/sign_equal" />
 
                 <EditText
                     android:id="@+id/ProposedResultField"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
                     android:hint="@string/text_enter_result"
-                    android:inputType="number|numberSigned|numberDecimal"
-                    android:maxEms="12" >
-
+					style="@style/oplabel.result" >
                     <requestFocus />
                 </EditText>
             </TableRow>
@@ -155,12 +130,7 @@
 
         <TextView
             android:id="@+id/HintText"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:focusableInTouchMode="true"
-            android:linksClickable="true"
-            android:padding="5dp"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            style="@style/hinttext" />
     </ScrollView>
 
 </LinearLayout>
