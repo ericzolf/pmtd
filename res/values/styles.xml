@@ -85,7 +85,7 @@
 	<style name="infolabel">
 		<item name="android:layout_width">wrap_content</item>
 		<item name="android:layout_height">wrap_content</item>
-		<item name="android:gravity">center|center_horizontal</item>
+		<item name="android:gravity">right</item>
    	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 			
@@ -94,7 +94,7 @@
    	</style>
 
 	<style name="infolabel.center">
-		<item name="android:gravity">center|center_horizontal</item>
+		<item name="android:gravity">center_horizontal</item>
    	</style>
 
 	<style name="infolabel.left">
