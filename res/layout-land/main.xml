@@ -12,44 +12,42 @@
         android:gravity="center_horizontal"
         android:orientation="vertical" >
 
-        <LinearLayout
-            android:id="@+id/linearLayoutHelloAndTries"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/layoutHelloAndTries"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/infoTextView"
-                android:text="@string/text_hello"
-                style="@style/infolabel.margin" />
+                style="@style/infolabel.margin"
+                android:layout_alignParentLeft="true"
+                android:text="@string/text_hello" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/TriesLabel"
+                style="@style/infolabel.margin"
+                android:layout_toLeftOf="@+id/TriesNumber"
+                android:layout_toRightOf="@id/infoTextView"
+                android:text="@string/tries_label" />
 
-                <TextView
-                    android:id="@+id/TriesLabel"
-                    android:text="@string/tries_label" 
-                    style="@style/infolabel.margin" />
+            <TextView
+                android:id="@id/TriesNumber"
+                style="@style/infolabel"
+                android:layout_toLeftOf="@+id/TriesSeparator"
+                android:text="@string/default_tries_number" />
 
-                <TextView
-                    android:id="@+id/TriesNumber"
-                    android:text="@string/default_tries_number"
-                    style="@style/infolabel" />
+            <TextView
+                android:id="@id/TriesSeparator"
+                style="@style/infolabel.center"
+                android:layout_toLeftOf="@+id/TriesMax"
+                android:text="@string/default_tries_separator" />
 
-                <TextView
-                    android:id="@+id/TriesSeparator"
-                    android:text="@string/default_tries_separator"
-                    style="@style/infolabel.center" />
-
-                <TextView
-                    android:id="@+id/TriesMax"
-                    android:text="@string/default_max_tries"
-                    style="@style/infolabel.left" />
-            </LinearLayout>
-        </LinearLayout>
+            <TextView
+                android:id="@id/TriesMax"
+                style="@style/infolabel.left"
+                android:layout_alignParentRight="true"
+                android:text="@string/default_max_tries" />
+        </RelativeLayout>
 
         <TableLayout
             android:id="@+id/tableLayoutTimeAndExercise"
@@ -64,8 +62,8 @@
 
                 <TextView
                     android:id="@+id/chronoText"
-                    android:text="@string/default_chrono_time"
-					style="@style/infolabel.center" />
+                    style="@style/infolabel.center"
+                    android:text="@string/default_chrono_time" />
 
                 <TextView
                     android:id="@+id/Operand1Label"
@@ -101,8 +99,9 @@
 
                 <EditText
                     android:id="@+id/ProposedResultField"
-                    android:hint="@string/text_enter_result"
-					style="@style/oplabel.result" >
+                    style="@style/oplabel.result"
+                    android:hint="@string/text_enter_result" >
+
                     <requestFocus />
                 </EditText>
             </TableRow>
@@ -113,12 +112,11 @@
             style="@style/butter_button"
             android:enabled="false"
             android:text="@string/text_check_solution" />
-        
+
         <Button
             android:id="@+id/NewExerciseButton"
             style="@style/butter_button"
             android:text="@string/text_new_exercise" />
-
     </LinearLayout>
 
     <ScrollView
