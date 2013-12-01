@@ -85,13 +85,14 @@
 	<style name="infolabel">
 		<item name="android:layout_width">wrap_content</item>
 		<item name="android:layout_height">wrap_content</item>
-		<item name="android:gravity">right</item>
+		<item name="android:gravity">left</item>
    	    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 			
-	<style name="infolabel.margin">
-		<item name="android:layout_marginRight">5dp</item>
-   	</style>
+	<style name="infolabel.padded">
+<!-- 		<item name="android:minEms">2</item> TODO: 1 em is too little, 2 em too broad, without it, the width changes slightly as numbers changes -->
+		<item name="android:gravity">right</item>
+	</style>
 
 	<style name="infolabel.center">
 		<item name="android:gravity">center_horizontal</item>

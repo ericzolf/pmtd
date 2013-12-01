@@ -19,20 +19,19 @@
 
             <TextView
                 android:id="@+id/infoTextView"
-                style="@style/infolabel.margin"
+                style="@style/infolabel"
                 android:layout_alignParentLeft="true"
                 android:text="@string/text_hello" />
 
             <TextView
                 android:id="@+id/TriesLabel"
-                style="@style/infolabel.margin"
+                style="@style/infolabel"
                 android:layout_toLeftOf="@+id/TriesNumber"
-                android:layout_toRightOf="@id/infoTextView"
                 android:text="@string/tries_label" />
 
             <TextView
                 android:id="@id/TriesNumber"
-                style="@style/infolabel"
+                style="@style/infolabel.padded"
                 android:layout_toLeftOf="@+id/TriesSeparator"
                 android:text="@string/default_tries_number" />
 
@@ -44,7 +43,7 @@
 
             <TextView
                 android:id="@id/TriesMax"
-                style="@style/infolabel.left"
+                style="@style/infolabel"
                 android:layout_alignParentRight="true"
                 android:text="@string/default_max_tries" />
         </RelativeLayout>
