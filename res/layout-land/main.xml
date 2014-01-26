@@ -77,7 +77,6 @@
 
                 <Spinner
                     android:id="@+id/OperationSpinner"
-                    style="@style/butter_spinner"
                     android:prompt="@string/text_choose_operation" />
 
                 <TextView

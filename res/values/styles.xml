@@ -43,7 +43,8 @@
 
     	<item name="android:buttonStyle">@style/butter_button</item>
     	<item name="android:alertDialogStyle">@style/CalculationTangoTheme</item>
-    	
+    	<item name="android:spinnerItemStyle">@style/butter_spinner_item</item>
+    	<!--  item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item -->
     	<!-- 		    
         <item name="android:colorForegroundInverse">@color/tango_chocolate_3</item>
 		<item name="android:textColorSecondary">@color/tango_sky_blue_3</item>
@@ -72,11 +73,20 @@
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
     </style>
 
+	<style name="butter_spinner_item">
+        <item name="android:textColor">@drawable/butter_button_text_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+	
+	<!--  Could be used as style for spinner in main.xml but doesn't quite work out -->
 	<style name="butter_spinner" parent="@style/butter_button">
-        <item name="android:layout_width">45sp</item> <!-- for some reason, wrap_content is too broad -->
+		<item name="android:layout_width">45sp</item> <!-- for some reason, wrap_content is too broad -->
         <item name="android:gravity">center|center_horizontal</item>
     </style>
 	
+	<!--  Was meant as a neutral style where the color could be changed on the fly - no idea how to make it work -->
 	<style name="neutral_button" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/neutral_button_background_selector</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
