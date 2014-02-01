@@ -20,10 +20,10 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 import eu.lavarde.util.ChronoProvider;
-import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.text.method.LinkMovementMethod;
 //import android.util.Log;
 import android.view.KeyEvent;
@@ -39,7 +39,7 @@ import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.graphics.PorterDuff;
 
-public abstract class PmtdRoundActivity extends Activity {
+public abstract class PmtdRoundActivity extends ActionBarActivity {
 //	protected static final String TAG = PlusMinusTimesDivideActivity.class.getSimpleName();
 	protected INumberProvider[] nums; // our "Model" object to keep data
 	protected int round;

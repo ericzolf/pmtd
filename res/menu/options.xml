@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/challenge" android:title="@string/challenge" android:icon="@android:drawable/ic_menu_compass"></item>
-    <item android:id="@+id/prefs"     android:title="@string/preferences" android:icon="@android:drawable/ic_menu_preferences"></item>
-    <item android:id="@+id/about"     android:title="@string/about" android:icon="@android:drawable/ic_menu_info_details"></item>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:pmtd="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/challenge"
+        android:title="@string/challenge"
+        android:icon="@android:drawable/ic_menu_compass"
+        pmtd:showAsAction="ifRoom" />
+    <item android:id="@+id/prefs"
+		android:title="@string/preferences"
+		android:icon="@android:drawable/ic_menu_preferences"
+		pmtd:showAsAction="ifRoom" />
+    <item android:id="@+id/about"
+        android:title="@string/about"
+		android:icon="@android:drawable/ic_menu_info_details" />
 </menu>

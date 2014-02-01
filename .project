@@ -3,6 +3,7 @@
 	<name>PlusMinusTimesDivide</name>
 	<comment></comment>
 	<projects>
+		<project>android-support-v7-appcompat</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

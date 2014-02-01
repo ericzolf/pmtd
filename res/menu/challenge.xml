@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/challenge" android:title="@string/challenge_new" android:icon="@android:drawable/ic_menu_revert"></item>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:pmtd="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/challenge"
+        android:title="@string/challenge_new"
+        android:icon="@android:drawable/ic_menu_revert"
+        pmtd:showAsAction="ifRoom" />
 </menu>

@@ -1,3 +1,5 @@
+- FIX: menu available again on Android tablets through use of ActionBar.
+- CHG: the appearance has changed slightly due to some style rewriting.
 2013.09.15.17:
 - FIX: typo in German preferences
 - FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions (Closes: Issues #2 and #3).

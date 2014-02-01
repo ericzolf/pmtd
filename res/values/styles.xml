@@ -30,7 +30,7 @@
 	<color name="tango_aluminium_5">#555753</color>
 	<color name="tango_aluminium_6">#2e3436</color>
 
-	<style name="CalculationTangoTheme" parent="android:Theme.Light">
+	<style name="CalculationTangoTheme" parent="Theme.AppCompat.Light">
 		<item name="android:windowBackground">@color/tango_butter_1</item>
 		<item name="android:colorBackground">@color/tango_butter_1</item>
 		<item name="android:colorForeground">@color/tango_butter_3</item>
