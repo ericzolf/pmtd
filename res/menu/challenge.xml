@@ -3,6 +3,6 @@
     	xmlns:pmtd="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/challenge"
         android:title="@string/challenge_new"
-        android:icon="@android:drawable/ic_menu_revert"
-        pmtd:showAsAction="ifRoom" />
+        android:icon="@android:drawable/ic_menu_recent_history" />
+        <!-- As we don't have a good icon in 2.1 we don't use it pmtd:showAsAction="ifRoom" / -->
 </menu>

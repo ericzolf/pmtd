@@ -44,7 +44,9 @@
     	<item name="android:buttonStyle">@style/butter_button</item>
     	<item name="android:alertDialogStyle">@style/CalculationTangoTheme</item>
     	<item name="android:spinnerItemStyle">@style/butter_spinner_item</item>
-    	<!--  item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item -->
+    	<!-- Works only starting with API 11 - item name="android:actionBarStyle">@style/ButterActionBar</item -->
+        <item name="actionBarStyle">@style/ButterActionBar</item>          <!-- Support library compatibility -->
+      	<!--  item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item -->
     	<!-- 		    
         <item name="android:colorForegroundInverse">@color/tango_chocolate_3</item>
 		<item name="android:textColorSecondary">@color/tango_sky_blue_3</item>
@@ -64,7 +66,13 @@
         <item name="android:textColorLink">@color/tango_sky_blue_3</item>
         -->
 	</style>
-	
+	<style name="ButterActionBar"
+           parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@color/tango_butter_2</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/tango_butter_2</item>
+    </style>
 	<style name="butter_button" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/butter_button_background_selector</item>
         <item name="android:textColor">@drawable/butter_button_text_selector</item>
