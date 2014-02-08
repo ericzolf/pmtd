@@ -20,9 +20,9 @@
     <string name="text_enter_result">Deine Lösung?</string>
     <string name="msg_answer_not_valid_title">Unpassende Antwort</string>
     <string name="msg_answer_not_valid">Deine Antwort passt leider nicht.
-        \nDas Ergebnis von „%1$s” can <b>NICHT</b> „%2$s” sein.</string>
+        \nDas Ergebnis von „%1$s” kann <b>NICHT</b> „%2$s” sein.</string>
     <string name="msg_answer_not_valid_too_many_digits">Es gibt zu viele Nachkommastellen in Deiner Antwort.
-        \nDas Ergebnis von „%1$s” can <b>NICHT</b> „%2$s” sein.</string>
+        \nDas Ergebnis von „%1$s” kann <b>NICHT</b> „%2$s” sein.</string>
     <string name="msg_answer_correct_title">Korrekte Antwort</string>
     <string name="msg_answer_correct">Juhu, Deine Antwort ist korrekt, Glückwunsch!
         \nDas Ergebnis von „%1$s” ist in der Tat „%2$s”.</string>
@@ -104,7 +104,7 @@
     <string name="about_chooser">Wählen Sie eine E-Mail-Applikation, um Ihre Meinung zu schicken:</string>
     <string name="about_enhancement">Funktion vorschlagen</string>
     <string name="about_bug">Fehler melden</string>
-    <string name="about_text">© 2012-2013, Eric Lavarde.
+    <string name="about_text">© 2012-2014, Eric Lavarde.
         \nDer Code dieses Programs ist freie Software: Sie können ihn unter der Konditionen der GPL Version 3 oder später
         verteilen und/or ändern. Siehe die COPYING Datei im Quellcode für mehr Information.
 		\n„OK” drücken, um zuzumachen, sonst einen der anderen Knöpfen, um eine E-Mail mit Meinung zu schicken.</string>
@@ -121,7 +121,7 @@
     <string name="temp_wip">Arbeit im Gange, noch nicht implementiert…</string>
 
     <!-- USERS ACTIVITY -->
-    <string name="no_user">Kein Benutzer bis jetzt vorhanden; Menü benutzen, um Einen zu kreieren.\n
+    <string name="no_user">Kein Benutzer bis jetzt vorhanden; Menü bzw. Plussymbol benutzen, um Einen zu kreieren.\n
         Danach länger auf den neuen Eintrag drücken, um mehr Optionen zu kriegen.</string>
     <string name="add_user">Benutzer kreieren</string>
     <string name="select_user">Benutzer selektieren</string>
@@ -132,7 +132,7 @@
     <string name="user_name_hint">Benutzername</string>
 
     <!-- CHALLENGES ACTIVITY -->
-    <string name="no_challenge">Kein Wettbewerb bis jetzt vorhanden; Menü benutzen, um Einen zu kreieren.\n
+    <string name="no_challenge">Kein Wettbewerb bis jetzt vorhanden; Menü bzw. Plussymbol benutzen, um Einen zu kreieren.\n
         Danach länger auf den neuen Eintrag drücken, um mehr Optionen zu kriegen.</string>
     <string name="add_challenge">Wettbewerb kreieren</string>
     <string name="select_challenge">Wettbewerb selektieren</string>

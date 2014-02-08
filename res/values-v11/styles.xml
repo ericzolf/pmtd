@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file should only contain aspects that are not known before API v11 aka Android 3.0 -->
+<resources>
+    
+	<style name="CalculationTangoTheme" parent="TangoTheme">
+    	<item name="android:actionBarStyle">@style/ButterActionBar</item>
+	  	<!-- Not sure this brings anything <item name="android:dialogTheme">@style/DialogTango</item> -->
+	</style>
+
+</resources>

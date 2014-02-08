@@ -30,7 +30,12 @@
 	<color name="tango_aluminium_5">#555753</color>
 	<color name="tango_aluminium_6">#2e3436</color>
 
-	<style name="CalculationTangoTheme" parent="Theme.AppCompat.Light">
+	<style name="CalculationTangoTheme" parent="TangoTheme">
+	    <item name="actionBarStyle">@style/ButterActionBar</item> <!-- Support library compatibility -->
+	</style>
+	
+	<!-- consider the style TangoTheme as an abstract style used for keeping everything non dependent on version -->
+	<style name="TangoTheme" parent="Theme.AppCompat.Light">
 		<item name="android:windowBackground">@color/tango_butter_1</item>
 		<item name="android:colorBackground">@color/tango_butter_1</item>
 		<item name="android:colorForeground">@color/tango_butter_3</item>
@@ -42,10 +47,8 @@
 <!-- 		<item name="android:textColorPrimary">@color/tango_sky_blue_3</item> -->
 
     	<item name="android:buttonStyle">@style/butter_button</item>
-    	<item name="android:alertDialogStyle">@style/CalculationTangoTheme</item>
+    	<item name="android:alertDialogStyle">@style/DialogTango</item>
     	<item name="android:spinnerItemStyle">@style/butter_spinner_item</item>
-    	<!-- Works only starting with API 11 - item name="android:actionBarStyle">@style/ButterActionBar</item -->
-        <item name="actionBarStyle">@style/ButterActionBar</item>          <!-- Support library compatibility -->
       	<!--  item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item -->
     	<!-- 		    
         <item name="android:colorForegroundInverse">@color/tango_chocolate_3</item>
@@ -135,17 +138,7 @@
 	<style name="oplabel.equal">
 		<item name="android:gravity">center_horizontal</item>
     </style>
-    
-	<!--  Initial equal label, can be simplified:
-					android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:gravity="center_horizontal"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:textAppearance="?android:attr/textAppearanceLarge" -->
-	
+    	
 	<style name="hinttext">
 		<item name="android:layout_width">fill_parent</item>
 		<item name="android:layout_height">wrap_content</item>
@@ -154,23 +147,4 @@
 		<item name="android:padding">5dp</item>
    	    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
    	</style>
-
-		<!-- Not usable in older versions of Android aka prior to API level 11
-  	<item name="android:dialogTheme">@style/CalculationTangoTheme</item>
-
-   	<style name="Dialog_Bad" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@color/tango_scarlet_red_1</item>
-        <item name="android:colorBackground">@color/tango_scarlet_red_1</item>
-        <item name="android:colorForeground">@color/tango_scarlet_red_3</item>
-        <item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
-    </style>
-
-   	<style name="Dialog_Good" parent="@android:style/Theme.Dialog">
-        <item name="android:windowBackground">@color/tango_chameleon_1</item>
-        <item name="android:colorBackground">@color/tango_chameleon_1</item>
-        <item name="android:colorForeground">@color/tango_chameleon_3</item>
-        <item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
-    </style>
-    -->
-    
 </resources>

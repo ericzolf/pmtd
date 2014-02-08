@@ -1,5 +1,8 @@
+2014.02.08.18:
+- FIX: small typo (can instead of kann) in German translation.
 - FIX: menu available again on Android tablets through use of ActionBar.
-- CHG: the appearance has changed slightly due to some style rewriting.
+- CHG: the appearance has changed slightly due to quite heavy style rewriting.
+- CHG: the dialogs to create users and challenges have been re-styled (still some work to do).
 2013.09.15.17:
 - FIX: typo in German preferences
 - FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions (Closes: Issues #2 and #3).

@@ -4,11 +4,11 @@
     <item android:id="@+id/challenge"
         android:title="@string/challenge"
         android:icon="@android:drawable/ic_menu_compass"
-        pmtd:showAsAction="ifRoom" />
+        /> <!--  no good icon so we don't use it pmtd:showAsAction="ifRoom" /> -->
     <item android:id="@+id/prefs"
 		android:title="@string/preferences"
 		android:icon="@android:drawable/ic_menu_preferences"
-		pmtd:showAsAction="ifRoom" />
+        /> <!--  no good icon so we don't use it pmtd:showAsAction="ifRoom" /> -->
     <item android:id="@+id/about"
         android:title="@string/about"
 		android:icon="@android:drawable/ic_menu_info_details" />

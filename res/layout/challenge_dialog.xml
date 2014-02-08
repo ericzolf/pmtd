@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogTango"
     android:id="@+id/scrollViewChallengeDialog"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
@@ -13,17 +14,14 @@
 
         <TextView
             android:id="@+id/challengeLabel"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#FFF" />
+            style="@style/dialogtext" />
 
         <EditText
             android:id="@+id/editChallengeName"
+            android:hint="@string/challenge_name_hint"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/challenge_name_hint"
             android:inputType="textPersonName" >
 
             <requestFocus />
@@ -36,25 +34,14 @@
 
             <TextView
                 android:id="@+id/labelRounds"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:gravity="left"
-                android:paddingRight="5dip"
                 android:text="@string/challenge_rounds"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
-
+            	style="@style/dialogtext.left" />
+                
             <TextView
                 android:id="@+id/textViewRounds"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_weight="0"
-                android:gravity="right"
                 android:text="@string/sign_unknown"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+                style="@style/dialogtext.right" />
+                
         </LinearLayout>
 
         <SeekBar
@@ -72,13 +59,8 @@
 
             <TextView
                 android:id="@+id/labelOperation"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:gravity="center_vertical"
-                android:paddingRight="5dip"
                 android:text="@string/challenge_operation"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+                style="@style/dialogtext.left" />
 
             <Spinner
                 android:id="@+id/challengeOperationSpinner"
@@ -95,25 +77,13 @@
 
             <TextView
                 android:id="@+id/labelMax"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:gravity="left"
-                android:paddingRight="5dip"
                 android:text="@string/challenge_max"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+                style="@style/dialogtext.left" />
 
             <TextView
                 android:id="@+id/textViewMax"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_weight="0"
-                android:gravity="right"
                 android:text="@string/sign_unknown"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+                style="@style/dialogtext.right" />
         </LinearLayout>
 
         <SeekBar
@@ -125,11 +95,8 @@
 
         <CheckBox
             android:id="@+id/checkBoxMax"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:text="@string/challenge_maxwhich"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#FFF" />
+            style="@style/dialogtext" />
 
         <LinearLayout
             android:id="@+id/placesLine"
@@ -138,24 +105,12 @@
 
             <TextView
                 android:id="@+id/labelPlaces"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:gravity="left"
-                android:paddingRight="5dip"
                 android:text="@string/challenge_places"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+            	style="@style/dialogtext.left" />
             <TextView
                 android:id="@+id/textViewPlaces"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_weight="0"
-                android:gravity="right"
                 android:text="@string/sign_unknown"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+            	style="@style/dialogtext.right" />
             </LinearLayout>
 
         <SeekBar
@@ -173,22 +128,12 @@
 
             <TextView
                 android:id="@+id/labelTable"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingRight="5dip"
                 android:text="@string/challenge_table"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+            	style="@style/dialogtext.left" />
             <TextView
                 android:id="@+id/textViewTable"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:gravity="right"
                 android:text="@string/sign_unknown"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#FFF" />
+            	style="@style/dialogtext.right" />
             </LinearLayout>
 
         <SeekBar
@@ -201,19 +146,13 @@
 
         <CheckBox
             android:id="@+id/checkBoxBool1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:text="@string/sign_unknown"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#FFF" />
+            style="@style/dialogtext" />
 
         <CheckBox
             android:id="@+id/checkBoxBool2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:text="@string/sign_unknown"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#FFF" />
+            style="@style/dialogtext" />
     </LinearLayout>
 
 </ScrollView>

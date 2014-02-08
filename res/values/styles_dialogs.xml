@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="dialogtext">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/tango_sky_blue_3</item>
+   	    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+   	</style>
+	<style name="dialogtext.left">
+	    <item name="android:gravity">left</item>	    
+	    <item name="android:layout_width">wrap_content</item>
+ 		<item name="android:paddingRight">5dp</item> -->
+   	</style>
+	<style name="dialogtext.right">
+	    <item name="android:layout_gravity">right</item>
+	    <item name="android:gravity">right</item>	    
+   	</style>
+	
+   	<style name="DialogBad" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/tango_scarlet_red_1</item>
+        <item name="android:colorBackground">@color/tango_scarlet_red_1</item>
+        <item name="android:colorForeground">@color/tango_scarlet_red_3</item>
+        <item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
+    </style>
+
+   	<style name="DialogGood" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/tango_chameleon_1</item>
+        <item name="android:colorBackground">@color/tango_chameleon_1</item>
+        <item name="android:colorForeground">@color/tango_chameleon_3</item>
+        <item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
+    </style>
+    
+	<style name="DialogTango" parent="@android:style/Theme.Dialog">
+		<item name="android:background">@color/tango_butter_1</item>
+		<item name="android:colorBackground">@color/tango_butter_1</item>
+		<item name="android:colorForeground">@color/tango_butter_3</item>
+		<item name="android:textColorPrimary">@color/tango_sky_blue_3</item>
+    	<item name="android:buttonStyle">@style/butter_button</item>
+	</style>
+</resources>

@@ -104,7 +104,7 @@
     <string name="about_chooser">Choisissez une application de courriel pour envoyer vos commentaires:</string>
     <string name="about_enhancement">Demande de fonction</string>
     <string name="about_bug">Rapport de bogue</string>
-    <string name="about_text">© 2012-2013, Eric Lavarde.
+    <string name="about_text">© 2012-2014, Eric Lavarde.
         \nLe code de ce programme est du logiciel libre: vous pouvez le redistribuer et/ou le modifier sous les mêmes termes
         de la license GPL version 3 ou plus récente. Voyez le fichier COPYING dans le code source pour plus d\'information.
 		\nPressez « OK » pour fermer, ou l\'un des autres boutons pour envoyer un courriel avec votre avis.</string>
@@ -121,7 +121,7 @@
     <string name="temp_wip">Travail en cours, pas encore implémenté …</string>
 
     <!-- USERS ACTIVITY -->
-    <string name="no_user">Aucun utilisateur existant; utilise le menu pour en créer un.\n
+    <string name="no_user">Aucun utilisateur existant; utilise le menu ou le signe plus pour en créer un.\n
         Après appuie longuement sur la nouvelle entrée pour de nouvelles options.</string>
     <string name="add_user">Créer un utilisateur</string>
     <string name="select_user">Choisir l\'utilisateur</string>
@@ -132,7 +132,7 @@
     <string name="user_name_hint">Nom d\'utilisateur</string>
 
     <!-- CHALLENGE ACTIVITY -->
-    <string name="no_challenge">Aucune compétition existante; utilise le menu pour en créer une.\n       
+    <string name="no_challenge">Aucune compétition existante; utilise le menu ou le signe plus pour en créer une.\n       
         Après appuie longuement sur la nouvelle entrée pour de nouvelles options.</string>
     <string name="add_challenge">Créer une compétition</string>
     <string name="select_challenge">Choisir la compétition</string>
