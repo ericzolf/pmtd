@@ -82,6 +82,8 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">10dip</item>
     </style>
 
 	<style name="butter_spinner_item">

@@ -6,7 +6,6 @@
     <string name="app_name">PlusMoinsFoisDivise</string>
     <string name="app_title">PMFD - %1$s</string>
     <string name="sign_equal">=</string>
-    <string name="text_check_solution">Vérifier la solution</string>
     <string name="text_choose_operation">Choisir le type d\'opération</string>
 
     <string-array name="signs_array"> <!-- l'ordre est important! -->
@@ -16,7 +15,8 @@
         <item>÷</item>
     </string-array>
 
-    <string name="text_new_exercise">Créer un nouvel exercice</string>
+    <string name="text_check_solution">Vérifier la solution</string>
+    <string name="text_new_exercise">Exercice suivant</string>
     <string name="text_enter_result">Ta solution?</string>
     <string name="msg_answer_not_valid_title">Réponse non valide</string>
     <string name="msg_answer_not_valid">Il y a quelque chose de faux dans ta réponse.

@@ -109,21 +109,24 @@
             android:id="@+id/ShowSolutionButton"
             style="@style/butter_button"
             android:enabled="false"
+            android:drawableLeft="@android:drawable/ic_media_play"
             android:text="@string/text_check_solution" />
+
+        <!-- TODO: remove the following text field only needed to get a minimum width of the left panel and some padding -->
+        <TextView
+            android:id="@+id/HiddenDummyText"
+            style="@style/infolabel"
+            android:height="10dp"
+            android:minEms="20"
+            android:text="@string/sign_unknown"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/NewExerciseButton"
             style="@style/butter_button"
+            android:drawableLeft="@android:drawable/ic_media_next"
             android:text="@string/text_new_exercise" />
 
-        <!-- TODO: remove the following text field only needed to get a minimum width of the left panel -->
-
-        <TextView
-            android:id="@+id/HiddenDummyText"
-            style="@style/infolabel"
-            android:minEms="20"
-            android:text="@string/sign_unknown"
-            android:visibility="invisible" />
     </LinearLayout>
 
     <ScrollView

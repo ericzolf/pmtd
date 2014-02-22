@@ -5,7 +5,6 @@
     <string name="app_name">PlusMinusTimesDivide</string>
     <string name="app_title">PMTD - %1$s</string>
     <string name="sign_equal">=</string>
-    <string name="text_check_solution">Check the solution</string>
     <string name="text_choose_operation">Choose the operation to train</string>
     <string-array name="signs_array"> <!-- the order is important! -->
         <item>+</item>
@@ -13,7 +12,8 @@
         <item>x</item>
         <item>÷</item>
     </string-array>
-    <string name="text_new_exercise">Create a new exercise</string>
+    <string name="text_check_solution">Check solution</string>
+    <string name="text_new_exercise">Next exercise</string>
     <string name="text_enter_result">Your answer?</string>
     <string name="msg_answer_not_valid_title">Answer not valid</string>
     <string name="msg_answer_not_valid">The answer you entered is not valid.

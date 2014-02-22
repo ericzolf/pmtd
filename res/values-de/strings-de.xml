@@ -6,7 +6,6 @@
     <string name="app_name">PlusMinusMalGeteilt</string>
     <string name="app_title">PMMG - %1$s</string>
     <string name="sign_equal">=</string>
-    <string name="text_check_solution">Die Lösung überprüfen</string>
     <string name="text_choose_operation">Die Rechenart wählen</string>
 
     <string-array name="signs_array"> <!-- die Reihenfolge ist wichtig! -->
@@ -16,7 +15,8 @@
         <item>:</item>
     </string-array>
 
-    <string name="text_new_exercise">Eine neue Übung erzeugen</string>
+    <string name="text_check_solution">Lösung überprüfen</string>
+    <string name="text_new_exercise">Nächste Übung</string>
     <string name="text_enter_result">Deine Lösung?</string>
     <string name="msg_answer_not_valid_title">Unpassende Antwort</string>
     <string name="msg_answer_not_valid">Deine Antwort passt leider nicht.
