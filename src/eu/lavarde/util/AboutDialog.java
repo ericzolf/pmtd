@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
@@ -16,7 +17,8 @@ public class AboutDialog {
 	private String app_version;
 	private String android_version;
 	private String screen_size;
-	
+	private String screen_dpi;
+
 	public AboutDialog(Context ctx) {
 		this.ctx = ctx;
 		try
@@ -29,8 +31,10 @@ public class AboutDialog {
 		    app_version = "NOT FOUND";
 		}
 		android_version = android.os.Build.VERSION.RELEASE + "(" + android.os.Build.VERSION.CODENAME + ")";
-		Display display = ((WindowManager) ctx.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-		screen_size = display.getWidth() + "x" + display.getHeight();
+		DisplayMetrics dm = new DisplayMetrics();
+		((WindowManager) ctx.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(dm);;
+		screen_size = dm.widthPixels + "x" + dm.heightPixels;
+		screen_dpi  = dm.xdpi + "x" + dm.ydpi + " (" + dm.density + "/" + dm.densityDpi + ")";
 	}
 	
 	public void show() {
@@ -62,9 +66,10 @@ public class AboutDialog {
 		emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"android@lavar.de"}); // recipients
 		emailIntent.putExtra(Intent.EXTRA_SUBJECT, app_name + "/" + subject);
 		emailIntent.putExtra(Intent.EXTRA_TEXT, text + "\n\n"
-				+ "App version:     " + app_version + "\n"
-				+ "Android version: " + android_version + "\n"
-				+ "Screen WxH:      " + screen_size);
+				+ "App version:           " + app_version + "\n"
+				+ "Android version:       " + android_version + "\n"
+				+ "Screen  WxH:           " + screen_size + "\n"
+				+ "Density WxH (fac/dpi): " + screen_dpi);
 		// NOT NEEDED: emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("content://path/to/email/attachment"));
 		// You can also attach multiple items by passing an ArrayList of Uris
 		
