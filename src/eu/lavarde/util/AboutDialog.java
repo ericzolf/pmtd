@@ -8,7 +8,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.WindowManager;
 
 public class AboutDialog {
