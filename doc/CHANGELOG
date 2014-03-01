@@ -1,3 +1,10 @@
+2014.03.01.17:
+- DEV: added DOCTYPE entry to all XML files to avoid Eclipse warnings about missing DTD or schema
+- DEV: get rid of warning because Display import isn't needed anymore.
+- CHG: add screen density info to bug or enhancement email.
+- DEV: added --no-pager to git command to avoid paging and cutting long lines.
+- DEV: added small shell script to retrieve all log messages since last tag (useful for changelog).
+- CHG: bigger buttons with icons added for small fingers and little eyes.
 2014.02.08.18:
 - FIX: small typo (can instead of kann) in German translation.
 - FIX: menu available again on Android tablets through use of ActionBar.
