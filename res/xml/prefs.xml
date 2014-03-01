@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PreferenceScreen>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/prefs_cat_overall" android:key="prefs.overall">
         <ListPreference android:key="prefs.overall.lang" android:title="@string/prefs_lang_title" android:entries="@array/prefs_lang_array" android:entryValues="@array/prefs_lang_val_array"></ListPreference>

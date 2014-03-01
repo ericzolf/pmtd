@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE menu>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- the icons don't seem to work, but let's keep them for now... -->
     <item android:id="@+id/select_challenge" android:title="@string/select_challenge" android:icon="@android:drawable/ic_menu_directions"></item>

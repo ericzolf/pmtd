@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
 <resources>
     <string name="hint_none">Den Knopf mit den Operationszeichen (+—·:) drücken, um die trainierte Operation zu ändern.
         Den Menüknopf drücken und zu den Einstellungen gehen, um den Schwierigkeitsgrad des Trainings zu ändern.</string>
