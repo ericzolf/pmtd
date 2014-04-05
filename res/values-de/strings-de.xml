@@ -49,12 +49,14 @@
         <item>en</item>
         <item>fr</item>
         <item>de</item>
+        <item>es</item>
     </string-array>
     <string-array name="prefs_lang_array">
         <item>Standard</item>
         <item>English</item>
         <item>Français</item>
         <item>Deutsch</item>
+        <item>Español</item>
     </string-array>
 
     <string name="prefs_overall_timer_visible_title">Sichtbarkeit der Zeituhr</string>

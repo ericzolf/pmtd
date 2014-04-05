@@ -1,10 +1,10 @@
- 
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
 <resources>
     <string name="text_hello">¡Comprueba tus habilidades en cálculo!</string>
     <string name="tries_label">Intentos:</string>
-    <string name="app_name">PlusMinusTimesDivide</string>
-    <string name="app_title">PMTD - %1$s</string>
+    <string name="app_name">MásMenosPorDividido</string>
+    <string name="app_title">MMPD - %1$s</string>
     <string name="sign_equal">=</string>
     <string name="text_check_solution">Comprueba el resultado</string>
     <string name="text_choose_operation">Escoje una operación para entrenar</string>
@@ -40,14 +40,14 @@
         <item>en</item>
         <item>fr</item>
         <item>de</item>
-	<item>es</item>
+        <item>es</item>
     </string-array>
     <string-array name="prefs_lang_array">
-        <item>Standard</item>
+        <item>Estándar</item>
         <item>English</item>
         <item>Français</item>
         <item>Deutsch</item>
-	<item>Spanish</item>
+        <item>Español</item>
     </string-array>
     <string name="prefs_overall_timer_visible_title">Visibilidad del reloj</string>
     <string name="prefs_overall_timer_visible_on_summary">El reloj se puede ver</string>
