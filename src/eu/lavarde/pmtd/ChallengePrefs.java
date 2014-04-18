@@ -18,7 +18,7 @@ along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
 package eu.lavarde.pmtd;
 
-public class ChallengePrefs implements IPrefs {
+public class ChallengePrefs extends APrefs {
 	private long id;
 	private String name;
 	private long userId;

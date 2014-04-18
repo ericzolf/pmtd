@@ -230,6 +230,7 @@ public abstract class PmtdRoundActivity extends ActionBarActivity {
         operationSpinner.setSelection(mPrefs.getOperation());
 
     	proposedResultField.setText(nums[round].getAnswer());
+    	proposedResultField.setHint(mPrefs.toString());
 
     	setTriesGUI();                
     	

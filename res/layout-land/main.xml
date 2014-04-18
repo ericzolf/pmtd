@@ -99,7 +99,9 @@
                 <EditText
                     android:id="@+id/ProposedResultField"
                     style="@style/oplabel.result"
+                    android:ellipsize="end"
                     android:hint="@string/text_enter_result" >
+                    <!-- TODO remove ellipsize which is a workaround for hint not appearing, see http://code.google.com/p/android/issues/detail?id=7252 -->
 
                     <requestFocus />
                 </EditText>

@@ -1,5 +1,3 @@
-package eu.lavarde.pmtd;
-
 /* This file is part of the PlusMinusTimesDivide product, copyright Eric Lavarde <android@lavar.de>.
  * Trademarks (the product name, in English and translated, artwork like icons, and the domains
  * lavar.de and lavarde.eu - also reversed as package name) are properties of the copyright owner
@@ -18,6 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with PlusMinusTimesDivide.  If not, see <http://www.gnu.org/licenses/>.
 */
+package eu.lavarde.pmtd;
 
 import java.util.Locale;
 
@@ -27,7 +26,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
 
-public class Prefs implements IPrefs {
+public class Prefs extends APrefs {
 
 	private SharedPreferences prefs;
 	
