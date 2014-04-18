@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
+<resources>
+<string name="market_description">
+A program to train children\'s mathematical skills in the four calculation methods: addition, subtraction, multiplication and division.
+The preferences allow to adapt the app\'s difficulty to any pupil\'s level, from basic primary (elementary) school to secondary and beyond.
+
+The program gives hints when the given answer is wrong (send me your tips if you have some more).
+The preferences dialog (from the Menu button) allows adaptation to most levels of difficulty required by children in different ages: 
+
+* maximum of operands or result, 
+* integer or decimal (with up to four decimal places) operations, 
+* with or without carry over, 
+* multiplication and addition tables training, 
+* number of authorized tries,
+* and some few others…
+
+There is a timer but it is shut-off by default, as to not stress sensible children.
+Finally, the language of the app can be set different (English, French, German, Spanish) from the default.
+
+The challenge mode (reachable from the menu in the first dialog) allows children to play against themselves and others with predefined challenges and a high-scores list.
+
+This app is Open Source under the GNU Public License version 3 or later (GPLv3+).
+</string>
+<string name="market_promo">
+Train children\'s skills in addition, subtraction, multiplication and division.
+</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
+<resources>
+<string name="market_description">
+Un programme pour aider les enfants à s\'entraîner dans les quatre opérations de calcul mental: addition, soustraction, multiplication et division.
+Les préférences permettent d\'adapter la difficulté de l\'application au niveau de tout élève, de l\'école primaire au collège, et même au-delà.
+
+L\'app donne des conseils quand l\'utilisateur se trompe (vous pouvez m\'envoyer vos propositions).
+Le dialogue de préférences (à partir du bouton Menu) permet d\'adapter la difficulté de manière flexible à l\'âge et l\'avancement des enfants: 
+
+* le maximum des opérandes ou du résultat,
+* opérations avec entiers ou décimaux (jusqu\'à 4 décimales),
+* sans ou avec retenue ou report,
+* tables d\'addition et de multiplication,
+* nombre d\'essais autorisés,
+* et quelques autres….
+
+Sinon, il y a un chronomètre mais il est invisible par défaut pour ne pas stresser inutilement les enfants impressionnables.
+Enfin, la langue de l\'application peut-être rendue différente (français, anglais, allemand) de celle par défaut.
+
+Le mode compétition (disponible par le menu du premier dialogue) permet aux enfants de se mesurer à eux-mêmes et à d\'autres avec des compétitions pré-définies et une liste de records.
+
+Ce logiciel est libre (Open Source) sous licence GNU Public License version 3 ou plus (GPLv3+).
+</string>
+<string name="market_promo">
+Entraîner les enfants à l\'addition, soustraction, multiplication et division.
+</string>
+</resources>

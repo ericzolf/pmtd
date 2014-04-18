@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
+<resources>
+<string name="market_description">
+Ein Programm, um Kinder in den vier Grundrechenarten zu trainieren: Addition, Subtraktion, Multiplikation und Division.
+Die Einstellungen erlauben es, die Schwierigkeit der App auf das Niveau jedes Schülers anzupassen, von der Grundschule bis zum Gymnasium bzw. Haupt- oder Realschule.
+
+Die App gibt Hinweise, wenn der Benutzer eine falsche Antwort gibt (schickt mir Eure Vorschläge).
+Der Einstellungendialog (aus dem Menu Knopf) erlaubt es, die Schwierigkeit am Alter des Kindes anzupassen:
+
+* Maximum von Operanden oder Ergebnis,
+* Ganz- oder Dezimalzahlrechnungen (mit bis zu vier Nachkommastellen),
+* mit oder ohne Überhang,
+* Trainieren von Addition und Multiplikationstabellen,
+* Anzahl von erlaubten Versuchen,
+* und ein Paar Andere…
+
+Es gibt eine Zeituhr aber sie ist standardmäßig unsichtbar, um empfindliche Kinder nicht zu belasten.
+Letztendlich, die Sprache der App kann anders (Deutsch, Englisch, Französisch, Spanisch) eingestellt sein als der Systemstandard.
+
+Der Wettbewerbmodus (erreichbar vom Menü des ersten Dialogs) erlaubt es Kindern, sich mit sich selbst und anderen Kindern zu messen, anhand vordefinierten Wettbewerbe und einer Highscore-Liste.
+
+Diese App ist frei (Open Source) unter der GNU Public License Version 3 oder später (GPLv3+).
+</string>
+<string name="market_promo">
+Trainiert Kinder in Addition, Subtraktion, Multiplikation und Division.
+</string>
+</resources>
