@@ -1,3 +1,18 @@
+2014.05.01.18:
+- NEW: Volunteers can translate the app under https://www.transifex.com/projects/p/pmtd/
+- NEW: Spanish translation thanks to Rober xphnx
+- FIX: hint for result is now visible on older versions of Android.
+- NEW: hint for result shows shortcuts for chosen preferences.
+- NEW: shortcuts for preferences are shown in the preferences dialog.
+- DEV: replaced strings-{es,de,fr}.xml files with versions from Transifex.
+- DEV: multiple string format changes in order to be compatible with transifex in Spanish and English.
+- DEV: moved prefs string function from IntegerProvider to new abstract class APrefs.
+- DEV: make Prefs classes extend APrefs to profit from toString function.
+- DEV: reformatted the strings.xml files to do clean-up.
+- DEV: add market.xml and translations for translation of strings used in the market description.
+- DEV: slightly updated Spanish strings, especially to get rid of errors.
+- DEV: small changes to get language list correct in strings.
+- DEV: added getPrefsString method to IntegerProvider class (will move!)
 2014.03.01.17:
 - DEV: added DOCTYPE entry to all XML files to avoid Eclipse warnings about missing DTD or schema
 - DEV: get rid of warning because Display import isn't needed anymore.
