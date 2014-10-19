@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE resources>
+<resources>
+  <string name="market_description">
+Un applicativo per esercitare le capacità matematiche dei ragazzi nelle quattro operazioni aritmetiche: addizione, sottrazione, moltiplicazione e divisione.
+Le preferenze consentono di adattare la difficoltà ad ogni livello, dalle scuole primarie (elementari) alle secondarie ed oltre.
+
+Il programma fornisce dei suggerimenti quando la risposta è sbagliata (mandatemi i vostri se ne avete altri).
+La schermata delle preferenze (accessibile dal bottone Menù) consente di ataddare il livello di difficoltà in base all\'età dei ragazzi:
+
+* massimo di operandi o risultato;
+* operazioni intere o decimali (fino a quattro)
+* con o senza riporto
+* tabelline da esercitare (per la moltiplicazione e l\'addizione)
+* numero di tentativi
+* ed altro ancora…
+
+È possibile attivare un timer (spento per default per non mettere sotto pressione i ragazzi sensibili)
+Infine, l\'applicativo può essere impostato in varie lingue  (inglese, francese, tedesco, italiano, spagnolo)
+
+La modalità di sfida (raggiungibile dal menù nella prima schermata) consente ai ragazzi di giocare contro se stessi e altri con delle sfide predefinite e la gestione degli high-scores.
+
+Questo applicativo è Open Source sotto la licenza GNU Public License versione 3 o successiva (GPLv3+).
+</string>
+  <string name="market_promo">
+Esercita le capacità dei ragazzi nelle quattro operazioni aritmetiche.
+</string>
+</resources>
