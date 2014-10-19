@@ -1,4 +1,7 @@
-2014.05.01.18:
+== 2014.10.19.10:
+- NEW: Add Italian language and few other language corrections.
+- DEV: fix too much escaped apostrophes in the italian translation.
+== 2014.05.01.18:
 - NEW: Volunteers can translate the app under https://www.transifex.com/projects/p/pmtd/
 - NEW: Spanish translation thanks to Rober xphnx
 - FIX: hint for result is now visible on older versions of Android.
@@ -13,19 +16,19 @@
 - DEV: slightly updated Spanish strings, especially to get rid of errors.
 - DEV: small changes to get language list correct in strings.
 - DEV: added getPrefsString method to IntegerProvider class (will move!)
-2014.03.01.17:
+== 2014.03.01.17:
 - DEV: added DOCTYPE entry to all XML files to avoid Eclipse warnings about missing DTD or schema
 - DEV: get rid of warning because Display import isn't needed anymore.
 - CHG: add screen density info to bug or enhancement email.
 - DEV: added --no-pager to git command to avoid paging and cutting long lines.
 - DEV: added small shell script to retrieve all log messages since last tag (useful for changelog).
 - CHG: bigger buttons with icons added for small fingers and little eyes.
-2014.02.08.18:
+== 2014.02.08.18:
 - FIX: small typo (can instead of kann) in German translation.
 - FIX: menu available again on Android tablets through use of ActionBar.
 - CHG: the appearance has changed slightly due to quite heavy style rewriting.
 - CHG: the dialogs to create users and challenges have been re-styled (still some work to do).
-2013.09.15.17:
+== 2013.09.15.17:
 - FIX: typo in German preferences
 - FIX: especially for multiplications and divisions, the numbers are better balanced, giving more interesting questions (Closes: Issues #2 and #3).
 - NEW: High-scores list when long pressing on challenges.
@@ -36,43 +39,43 @@ adapted IntegerProvider to changes done.
 - DEV: Bumped the targetSdkVersion to 18 (4.3) - no impact expected
 - DEV: added HighscoresList Activity with all list layouts pertaining to it
 - DEV: smaller lint corrections.
-2013.05.04.13
+== 2013.05.04.13
 - NEW: High-score ranking is shown when ending a challenge if under 50 best (you can't get a list yet).
 - DEV: new class HighscoresDbAdapter.
 - DEV: moved all DB related classes to a separate 'db' package.
-2013.02.03.13
+== 2013.02.03.13
 - CHG: divisions with max applied to big number should be more "interesting".
 - CHG: copyright 2012-2013 instead of 2012 (nobody cares, I know).
 - DEV: new class util.RandomNonLinear derived from java.util.Random to get nextLong and non linear distribution.
-2013.01.13.13:
+== 2013.01.13.13:
 - CHG: texts have been modified to show nicer and more international quote signs.
 - NEW: win/loss dialogs show the actual result or the given answer.
 - NEW: win/loss dialogs of training allows to jump directly to the next exercise.
 - FIX: state of training or challenge was not properly saved when rotating device.
 - DEV: moved to git at https://code.google.com/p/pmtd/
-2012.12.18.20:
+== 2012.12.18.20:
 - NEW: challenge mode can now be used and shows a result with score (which can't yet be stored).
 - CHG: specific title for each activity.
 - DEV: new ChallengeRoundActivity activity.
-2012.12.02.21:
+== 2012.12.02.21:
 - FIX: correct function of new exercise button (sorry!).
 - FIX: correct labels for challenge context menu (only in English).
 - DEV: create superclass PmtdRoundActivity and derive/rename TrainingRoundActivity (was PlusMinusTimesDivideActivity).
-2012.11.24.09:
+== 2012.11.24.09:
 - NEW: bigger icons for high-density screens.
 - NEW: challenge mode still a stub, user can be selected, challenge created/renamed, but not used (yet).
 - CHG: last trained operation is remembered after leaving the app.
 - NEW: hints about subtracting and dividing same numbers.
 - DEV: created interface for prefs and start to use it.
 - DEV: create all "Challenge" classes.
-2012.10.06.11:
+== 2012.10.06.11:
 - NEW: stub of a challenge mode (just user list, where users can be created/deleted/renamed). Work in progress!
 - CHG: menus have icons (looks nicer).
 - NEW: An about dialog with the possibility to send feedback.
 - DEV: Make Prefs a non-static class and adapt usage accordingly (still preparation for challenge mode).
 - DEV: Stop fiddling with R.string.plus/minus/etc and use instead INumberProvider.PLUS/MINUS/etc
 - DEV: Bumped minimum API level from 4 to 7 aka Android 2.1 (according to statistics, shouldn't impact any user).
-2012.07.01.20:
+== 2012.07.01.20:
 - CHG: more colourful / playful interface (more funny than good-looking, design isn't my strength)
 - NEW: Added time counter and preference to make it visible (or not by default).
 - CHG: Number of decimal places has become specific to operation.
@@ -80,18 +83,18 @@ adapted IntegerProvider to changes done.
 - FIX: Language of preferences changes as language preference changes (no need to go out and back in).
 - DEV: Refactored main Activity to centralize all findViewById calls in onCreate (might improve performance).
 - DEV: Split Prefs and PrefsActivity in order to prepare for later challenge mode.
-2012.05.29.10:
+== 2012.05.29.10:
 - CHG: New fixed version in Play Store (see details in description of old entry)
 - NEW: Landscape specific layout.
 - NEW: Further beautification with smileys in pop-up menus.
 - FIX: Small correction in German hints for multiplications by nine (9).
 - DEV: Changed package name to eu.lavarde.pmtd
-2012.05.12.19:
+== 2012.05.12.19:
 - CHG: Slightly more compact user interface.
 - FIX: Really correctly fixed the language issue this time (hopefully).
 - FIX: The old language fix created issues on older Android versions (2.1/2.2 and older)
 - CHG: Press the Return button to check the answer given.
-2012.05.06.17:
+== 2012.05.06.17:
 - NEW: preference to train a specific table of addition or multiplication.
 - NEW: the program gives hints when the answer given is wrong (send me your tips if you have some more).
 - CHG: more children friendly interface (still work in progress).
@@ -99,7 +102,7 @@ adapted IntegerProvider to changes done.
 - FIX: there were quite a lot of overflow errors that needed fixing.
 - CHG: maximum 4 decimal places (to avoid overflows indeed).
 - DEV: isMaxOperands renamed to isSmallNumbersMax for more clarity.
-2012.04.07.18:
+== 2012.04.07.18:
 - NEW: maximum number of tries per exercise.
-2012.03.25.12: 
+== 2012.03.25.12: 
 - initially released version
