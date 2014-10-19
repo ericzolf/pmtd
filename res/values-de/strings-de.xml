@@ -25,7 +25,7 @@
   <string name="msg_answer_incorrect_title">Inkorrekte Antwort</string>
   <string name="msg_answer_incorrect">Tut mir leid, Deine Antwort ist nicht korrekt, versuch\'s nochmal…\nDas Ergebnis von „%1$s” ist <b>NICHT</b> „%2$s”.</string>
   <string name="msg_answer_not_found_title">Antwort nicht gefunden</string>
-  <string name="msg_answer_not_found">Es tut mir echt leid aber Du hast die richtige Antwort nicht finden können.\nDas Ergebnis von „%1$s” ist eigentlich „%2$s”.</string>
+  <string name="msg_answer_not_found">Es tut mir echt Leid aber Du hast die richtige Antwort nicht finden können.\nDas Ergebnis von „%1$s” ist eigentlich „%2$s”.</string>
   <string name="msg_again">Nächste Übung!</string>
   <!--PREFERENCES-->
   <string name="preferences">Einstellungen</string>
@@ -40,6 +40,7 @@
     <item>fr</item>
     <item>de</item>
     <item>es</item>
+    <item>it</item>
   </string-array>
   <string-array name="prefs_lang_array">
     <item>Standard</item>
@@ -47,6 +48,7 @@
     <item>Français</item>
     <item>Deutsch</item>
     <item>Español</item>
+    <item>Italiano</item>
   </string-array>
   <string name="prefs_overall_timer_visible_title">Sichtbarkeit der Zeituhr</string>
   <string name="prefs_overall_timer_visible_on_summary">Zeituhr ist sichtbar</string>
@@ -140,7 +142,7 @@
   <string name="challenge_other">Anderer Wettbewerb</string>
   <!--HIGH-SCORES ACTIVITY-->
   <string name="highscores">Highscores</string>
-  <string name="no_highscore">Kein Highscore wurde bis jetzt für diesen Wettbewerb oder Benutzer erreicht.\nDrücke die Zurücktaste, spiel eine Runde oder zwei, und komm später zurück!</string>
+  <string name="no_highscore">Kein Highscore wurde bis jetzt für diesen Wettbewerb oder Benutzer erreicht.\nDrücke die Zurücktaste, spiele eine Runde oder zwei, und komm später zurück!</string>
   <string name="by">von</string>
   <string name="points_when">Punkte am</string>
 </resources>

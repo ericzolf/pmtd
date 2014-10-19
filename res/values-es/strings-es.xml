@@ -40,6 +40,7 @@
     <item>fr</item>
     <item>de</item>
     <item>es</item>
+    <item>it</item>
   </string-array>
   <string-array name="prefs_lang_array">
     <item>Estándar</item>
@@ -47,6 +48,7 @@
     <item>Français</item>
     <item>Deutsch</item>
     <item>Español</item>
+    <item>Italiano</item>
   </string-array>
   <string name="prefs_overall_timer_visible_title">Visibilidad del reloj</string>
   <string name="prefs_overall_timer_visible_on_summary">El reloj se puede ver</string>

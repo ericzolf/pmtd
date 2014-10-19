@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE resources>
+<resources>
+  <string name="hint_none">Premere il bottone con l\\'operazione (+—x÷) per cambiare l\\'operazione da esercitare.
+Premere il bottone menù e selezionare Preferenze per modificare la difficoltà.</string>
+  <!--SPECIFIC PLUS HINTS-->
+  <string name="hint_plus_zero">Aggiungere zero (0) a qualsiasi numero dà quello stesso numero come risultato;
+ad es. 1234 <b>+ 0</b> = 1234</string>
+  <string name="hint_plus_nine">Aggiungere nove (9) ad un numero è lo stesso che aggiungere dieci (10) e togliere uno (1);
+ad es. per calcolare 26 <b>+ 9</b>, prima aggiungere 10 a 26 (che dà 36) e poi togliere 1, il risultato sarà 35,
+cioè 26 <b>+ 9</b> = (26 + 10) — 1 = 36 — 1 = 35</string>
+  <!--GENERIC PLUS HINTS-->
+  <string name="hint_plus_commute">L\'addizione (somma) è <i>commutativa</i>.
+Questo significa che si possono scambiare gli operandi (i numeri) ed il risultato non cambia.
+In certi casi può essere più facile,
+ad es. 12- 412 = 412 + 12 = 424</string>
+  <string name="hint_plus_smaller">Anziché sommare un numero complicato,
+può essere più semplice sommare due numeri più piccoli per cercare di arrivare ad un risultato \"tondo\"
+ad es. invece di calcolare <b>19 +</b> 24, prima aggiungere 16 a 24 (che dà 40) e poi aggiungere 3, ottenendo il totale di 43
+cioè <b>19 +</b> 24 = 3 + 16 + 24 = 3 + 40 = 43</string>
+  <!--SPECIFIC MINUS HINTS-->
+  <string name="hint_minus_zero">Sottrarre (togliere) zero (0) da qualsiasi numero dà quello stesso numero come risultato;
+ad es. 768 <b>— 0</b> = 768</string>
+  <string name="hint_minus_nine">Togliere nove (9) da un numero è lo stesso che aggiungere uno (1) a togliere dieci (10);
+ad es. anziché 82 <b>— 9</b>, aggiungere prima 1 ad 82 (che dà 83) e poi togliere 10, il risultato sarà 73,
+cioè 82 <b>— 9</b> = 82 + 1 — 10 = 83 — 10 = 73</string>
+  <string name="hint_minus_equal">Sottrarre un numero da se stesso dà <i>sempre</i> come risutlato zero (0);
+ad es. 384 — 384 = <b>0</b></string>
+  <!--GENERIC MINUS HINTS-->
+  <string name="hint_minus_addition">La sottrazione (ovvero operazione meno) è l\'inverso dell\'addizione:
+Se avete una scatola con 20 caramelle, chiedersi quante caramelle rimangono se se ne tolgono 8 è la stessa cosa
+che chiedersi quante ne vanno aggiunte alle 8 già prese per
+averne un totale di 20 per merenda. Pensare al rovescio può aiutare a trovare la soluzione corretta.
+ad es. 20 <b>—</b> 8 = <b>?</b> diventa 8 <b>+ ?</b> = 20 (e la risposta è 12 in entrambi i casi)</string>
+  <string name="hint_minus_smaller">Anziché togliere un numero complicato,
+può essere più semplice togliere due numeri più piccoli per cercare di arrivare ad un risultato \"tondo\"
+ad es. invece di calcolare <b>53 —</b> 24, prima togliere 23 da 53 (che dà 30) e poi togliere 1, ottenendo il totale di 29
+cioè <b>53 —</b> 24 = 53 — 23 — 1 = 30 — 1 = 29</string>
+  <!--SPECIFIC TIMES HINTS-->
+  <string name="hint_times_zero">Qualsiasi numero moltiplicato per zero (0) dà <i>sempre</i> 0 come risultato;
+ad es. 1234 <b>x 0</b> = <b>0</b></string>
+  <string name="hint_times_one">Qualsiasi numero moltiplicato per uno (1) dà lo stesso numero come risultato;
+ad es. <b>1 x</b> 37 = 37</string>
+  <string name="hint_times_two">Moltiplicare per due (2) un numero è la stessa cosa che aggiungere il numero a se stesso;
+ad es. <b>2 x</b> 25 = 25 + 25 = 50</string>
+  <string name="hint_times_three">Quando si moltiplica un numero per tre (3), si può facilmente verificare se il risultato è corretto
+sommando ripetutamente tutte le cifre: la loro somma deve essere uguale a tre o ad un multiplo di tre (6 o 9)!
+Se non è così, il risultato è sbagliato ed è meglio verificarlo;
+ad es. <b>3 x</b> 12 = 36 e 3 + 6 = <b>9</b> (che è 3 per 3)
+oppure, più difficile, <b>3 x</b> 19 = 57 e 5 + 7 = 12 e 1 + 2 = <b>3</b>;</string>
+  <string name="hint_times_five">Moltiplicare un numero per cinque (5) è lo stesso che moltiplicare il numero per dieci (10)
+e dividerlo per due (2), ovvero prenderne la metà;
+ad es. <b>5 x</b> 43 = (10 x 43) ÷ 2 = 430 ÷ 2 = 215</string>
+  <string name="hint_times_nine1">Moltiplicare un numero per nove (9) è lo stesso che moltiplicarlo per dieci (10)
+e poi togliere (sottrarre) il numero una volta;
+ad es. <b>9 x</b> 24 = (10 x 24) — 24 = 240 — 24 = 216</string>
+  <string name="hint_times_nine2">Quando si moltiplica un numero per nove (9), si può facilmente verificare se il risultato è corretto
+sommando ripetutamente tutte le cifre: la loro somma deve essere uguale a nove!
+Se non è così, il risultato è sbagliato ed è meglio verificarlo;
+ad es. <b>9 x</b> 24 = 216 e 2 + 1 + 6 = <b>9</b>; 
+oppure, più difficile, 9 x 44 = 396 e 3 + 9 + 6 = 18, ed infine 1 + 8 = 9</string>
+  <string name="hint_times_ten_int">Moltiplicare un numero intero per dieci (10) è semplicemente aggiungere uno zero alla fine
+ad es. <b>10 x</b> 683 = 683<b>0</b></string>
+  <!--GENERIC TIMES HINTS-->
+  <string name="hint_times_commute">La moltiplicazione (l\'operazione per) è <i>commutativa</i>.
+Questo significa che si possono scambiare gli operandi (i numeri) ed il risultato non cambia.
+In certi casi può essere più facile,
+ad es. 12 x 3 = 3 x 12 = 36</string>
+  <!--SPECIFIC DIVIDE HINTS-->
+  <string name="hint_divide_zero">Zero (0) diviso per qualsiasi numero dà <i>sempre</i> 0 come risultato;
+ad es. <b>0 ÷</b> 354 = <b>0</b></string>
+  <string name="hint_divide_one">Qualsiasi numero diviso per uno (1) dà lo stesso numero come risultato;
+ad es. 28 <b>÷ 1</b> = 28</string>
+  <string name="hint_divide_equal">Dividere un numero per se stesso dà &lt;i&gt;sempre&gt; uno (1)
+ad es. 427 ÷ 427 = &lt;b&gt;1&lt;/b&gt;</string>
+  <!--GENERIC DIVIDE HINTS-->
+  <string name="hint_divide_multiplication">La divisione è l\'inverso della multiplicazione
+Se avete 24 biglie da offrire, chiedersi quante di queste ognuno dei vostri 4 amici riceverà è lo stesso che chiedersi
+quanti amici dovrete chiamare se ognuno riceverà 4 biglie per fare un totale di 24
+biglie con cui giocare. Pensare al rovescio può aiutare a trovare la soluzione corretta
+ad es. 24 <b>÷</b> 4 = <b>?</b> diventa 4 <b>x ?</b> = 24 (e la soluzione è 6 in entrambi i casi)</string>
+</resources>
