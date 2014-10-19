@@ -1,5 +1,5 @@
 == 2014.10.19.10:
-- NEW: Add Italian language and few other language corrections.
+- NEW: Add Italian language, thanks to UP (and down), and few other language corrections.
 - DEV: fix too much escaped apostrophes in the italian translation.
 == 2014.05.01.18:
 - NEW: Volunteers can translate the app under https://www.transifex.com/projects/p/pmtd/

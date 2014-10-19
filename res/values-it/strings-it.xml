@@ -3,8 +3,8 @@
 <resources>
   <string name="text_hello">Esercita le tue capacità di calcolo!</string>
   <string name="tries_label">Tentativi:</string>
-  <string name="app_name">PlusMinusTimesDivide</string>
-  <string name="app_title">PMTD - %1$s</string>
+  <string name="app_name">PiùMenoMoltiplicatoDiviso</string>
+  <string name="app_title">PMMD - %1$s</string>
   <string name="sign_equal">=</string>
   <string name="text_choose_operation">Scegli in quale operazione esercitarti</string>
   <string-array name="signs_array">
