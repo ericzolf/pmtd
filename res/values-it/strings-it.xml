@@ -59,7 +59,7 @@
   <string name="prefs_plus_max_applies_on_summary">Il massimo si applica agli operandi [max]</string>
   <string name="prefs_plus_max_applies_off_summary">Il massimo si applica al risultato [MAX]</string>
   <string name="prefs_plus_table_training_title">Valore della tabellina da esercitare</string>
-  <string name="prefs_plus_table_training_msg">Inserisci qui il valore di cui vuoi esercitare l\\'addizione, altrimenti inserisci 0:</string>
+  <string name="prefs_plus_table_training_msg">Inserisci qui il valore di cui vuoi esercitare l\'addizione, altrimenti inserisci 0:</string>
   <string name="prefs_plus_carry_allow_title">Consenti il riporto</string>
   <string name="prefs_plus_carry_allow_on_summary">Riporto permesso [←]</string>
   <string name="prefs_plus_carry_allow_off_summary">Riporto proibito (solo ultima cifra) [↚]</string>
@@ -67,7 +67,7 @@
   <string name="prefs_minus_max_value_title">Valore massimo</string>
   <string name="prefs_minus_max_applies_title">Il massimo si applica a …</string>
   <string name="prefs_minus_max_applies_on_summary">Il massimo si applica ai numeri più piccoli [max]</string>
-  <string name="prefs_minus_max_applies_off_summary">Il massimo si applica all\\'operando maggiore [MAX]</string>
+  <string name="prefs_minus_max_applies_off_summary">Il massimo si applica all\'operando maggiore [MAX]</string>
   <string name="prefs_minus_borrow_allow_title">Consenti il prestito</string>
   <string name="prefs_minus_borrow_allow_on_summary">Prestito permesso [→]</string>
   <string name="prefs_minus_borrow_allow_off_summary">Prestito proibito (solo ultima cifra) [↛]</string>
@@ -85,7 +85,7 @@
   <string name="prefs_divide_max_value_title">Valore massimo</string>
   <string name="prefs_divide_max_applies_title">Il massimo si applica a …</string>
   <string name="prefs_divide_max_applies_on_summary">Il massimo si applica ai numeri più piccoli [max]</string>
-  <string name="prefs_divide_max_applies_off_summary">Il massimo si applica all\\'operando maggiore [MAX]</string>
+  <string name="prefs_divide_max_applies_off_summary">Il massimo si applica all\'operando maggiore [MAX]</string>
   <string name="prefs_divide_rest_allow_title">Divisioni non esatte</string>
   <string name="prefs_divide_rest_allow_on_summary">Resto permesso [≠]</string>
   <string name="prefs_divide_rest_allow_off_summary">Resto proibito [=]</string>
@@ -93,11 +93,11 @@
   <string name="prefs_divide_integers_on_summary">Il numero di cifre decimali si applica solo al risultato [∈]</string>
   <string name="prefs_divide_integers_off_summary">Il numero di cifre decimali si applica ad operandi e risultato [∉]</string>
   <!--ABOUT-->
-  <string name="about">About…</string>
+  <string name="about">Riguardo a…</string>
   <string name="about_chooser">Scegli un applicativo di mail per inviare il feedback:</string>
   <string name="about_enhancement">Richiedi una feature</string>
   <string name="about_bug">Segnala bug</string>
-  <string name="about_text">© 2012-2014, Eric Lavarde.\nIl codice di questo programma è free software: puoi ridistribuirlo e/o modificarlo ai termini della licenza GPL versione 3 o successive. Vedere il file COPYING nei sorgenti per altre informazioni.\nPer chiudere premere “OK”, per inviare un feedback via mail usare uno degli altri bottoni.</string>
+  <string name="about_text">© 2012–2014, Eric Lavarde.\nIl codice di questo programma è free software: puoi ridistribuirlo e/o modificarlo ai termini della licenza GPL versione 3 o successive. Vedere il file COPYING nei sorgenti per altre informazioni.\nPer chiudere premere “OK”, per inviare un feedback via mail usare uno degli altri bottoni.</string>
   <string name="about_subject_bug">BUG: &lt;breve descrizione del problema&gt;</string>
   <string name="about_text_bug">&lt;Scrivi cosa stavi facendo quando si è manifestato il problema che vorresti che correggessi. Descrivi cosa è successo e cosa sarebbe docuto succedere.&gt;</string>
   <string name="about_subject_enhancement">ENH: &lt;breve descrizione della miglioria&gt;</string>
@@ -107,7 +107,7 @@
   <string name="temp_sorry">Spiacente!</string>
   <string name="temp_wip">Lavori in corso, non ancora funzionante…</string>
   <!--USERS ACTIVITY-->
-  <string name="no_user">Non ci sono utenti; usare il menù o il bottone + per crearne uno.\nSuccessivamente, tenere premuto sull\\'utente per accedere ad altre azioni.</string>
+  <string name="no_user">Non ci sono utenti; usare il menù o il bottone + per crearne uno.\nSuccessivamente, tenere premuto sull\'utente per accedere ad altre azioni.</string>
   <string name="add_user">Aggiungi un utente</string>
   <string name="select_user">Seleziona un utente</string>
   <string name="rename_user">Rinomina un utente</string>
@@ -134,10 +134,10 @@
   <!--CHALLENGE ACTIVITY-->
   <string name="challenge_next_round">Prossimo turno</string>
   <string name="challenge_round">Turno %1$2d di %2$2d (%3$d)</string>
-  <string name="challenge_hint">Sfida “%1$s” dell\\'utente “%2$s”\nTentativi: %3$d in %4$s min:sec\nCorrette: %5$d\nErrate: %6$d\n<b>Punteggio: %7$d</b></string>
+  <string name="challenge_hint">Sfida “%1$s” dell\'utente “%2$s”\nTentativi: %3$d in %4$s min:sec\nCorrette: %5$d\nErrate: %6$d\n<b>Punteggio: %7$d</b></string>
   <string name="challenge_finished_title">Sfida terminata!</string>
   <string name="challenge_finished_message">Hai terminato la sfida con %1$d punti.</string>
-  <string name="challenge_highscore_message">Hai realizzato l\\'high-score num. %1$d!</string>
+  <string name="challenge_highscore_message">Hai realizzato l\'high-score num. %1$d!</string>
   <string name="challenge_new">Nuova sfida</string>
   <string name="challenge_other">Altra sfida</string>
   <!--HIGH-SCORES ACTIVITY-->

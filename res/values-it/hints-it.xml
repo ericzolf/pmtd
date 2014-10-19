@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE resources>
 <resources>
-  <string name="hint_none">Premere il bottone con l\\'operazione (+—x÷) per cambiare l\\'operazione da esercitare.
-Premere il bottone menù e selezionare Preferenze per modificare la difficoltà.</string>
+  <string name="hint_none">Premere il bottone con l\'operazione (+—x÷) per cambiare l\'operazione da esercitare. Premere il bottone menù e selezionare Preferenze per modificare la difficoltà.</string>
   <!--SPECIFIC PLUS HINTS-->
   <string name="hint_plus_zero">Aggiungere zero (0) a qualsiasi numero dà quello stesso numero come risultato;
 ad es. 1234 <b>+ 0</b> = 1234</string>
