@@ -1,3 +1,6 @@
+== 2014.10.25.08:
+- FIX: small corrections to Italian title of PMTD and thank you to translator.
+- DEV: Lintian fixes around ndash.
 == 2014.10.19.10:
 - NEW: Add Italian language, thanks to UP (and down), and few other language corrections.
 - DEV: fix too much escaped apostrophes in the italian translation.

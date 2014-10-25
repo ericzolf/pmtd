@@ -97,7 +97,7 @@
   <string name="about_chooser">Elije una aplicación de correo electrónico para enviar la información</string>
   <string name="about_enhancement">Solicitar característica</string>
   <string name="about_bug">Informar de un fallo</string>
-  <string name="about_text">© 2012-2014, Eric Lavarde.\nEl código de este programa es software libre: puedes distribuirlo y/o modificarlo bajo los términos de la licencia GPL versión 3 o superior. Ojea el archivo COPYING en el código fuente para más información.\nPulsa \"OK\" para cerrar, o alguno de los otros botones para enviar un email con tus comentarios.</string>
+  <string name="about_text">© 2012–2014, Eric Lavarde.\nEl código de este programa es software libre: puedes distribuirlo y/o modificarlo bajo los términos de la licencia GPL versión 3 o superior. Ojea el archivo COPYING en el código fuente para más información.\nPulsa \"OK\" para cerrar, o alguno de los otros botones para enviar un email con tus comentarios.</string>
   <string name="about_subject_bug">BUG: &lt;pequeña descripción del problema&gt;</string>
   <string name="about_text_bug">&lt;Cuéntame que estabas haciendo cuando se presentó el problema que quieres que arregle. Describe qué estaba ocurriendo entonces y que esperas que pase ahora.&gt;</string>
   <string name="about_subject_enhancement">ENH: &lt;descripción corta de la mejora&gt;</string>

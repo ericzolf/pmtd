@@ -97,7 +97,7 @@
   <string name="about_chooser">Choose an email application to send your feedback:</string>
   <string name="about_enhancement">Request feature</string>
   <string name="about_bug">Report bug</string>
-  <string name="about_text">© 2012-2014, Eric Lavarde.\nThe code of this program is free software: you can redistribute it and/or modify it under the terms of the GPL version 3 or later. See the COPYING file in the source code for more information.\nPress “OK” to close, or one of the other buttons to send an email with feedback.</string>
+  <string name="about_text">© 2012–2014, Eric Lavarde.\nThe code of this program is free software: you can redistribute it and/or modify it under the terms of the GPL version 3 or later. See the COPYING file in the source code for more information.\nPress “OK” to close, or one of the other buttons to send an email with feedback.</string>
   <string name="about_subject_bug">BUG: &lt;short problem description&gt;</string>
   <string name="about_text_bug">&lt;Enter what you\'re doing when the problem appears that you\'d like me to fix. Describe what is then happening and what you would expect to actually happen.&gt;</string>
   <string name="about_subject_enhancement">ENH: &lt;short enhancement description&gt;</string>
