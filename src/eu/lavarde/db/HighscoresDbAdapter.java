@@ -133,7 +133,7 @@ public class HighscoresDbAdapter {
         initialValues.put(KEY_USER, userId);
         initialValues.put(KEY_CHALLENGE, challengeId);
         initialValues.put(KEY_SCORE, score);
-        initialValues.put(KEY_WHEN, System.currentTimeMillis());
+        initialValues.put(KEY_WHEN, System.currentTimeMillis()/1000);
         mDb.insert(DATABASE_TABLE, null, initialValues);
 
         // Trim the table to MAX_HIGHSCORES before returning

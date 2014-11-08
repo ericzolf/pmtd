@@ -1,3 +1,5 @@
+== 2014.11.08.20:
+- FIX: date and time were saved as milliseconds instead of seconds (not noticeable by users but still an issue).
 == 2014.10.25.08:
 - FIX: small corrections to Italian title of PMTD and thank you to translator.
 - DEV: Lintian fixes around ndash.

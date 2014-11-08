@@ -45,7 +45,7 @@ public class PmtdDbHelper extends SQLiteOpenHelper {
             		+ ");";
 
     private static final String DATABASE_NAME = "pmtd";
-	private static final int DATABASE_VERSION = 3;
+	private static final int DATABASE_VERSION = 4;
 
 	// TODO: find a better place for these intents/extra constants
 	public static final String EXTRA_USERID = "EXTRA_USERID";
@@ -77,6 +77,8 @@ public class PmtdDbHelper extends SQLiteOpenHelper {
     	if (oldVersion < 3 && newVersion >= 3) {
             db.execSQL(DATABASE_CREATE_HIGHSCORES); // high-scores table was added with version 3
     	}
+    	if (oldVersion < 4 && newVersion >= 4) { // FIX whendone was saved in milliseconds instead of seconds
+            db.execSQL("update highscores set whendone = whendone / 1000 where whendone > 1000000000000;");
+    	}
     }
-    
 }
