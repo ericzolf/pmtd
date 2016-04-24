@@ -32,7 +32,7 @@ public class ChronoProvider { // TODO: fix the chrono when the app is destroyed 
 	
 	public enum ChronoState { UNSTARTED, STARTED, PAUSED, STOPPED; }
 	
-	private long startTime = 0, elapsedTime = 0;
+	private long startTime = 0, elapsedTime = 0, stopTime = 0;
 	private ChronoState state = ChronoState.UNSTARTED;
 	private TextView textView;
 
@@ -96,14 +96,10 @@ public class ChronoProvider { // TODO: fix the chrono when the app is destroyed 
 	}
 
 	public boolean stop() {
-		if (state == ChronoState.STARTED) {
+		if (state == ChronoState.STARTED || state == ChronoState.PAUSED) {
 			stopHandler();
-			elapsedTime = SystemClock.elapsedRealtime() - startTime;
-			state = ChronoState.STOPPED;
-			updateTextView();
-			return true;
-		} else if (state == ChronoState.PAUSED) {
-			stopHandler();
+			stopTime = System.currentTimeMillis();
+			if (state == ChronoState.STARTED) elapsedTime = SystemClock.elapsedRealtime() - startTime;
 			state = ChronoState.STOPPED;
 			updateTextView();
 			return true;
@@ -129,6 +125,9 @@ public class ChronoProvider { // TODO: fix the chrono when the app is destroyed 
 	public int getElapsedSeconds() {
 		return (int) (getElapsedTime() / 1000L); // transform milliseconds in seconds
 	}
+	public int getStopSeconds() {
+		return (int) (stopTime / 1000L);
+	}
 	public ChronoState getState() {
 		return state;
 	}
@@ -147,6 +146,8 @@ public class ChronoProvider { // TODO: fix the chrono when the app is destroyed 
 
 	public void saveToBundle(Bundle stateSaver) {
 		stateSaver.putLong("ChronoProvider_elapsedtime", getElapsedTime());
+		stateSaver.putLong("ChronoProvider_starttime", startTime);
+		stateSaver.putLong("ChronoProvider_stoptime", stopTime);
 		stateSaver.putSerializable("ChronoProvider_state", state);
 		stopHandler();
 	}
@@ -154,6 +155,8 @@ public class ChronoProvider { // TODO: fix the chrono when the app is destroyed 
 	public void loadFromBundle(Bundle stateSaver) {
 		if (stateSaver == null) return;
 		state = (ChronoState) stateSaver.getSerializable("ChronoProvider_state");
+		startTime = stateSaver.getLong("ChronoProvider_starttime");
+		stopTime = stateSaver.getLong("ChronoProvider_stoptime");
 		setElapsedTime(stateSaver.getLong("ChronoProvider_elapsedtime"));
 		updateTextView();
 		if (state == ChronoState.STARTED)

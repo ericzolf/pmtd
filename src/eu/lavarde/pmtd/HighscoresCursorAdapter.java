@@ -44,7 +44,7 @@ public class HighscoresCursorAdapter extends CursorAdapter {
 		user.setText(userDbA.fetchUserName(cursor.getLong(cursor.getColumnIndex(HighscoresDbAdapter.KEY_USER))));
 		score.setText(cursor.getString(cursor.getColumnIndex(HighscoresDbAdapter.KEY_SCORE)));
 		DateFormat df = SimpleDateFormat.getDateTimeInstance();
-		when.setText(df.format(new Date(cursor.getLong(cursor.getColumnIndex(HighscoresDbAdapter.KEY_WHEN))*1000))); // seconds into milliseconds
+		when.setText(df.format(new Date(cursor.getLong(cursor.getColumnIndex(HighscoresDbAdapter.KEY_WHENDONE))*1000))); // seconds into milliseconds
 	}
 
 	@Override

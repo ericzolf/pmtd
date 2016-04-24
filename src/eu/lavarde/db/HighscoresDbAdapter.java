@@ -53,7 +53,7 @@ public class HighscoresDbAdapter {
     public static final String KEY_CHALLENGE = "challenge_id"; // Long/Integer - ID of challenge played
     public static final String KEY_USER = "user_id"; // Long/Integer - ID of user who played the challenge (null means unknown/deleted user)
     public static final String KEY_SCORE = "score"; // Integer - score reached
-    public static final String KEY_WHEN = "whendone"; // TimeDate - simply integer
+    public static final String KEY_WHENDONE = "whendone"; // TimeDate - simply integer
     
     public static final int MAX_HIGHSCORES = 50; // how many high-scores do we keep?
 
@@ -108,9 +108,10 @@ public class HighscoresDbAdapter {
      * @param userId the ID of the user who has reached the given score
      * @param challengeId the ID of the challenge for which the score has been reached
      * @param score the score reached
+     * @param when the time in seconds since the EPOCH when the score was reached
      * @return the 1-based rank of the score given in the high-scores (0 means that the score wasn't high enough to be inserted)
      */
-    public int createHighscore(long userId, long challengeId, int score) {
+    public int createHighscore(long userId, long challengeId, int score, int when) {
     	Cursor hsCursor = fetchChallengeHighscores(challengeId);
     	int cursorCount = hsCursor.getCount();
     	
@@ -133,7 +134,7 @@ public class HighscoresDbAdapter {
         initialValues.put(KEY_USER, userId);
         initialValues.put(KEY_CHALLENGE, challengeId);
         initialValues.put(KEY_SCORE, score);
-        initialValues.put(KEY_WHEN, System.currentTimeMillis()/1000);
+        initialValues.put(KEY_WHENDONE, when);
         mDb.insert(DATABASE_TABLE, null, initialValues);
 
         // Trim the table to MAX_HIGHSCORES before returning
@@ -165,7 +166,7 @@ public class HighscoresDbAdapter {
      */
     public Cursor fetchChallengeHighscores(long challengeId) {
 
-        return mDb.query(DATABASE_TABLE, new String[] {KEY_ID, KEY_USER, KEY_SCORE, KEY_WHEN},
+        return mDb.query(DATABASE_TABLE, new String[] {KEY_ID, KEY_USER, KEY_SCORE, KEY_WHENDONE},
         		KEY_CHALLENGE + "=" + challengeId, null, null, null, KEY_SCORE + " DESC");
     }
     

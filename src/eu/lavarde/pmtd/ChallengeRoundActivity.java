@@ -3,6 +3,7 @@ package eu.lavarde.pmtd;
 import eu.lavarde.db.HighscoresDbAdapter;
 import eu.lavarde.db.PmtdDbHelper;
 import eu.lavarde.db.ChallengesDbAdapter;
+import eu.lavarde.db.ScoreEvolutionDbAdapter;
 import eu.lavarde.db.UsersDbAdapter;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -43,6 +44,7 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
     private ChallengesDbAdapter mCDbAdapter;
     private UsersDbAdapter mUDbAdapter;
     private HighscoresDbAdapter mHDbAdapter;
+    private ScoreEvolutionDbAdapter mSDbAdapter;
 //    private Cursor mChallengesCursor;
     private int tries, failed, found;
 
@@ -67,6 +69,7 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 	protected void onDestroy() {
         mCDbAdapter.close();
         mHDbAdapter.close();
+        mSDbAdapter.close();
         mUDbAdapter.close();
 		super.onDestroy();
 	}
@@ -85,6 +88,9 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
         
         mHDbAdapter = new HighscoresDbAdapter(this);
         mHDbAdapter.open();
+
+        mSDbAdapter = new ScoreEvolutionDbAdapter(this);
+        mSDbAdapter.open();
 
         ChallengePrefs prefs = mCDbAdapter.fetchChallengePrefs(mChallengeId);
         mChallengeName = prefs.getName();
@@ -159,17 +165,24 @@ public class ChallengeRoundActivity extends PmtdRoundActivity {
 	}
 
 	private int getScore() {
-		return (chrono.getElapsedSeconds() * tries) == 0 ? 
+		int elapsed = chrono.getElapsedSeconds();
+		int score = (elapsed * tries) == 0 ? 
 				0 : 
-				found * 360360 * (found+failed) / (chrono.getElapsedSeconds() * tries);
+				found * 360360 * (found+failed) / (elapsed * tries);
 					// 360360 is 7*8*9*5*11*13 and can be divided in multiple ways, and right size
+		return score;
 	}
 	
+	/**
+	 * Finish the challenge: stop the clock, save the score evolution, and also a potential highscore
+	 * and trigger a dialog to congratulate the user and ask if he wants to play again.
+	 */
 	private void finishChallenge() {
 		chrono.stop(); initiateGUI();
-		// TODO add validation of high-score (or not)
 		int score = getScore();
-		int rank = mHDbAdapter.createHighscore(mUserId, mChallengeId, score);
+		mSDbAdapter.createScore(mUserId, mChallengeId, score, chrono.getStopSeconds(),
+				chrono.getElapsedSeconds(), tries, found, failed);
+		int rank = mHDbAdapter.createHighscore(mUserId, mChallengeId, score, chrono.getStopSeconds());
 		String msg = getString(R.string.challenge_finished_message, getScore()) ;
 		if (rank > 0) {// we've got a high-score!
 			msg = msg + " " + getString(R.string.challenge_highscore_message, rank);

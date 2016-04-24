@@ -124,6 +124,7 @@ public class UsersDbAdapter {
         if (mDb.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0) {
         	ChallengesDbAdapter.nullifyUser(mDb, rowId);
         	HighscoresDbAdapter.nullifyUser(mDb, rowId);
+        	ScoreEvolutionDbAdapter.deleteUser(mDb, rowId);
         	return true;
         } else {
         	return false;

@@ -168,6 +168,7 @@ public class ChallengesDbAdapter {
     public boolean deleteChallenge(long rowId) {
     	if (mDb.delete(DATABASE_TABLE, KEY_ID + "=" + rowId, null) > 0) {
     		HighscoresDbAdapter.deleteChallenge(mDb, rowId);
+    		ScoreEvolutionDbAdapter.deleteChallenge(mDb, rowId);
     		return true;
     	}
     	return false;
