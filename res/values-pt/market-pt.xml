@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
+<resources>
+<string name="market_description">
+Una app para entrenar las habilidades de los niños y niñas en las cuatro
+operaciones básicas: suma, resta, multiplicación y división. Las
+preferencias permiten adaptar la dificultad de la aplicación al nivel de
+las alumnas y alumnos, desde los cursos de Primaria a los de Secundaria o
+incluso superiores.
+
+El programa da avisos cuando la respuesta es correcta (envíeme sus
+consejos si tiene alguno más). El menú de preferencias (en el botón menú)
+permite la adaptación a los niveles o dificultad que necesitan las
+chicas/os en las diferentes edades:
+
+* Cantidad máxima en operandos y resultados,
+* Operaciones con números enteros o decimales (hasta cuatro decimales),
+* Operaciones con y sin llevar,
+* Entrenamiento con tablas de sumas y multiplicaciones,
+* Número de intentos permitidos,
+* Y algunas más…
+
+Hay un contador de tiempo, pero está apagado de forma predeterminada para
+no agobiar a los niños y niñas más sensibles. Por último, el idioma de la
+aplicación (inglés, francés, alemán, italiano, español) se toma de la configuración
+del dispositivo.
+
+El modo desafío (accesible desde el menú del primer cuadro de diálogo),
+permite que las chicas/os jueguen contra si mismas/os o contra otras/os
+con desafíos predefinidos y listas de puntuación más alta.
+
+Esta app es de código abierto y licenciada bajo GNU Public License versión
+3 o superior (GPLv3+).
+</string>
+<string name="market_promo">
+Entrenar las habilidades de los niños y niñas en suma, resta, multiplicación y división
+</string>
+</resources>
