@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources>
+<resources>
+    <string name="hint_none">Pressione o botão com uma operação
+        (+—x÷) para alterar a operação a ser treinada.
+        Pressione o botão menu e entre nas Preferências para alterar a dificuldade do treinamento.</string>
+
+    <!-- DICAS ESPECÍFICAS DA SOMA -->
+    <string name="hint_plus_zero">Somar zero (0) a qualquer número resulta no próprio número;
+        e.g. 1234 <b>+ 0</b> = 1234</string>
+    <string name="hint_plus_nine">Somar note (9) a um número é o mesmo que somar dez (10) e subtrair um (1);
+        e.g. ao invés de 26 <b>+ 9</b>, some primeiro 10 ao 26 (resulta 36) e subtraia 1, o total é igual a 35,
+        i.e. 26 <b>+ 9</b> = (26 + 10) — 1 = 36 — 1 = 35</string>
+
+    <!-- DICAS GENÉRICAS DA SOMA -->
+    <string name="hint_plus_commute">Adição (ou a operação de soma) é chamada de <i>comutativa</i>,
+        isso quer dizer que você pode trocar os operandos (os números) de lugar e o resultado será o mesmo,
+        às vezes isso pode deixar a operação mais clara na sua mente;
+        e.g. 12 + 412 = 412 + 12 = 424</string>
+    <string name="hint_plus_smaller">Ao invés de somar um número complicado,
+        pode ser mais fácil somar dois números menores, tentando pular para o resultado do próximo nível;
+        e.g. ao invés de <b>19 +</b> 24, some primeiro 16 ao 24 (resulta 40) então some 3, o total é igual a 43,
+        i.e. <b>19 +</b> 24 = 3 + 16 + 24 = 3 + 40 = 43</string>
+
+    <!-- DICAS ESPECÍFICAS DA SUBTRAÇÃO -->
+    <string name="hint_minus_zero">Subtrair (diminuir)zero (0) de qualquer número resulta no mesmo número;
+        e.g. 768 <b>— 0</b> = 768</string>
+    <string name="hint_minus_nine">Diminuir nove (9) de um número é o mesmo que somar um (1) e diminuir dez (10);
+        e.g. ao invés de 82 <b>— 9</b>, some primeiro 1 ao 82 (resulta 83) e subtraia 10, o total é igual a 73,
+        i.e. 82 <b>— 9</b> = 82 + 1 — 10 = 83 — 10 = 73</string>
+     <string name="hint_minus_equal">Subtrair um número dele próprio <i>sempre</i> é igual a zero (0);
+        e.g. 384 — 384 = <b>0</b></string>
+
+    <!-- DICAS GENÉRICAS DE SUBTRAÇÃO -->
+    <string name="hint_minus_addition">Subtração (ou a operação de menos) é o inverso da adição:
+        se você tem uma lancheira com 20 doces e se faz uma pergunta de quantos doces restarão se você tirar 8 é o mesmo que
+		se perguntar quantos doces você precisa colocar na sua lancheira somando-se aos 8 que você já tem de forma a 
+		obter 20 para o seu lanche. Pensar de outra forma pode ajudar você a encontrar a solução correta;
+		e.g. 20 <b>—</b> 8 = <b>?</b> se torna 8 <b>+ ?</b> = 20 (e a resposta é 12 em ambos os casos)</string>
+    <string name="hint_minus_smaller">Ao invés de subtrair um número complicado, 
+        pode ser mais fácil subtrair dois números menores, na tentativa de ir para o resultado da próxima rodada;
+        e.g. ao invés de <b>53 —</b> 24, subtraia primeiro 23 de 53 (resulta 30) então 1, o total é igual a 29,
+        i.e. <b>53 —</b> 24 = 53 — 23 — 1 = 30 — 1 = 29</string>
+
+    <!-- DICAS ESPECÍFICAS DE MULTIPLICAÇÃO -->
+    <string name="hint_times_zero">Multiplicar por (0) qualquer número resulta <i>sempre</i> em 0 como resposta;
+        e.g. 1234 <b>x 0</b> = <b>0</b></string>
+    <string name="hint_times_one">Multiplicar por um (1) qualquer número resulta este mesmo número como resposta;
+        e.g. <b>1 x</b> 37 = 37</string>
+    <string name="hint_times_two">Multiplicar por dois (2) qualquer número é o mesmo que somar este número a ele mesmo;
+        e.g. <b>2 x</b> 25 = 25 + 25 = 50</string>
+    <string name="hint_times_three">Quando você multiplica um número por três (3), você pode verificar facilmente se o seu resultado está correto
+        somando repetidamente todos os dígitos: a soma deles deles também precisa ser igual a três ou um múltiplo de três (6 or 9)!
+        Se não for o resultado que você conseguir, então algo está errado com o seu resultado e você deveria tentar de novo;
+        e.g. <b>3 x</b> 12 = 36 e 3 + 6 = <b>9</b> (que é 3 vezes 3)
+        or more complicated <b>3 x</b> 19 = 57 e 5 + 7 = 12 e 1 + 2 = <b>3</b>;</string>
+    <string name="hint_times_five">Multiplicar por cinco (5) qualquer número é o mesmo que multiplicar este número por dez (10)
+        e dividir por dois (2) ou tomar a metade dele;
+        e.g. <b>5 x</b> 43 = (10 x 43) ÷ 2 = 430 ÷ 2 = 215</string>
+    <string name="hint_times_nine1">Multiplicar por nove (9) qualquer número é o mesmo que multipplicar este número por dez(10)
+        e então diminuir (subtraindo) ele uma vez;
+        e.g. <b>9 x</b> 24 = (10 x 24) — 24 = 240 — 24 = 216</string>
+    <string name="hint_times_nine2">Quando você multiplica um número por nove (9), você pode verificar facilmente se o seu resultado está correto
+        adicionando repetidamente todos os dígitos: a soma deles também precisa ser igual a nove! Se não for o resultado que você conseguiu, então
+        algo está errado com o seu resultado e você deveria tentar de novo;
+        e.g. <b>9 x</b> 24 = 216 e 2 + 1 + 6 = <b>9</b>;
+        ou mais complicado 9 x 44 = 396 e 3 + 9 + 6 = 18, e finalmente 1 + 8 = 9</string>
+    <string name="hint_times_ten_int">Multiplicar por dez (10) qualquer número inteiro é tão fácil quanto adicionar um zero no fim do número;
+        e.g. <b>10 x</b> 683 = 683<b>0</b></string>
+
+    <!-- DICAS GENÉRICAS DE MULTIPLICAÇÃO -->
+    <string name="hint_times_commute">A multiplicação (ou a operação de vezes) é chamada <i>comutativa</i>,
+        isso quer dizer que você pode trocar os operandos (os números) de lugar e o resultado continuará o mesmo,
+        às vezes isso pode deixar a operação mais clara na sua mente;
+        e.g. 12 x 3 = 3 x 12 = 36</string>
+
+    <!-- DICAS ESPECÍFICAS DE DIVISÃO -->
+    <string name="hint_divide_zero">Zero (0) dividido por qualquer número resulta <i>sempre</i> em 0 como resposta;
+        e.g. <b>0 ÷</b> 354 = <b>0</b></string>
+    <string name="hint_divide_one">Dividir por um (1) qualquer número resulta no mesmo número como reposta;
+        e.g. 28 <b>÷ 1</b> = 28</string>
+    <string name="hint_divide_equal">Dividir um número por ele mesmo <i>sempre</i> é igual a um (1)
+        e.g. 427 ÷ 427 = <b>1</b></string>
+
+    <!-- DICAS GENÉRICAS DE DIVISÃO -->
+    <string name="hint_divide_multiplication">Divisão é o inverso da multiplicação:
+        se você tem 24 bolinhas de gude para dividir e se pergunta quantas cada um dos seus 4 amigos receberão, você também pode
+        se perguntar quantos amigos você precisa chamar se cada um trouxer 4 bolinhas de gude de forma a ter 24
+        bolinhas de gude para jogar. Pensar de outro jeito pode ajudá-lo a encontrar a solução correta;
+        e.g. 24 <b>÷</b> 4 = <b>?</b> se torna 4 <b>x ?</b> = 24 (e a resposta é 6 em ambos os casos)</string>
+
+</resources>
