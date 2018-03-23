@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources>
+<resources>
+  <string name="text_hello">Teste suas capacidades de calcular!</string>
+  <string name="tries_label">Tentativas:</string>
+  <string name="app_name">PlusMinusTimesDivide</string>
+  <string name="app_title">PMTD - %1$s</string>
+  <string name="sign_equal">=</string>
+  <string name="text_choose_operation">Escolha a operação para treinar</string>
+  <string-array name="signs_array">
+    <item>+</item>
+    <item>—</item>
+    <item>x</item>
+    <item>÷</item>
+  </string-array>
+  <!--the order of the signs in the array is important!-->
+  <string name="text_check_solution">Ver solução</string>
+  <string name="text_new_exercise">Próximo exercício</string>
+  <string name="text_enter_result">Sua resposta?</string>
+  <string name="msg_answer_not_valid_title">Resposta inválida</string>
+  <string name="msg_answer_not_valid">A resposta que você forneceu não é válida.\nO resutado de “%1$s” <b>NÃO</b> pode ser “%2$s”.</string>
+  <string name="msg_answer_not_valid_too_many_digits">Sua resposta tem muitos dígitos.\nO resultado de “%1$s” <b>NÃO</b> pode ser “%2$s”.</string>
+  <string name="msg_answer_correct_title">Resposta Correta</string>
+  <string name="msg_answer_correct">Isso aí, sua resposta está correta, parabéns!\nO resultado de “%1$s” realmente é “%2$s”.</string>
+  <string name="msg_answer_incorrect_title">Resposta Incorreta</string>
+  <string name="msg_answer_incorrect">Desculpe, sua resposta não está correta, tente novamente…\nO resultado de “%1$s” <b>NÃO</b> é “%2$s”.</string>
+  <string name="msg_answer_not_found_title">Resposta não encontrada</string>
+  <string name="msg_answer_not_found">Me desculpe mas você não achou a resposta correta.\nO resultado de “%1$s” na verdade é “%2$s”.</string>
+  <string name="msg_again">Próximo exercício!</string>
+  <!--PREFERENCES-->
+  <string name="preferences">Preferências</string>
+  <string name="prefs_cat_overall">Geral</string>
+  <string name="prefs_decimal_places_title">Casas decimais</string>
+  <string name="prefs_decimal_places_msg">Você pode escolher ter de 0 a 4 digitos após a vírgula:</string>
+  <string name="prefs_max_tries_title">Máximo de tentativas</string>
+  <string name="prefs_lang_title">Idioma do App</string>
+  <string-array name="prefs_lang_val_array">
+    <item>padrão</item>
+    <item>en</item>
+    <item>fr</item>
+    <item>de</item>
+    <item>es</item>
+    <item>it</item>
+    <item>br</item>
+  </string-array>
+  <string-array name="prefs_lang_array">
+    <item>Default</item>
+    <item>English</item>
+    <item>Français</item>
+    <item>Deutsch</item>
+    <item>Español</item>
+    <item>Italiano</item>
+    <item>Português do Brasil</item>
+  </string-array>
+  <string name="prefs_overall_timer_visible_title">Visibilidade do Temporizador</string>
+  <string name="prefs_overall_timer_visible_on_summary">Temporizador está visível</string>
+  <string name="prefs_overall_timer_visible_off_summary">Temporizador está invisível</string>
+  <string name="prefs_cat_plus">Soma</string>
+  <string name="prefs_plus_max_value_title">Valor Máximo</string>
+  <string name="prefs_plus_max_applies_title">O máximo se aplica a …</string>
+  <string name="prefs_plus_max_applies_on_summary">O máximo se aplica aos operandos [max]</string>
+  <string name="prefs_plus_max_applies_off_summary">O máximo se aplica ao resultado [MAX]</string>
+  <string name="prefs_plus_table_training_title">Valor do treinamento da tabela</string>
+  <string name="prefs_plus_table_training_msg">Se você quiser treinar a adição de um valor específico, entre com ele aqui, caso contrário entre com 0:</string>
+  <string name="prefs_plus_carry_allow_title">Permitir transição</string>
+  <string name="prefs_plus_carry_allow_on_summary">Transição permitida [←]</string>
+  <string name="prefs_plus_carry_allow_off_summary">Carry over forbidden (only last digit) [↚]</string>
+  <string name="prefs_cat_minus">Subtração</string>
+  <string name="prefs_minus_max_value_title">Valor máximo</string>
+  <string name="prefs_minus_max_applies_title">O máximo se aplica a …</string>
+  <string name="prefs_minus_max_applies_on_summary">O máximo se aplica a números menores [max]</string>
+  <string name="prefs_minus_max_applies_off_summary">O máximo se aplica ao maior operando [MAX]</string>
+  <string name="prefs_minus_borrow_allow_title">Allow borrow</string>
+  <string name="prefs_minus_borrow_allow_on_summary">Borrow allowed [→]</string>
+  <string name="prefs_minus_borrow_allow_off_summary">Borrow forbidden (only last digit) [↛]</string>
+  <string name="prefs_minus_negative_allow_title">Cálculo negativo</string>
+  <string name="prefs_minus_negative_allow_on_summary">Permitir resultados negativos [±]</string>
+  <string name="prefs_minus_negative_allow_off_summary">Proibit resultados negativos [+]</string>
+  <string name="prefs_cat_times">Multiplicação</string>
+  <string name="prefs_times_max_value_title">Valor máximo</string>
+  <string name="prefs_times_max_applies_title">O máximo se aplica a …</string>
+  <string name="prefs_times_max_applies_on_summary">O máxiimo se aplica aos openrandos [max]</string>
+  <string name="prefs_times_max_applies_off_summary">O máximo se aplica ao resultado [MAX]</string>
+  <string name="prefs_times_table_training_title">Tabela de valores para treino</string>
+  <string name="prefs_times_table_training_msg">Se você quer treinar a multiplicação de um número específico, entre ele aqui, ou entre 0:</string>
+  <string name="prefs_cat_divide">Divisão</string>
+  <string name="prefs_divide_max_value_title">Valor máximo</string>
+  <string name="prefs_divide_max_applies_title">Máximo se aplica a …</string>
+  <string name="prefs_divide_max_applies_on_summary">Máximo se aplica a números menores [max]</string>
+  <string name="prefs_divide_max_applies_off_summary">Máximo se aplica ao maior operando [MAX]</string>
+  <string name="prefs_divide_rest_allow_title">Divisão não exata</string>
+  <string name="prefs_divide_rest_allow_on_summary">Resto permitido [≠]</string>
+  <string name="prefs_divide_rest_allow_off_summary">Resto proibido [=]</string>
+  <string name="prefs_divide_integers_title">Divisão apenas de inteiros</string>
+  <string name="prefs_divide_integers_on_summary">O número de casas decimais só se aplica ao resultado [∈]</string>
+  <string name="prefs_divide_integers_off_summary">O número de casas decimais se aplica aos operandos e ao resultado [∉]</string>
+  <!--ABOUT-->
+  <string name="about">Sobre…</string>
+  <string name="about_chooser">Escolha um app de e-mail para nos enviar suas sugestões:</string>
+  <string name="about_enhancement">Pedir uma funcionalidade</string>
+  <string name="about_bug">Submeter bug</string>
+  <string name="about_text">© 2012–2014, Eric Lavarde.\nO código deste programa é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da licença GPL versão 3 ou posterior. Veja o arquivo COPYING no código fonte para mais informações.\nPressione “OK” para fechar, ou um dos outros botões para enviar um e-mail com sugestões.</string>
+  <string name="about_subject_bug">BUG: &lt;rápida descrição do problema&gt;</string>
+  <string name="about_text_bug">&lt;Escreva o que você estava fazendo quando o problema apareceu. Descreva então o que está acontecendo e o que você esperava acontecer.&gt;</string>
+  <string name="about_subject_enhancement">ENH: &lt;rápida descrição mais detalhada&gt;</string>
+  <string name="about_text_enhancement">&lt;Descreva em detalhes a funcionalidade que você gostaria que eu adicionasse, o que você gostaria de poder fazer e o que deveria acontecer.&gt;</string>
+  <!--CHALLENGE-->
+  <string name="challenge">Desafio</string>
+  <string name="temp_sorry">Desculpe!</string>
+  <string name="temp_wip">Trabalho em andamento, não implementado ainda…</string>
+  <!--USERS ACTIVITY-->
+  <string name="no_user">Nenhum usuário criado ainda; use o menu ou o "sinal de mais" para criar um.\nDepois, segure por um tempo maior no novo usuário para acessar mais opções.</string>
+  <string name="add_user">Criar usuário</string>
+  <string name="select_user">Selecionar usuário</string>
+  <string name="rename_user">Renomear usuário</string>
+  <string name="delete_user">Remover usuário</string>
+  <string name="give_user_name">Dê um nome ao seu usuário:</string>
+  <string name="give_new_user_name">Altere o nome do seu usuário:</string>
+  <string name="user_name_hint">Nome de usuário</string>
+  <!--CHALLENGES ACTIVITY-->
+  <string name="no_challenge">Nenhum desafio criado ainda; use o menu ou o "sinal de mais" para criar um.\nDepois, segure por um tempo no novo desafio para acessar mais opções.</string>
+  <string name="add_challenge">Criar desafio</string>
+  <string name="select_challenge">Selecionar desafio</string>
+  <string name="rename_challenge">Renomear desafio</string>
+  <string name="delete_challenge">Remover desafio</string>
+  <string name="give_challenge_name">Dê um nome ao seu desafio:</string>
+  <string name="give_new_challenge_name">Altere o nome do seu desafio:</string>
+  <string name="challenge_name_hint">Nome do desafio</string>
+  <!--CHALLENGES DIALOG-->
+  <string name="challenge_rounds">Rodadas:</string>
+  <string name="challenge_operation">Operação:</string>
+  <string name="challenge_max">Máximo:</string>
+  <string name="challenge_maxwhich">Máximo para números menores</string>
+  <string name="challenge_places">Casas decimais:</string>
+  <string name="challenge_table">Tabela de treino:</string>
+  <!--CHALLENGE ACTIVITY-->
+  <string name="challenge_next_round">Próxima rodada</string>
+  <string name="challenge_round">rodada %1$2d de %2$2d (%3$d)</string>
+  <string name="challenge_hint">Desafio “%1$s” do usuário “%2$s”\nTentativas: %3$d em %4$s min:sec\nCertas: %5$d\nErradas: %6$d\n<b>Pontuação: %7$d</b></string>
+  <string name="challenge_finished_title">Desafio finalizado!</string>
+  <string name="challenge_finished_message">Você completou o desafio com %1$d pontos.</string>
+  <string name="challenge_highscore_message">E você ficou na posição Nr. %1$d!</string>
+  <string name="challenge_new">Novo Desafio</string>
+  <string name="challenge_other">Outro Desafio</string>
+  <!--HIGH-SCORES ACTIVITY-->
+  <string name="highscores">Recordes</string>
+  <string name="no_highscore">Nenhum recorde foi estabelecido para esse desafio ou usuário.\nPressione a tecla voltar, jogue uma ou duas rodadas, e volte aqui mais tarde!</string>
+  <string name="by">por</string>
+  <string name="points_when">pontos no</string>
+</resources>
